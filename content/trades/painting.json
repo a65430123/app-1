@@ -1,0 +1,18 @@
+{
+  "id": "painting",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆"
+  ],
+  "difficulty": "beginner",
+  "title": "油漆",
+  "summary": "批土、底漆、面漆",
+  "icon": "paint-roller",
+  "order": 7,
+  "description": {
+    "default": "牆面與天花板的最後一道外觀，好壞一眼就看得出來。",
+    "master": "批土、研磨、底漆、面漆；含金屬與木作塗裝。"
+  }
+}

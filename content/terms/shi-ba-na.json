@@ -1,0 +1,25 @@
+{
+  "id": "shi-ba-na",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "工具"
+  ],
+  "difficulty": "beginner",
+  "title": "史巴拿",
+  "summary": "扳手",
+  "type": "term",
+  "origin": "ja",
+  "definition": {
+    "default": "扳手。源自日語「スパナ」（英語 spanner）。"
+  },
+  "reading": {
+    "kana": "スパナ",
+    "romaji": "supana"
+  },
+  "aliases": [
+    "扳手",
+    "spanner"
+  ],
+  "formalName": "扳手"
+}

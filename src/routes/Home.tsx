@@ -2,44 +2,38 @@ import { Link } from 'react-router-dom';
 import { Search, Package, BookA, MoreHorizontal } from 'lucide-react';
 import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
-import { SectionTitle, LinkRow, Placeholder } from '@/components/ui/Card';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { trades, procedures } from '@/data/placeholder';
+import { SectionTitle, Empty } from '@/components/ui/Card';
+import { EntryRow } from '@/components/content/EntryRow';
+import { iconFor } from '@/components/ui/icons';
+import { trades, procedures } from '@/content';
 import { useSettings } from '@/stores/settings';
+import { useLibrary } from '@/stores/library';
 
 export default function Home() {
   const mode = useSettings((s) => s.mode);
+  const history = useLibrary((s) => s.history).slice(0, 3);
   return (
     <>
       <TopBar title="工程通" />
       <Page>
-        {mode === 'beginner' && (
-          <p className="mb-3 text-muted">從工種開始逛，或直接搜尋你想了解的施工方法、材料或工地用語。</p>
-        )}
-        <Link
-          to="/search"
-          className="tap flex items-center gap-3 rounded-2xl border-2 border-line bg-surface px-4 text-lg text-muted"
-        >
+        {mode === 'beginner' && <p className="mb-3 text-muted">從工種開始逛，或直接搜尋你想了解的施工方法、材料或工地用語。</p>}
+        <Link to="/search" className="tap flex items-center gap-3 rounded-2xl border-2 border-line bg-surface px-4 text-lg text-muted">
           <Search className="size-6 text-primary" aria-hidden />
           搜尋工序、材料、術語
         </Link>
 
-        <SectionTitle action={<Link to="/trades" className="font-bold text-primary-ink">全部 ›</Link>}>工種</SectionTitle>
+        <SectionTitle action={<Link to="/trades" className="tap flex items-center font-bold text-primary-ink">全部 ›</Link>}>工種</SectionTitle>
         <div className="grid grid-cols-4 gap-2 sm:gap-3">
-          {trades.slice(0, 7).map(({ id, name, icon: Icon }) => (
-            <Link
-              key={id}
-              to={`/trades/${id}`}
-              className="flex aspect-square flex-col items-center justify-center gap-1 rounded-2xl border border-line bg-surface text-base font-bold active:bg-surface-2"
-            >
-              <Icon className="size-8 text-primary" aria-hidden />
-              {name}
-            </Link>
-          ))}
-          <Link
-            to="/trades"
-            className="flex aspect-square flex-col items-center justify-center gap-1 rounded-2xl border border-line bg-surface text-base font-bold active:bg-surface-2"
-          >
+          {trades.slice(0, 7).map((t) => {
+            const Icon = iconFor(t.icon);
+            return (
+              <Link key={t.id} to={`/trades/${t.id}`} className="flex aspect-square flex-col items-center justify-center gap-1 rounded-2xl border border-line bg-surface text-base font-bold active:bg-surface-2">
+                <Icon className="size-8 text-primary" aria-hidden />
+                {t.title}
+              </Link>
+            );
+          })}
+          <Link to="/trades" className="flex aspect-square flex-col items-center justify-center gap-1 rounded-2xl border border-line bg-surface text-base font-bold active:bg-surface-2">
             <MoreHorizontal className="size-8 text-muted" aria-hidden />
             更多
           </Link>
@@ -56,14 +50,16 @@ export default function Home() {
           </Link>
         </div>
 
-        <SectionTitle action={<Link to="/me/history" className="font-bold text-primary-ink">全部 ›</Link>}>最近瀏覽</SectionTitle>
-        <Placeholder text="還沒有瀏覽紀錄（P3 實作）" />
+        <SectionTitle action={history.length > 0 && <Link to="/me/history" className="tap flex items-center font-bold text-primary-ink">全部 ›</Link>}>最近瀏覽</SectionTitle>
+        {history.length ? (
+          <div className="flex flex-col gap-2">{history.map((h) => <EntryRow key={h.type + h.id} type={h.type} id={h.id} />)}</div>
+        ) : (
+          <Empty text="還沒有瀏覽紀錄，先點個工序看看吧" />
+        )}
 
         <SectionTitle>精選工序</SectionTitle>
         <div className="flex flex-col gap-2">
-          {procedures.map((p) => (
-            <LinkRow key={p.id} to={`/procedures/${p.id}`} title={p.title} subtitle={p.summary} right={<DifficultyBadge level={p.difficulty} />} />
-          ))}
+          {procedures.map((p) => <EntryRow key={p.id} type="procedure" id={p.id} showType={false} />)}
         </div>
       </Page>
     </>

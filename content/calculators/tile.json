@@ -1,0 +1,84 @@
+{
+  "id": "tile",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "磁磚"
+  ],
+  "difficulty": "beginner",
+  "title": "磁磚片數",
+  "summary": "依面積、磁磚尺寸、縫寬與損耗率估算片數",
+  "type": "calculator",
+  "engine": "tile",
+  "inputs": [
+    {
+      "key": "area",
+      "label": "鋪貼面積",
+      "unit": "m²",
+      "kind": "number",
+      "default": 10,
+      "min": 0,
+      "step": 0.1
+    },
+    {
+      "key": "w",
+      "label": "磁磚長",
+      "unit": "cm",
+      "kind": "number",
+      "default": 60,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "key": "h",
+      "label": "磁磚寬",
+      "unit": "cm",
+      "kind": "number",
+      "default": 60,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "key": "joint",
+      "label": "縫寬",
+      "unit": "mm",
+      "kind": "number",
+      "default": 2,
+      "min": 0,
+      "step": 0.5
+    },
+    {
+      "key": "waste",
+      "label": "損耗率",
+      "unit": "%",
+      "kind": "number",
+      "default": 8,
+      "min": 0,
+      "step": 1,
+      "help": "切磚多、斜貼時應提高"
+    },
+    {
+      "key": "perBox",
+      "label": "每箱片數（選填）",
+      "unit": "片",
+      "kind": "number",
+      "default": 4,
+      "min": 0,
+      "step": 1
+    }
+  ],
+  "params": [],
+  "formulaDisplay": [
+    "單片含縫面積 a = (長 + 縫寬) × (寬 + 縫寬)",
+    "片數 = 面積 ÷ a × (1 + 損耗率)，無條件進位",
+    "箱數 = 片數 ÷ 每箱片數，無條件進位"
+  ],
+  "notes": [
+    "斜貼或空間不規則時，損耗率常需提高至 10–15%",
+    "建議多備少量同批號磁磚供日後修補"
+  ],
+  "relatedProcedureIds": [
+    "tile-laying"
+  ]
+}

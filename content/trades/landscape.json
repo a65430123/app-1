@@ -1,0 +1,18 @@
+{
+  "id": "landscape",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "景觀"
+  ],
+  "difficulty": "beginner",
+  "title": "景觀",
+  "summary": "植栽、鋪面、排水",
+  "icon": "trees",
+  "order": 10,
+  "description": {
+    "default": "戶外庭園、植栽與鋪面。",
+    "master": "植栽、透水鋪面、排水與擋土。"
+  }
+}

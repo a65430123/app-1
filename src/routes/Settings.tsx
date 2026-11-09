@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
 import { Card } from '@/components/ui/Card';
+import { procedures, materials, terms, calculators } from '@/content';
 import { Disclaimer } from '@/components/ui/Disclaimer';
 import { useSettings, type FontScale, type Theme, type ViewMode } from '@/stores/settings';
 
@@ -57,8 +58,8 @@ export default function Settings() {
           />
         </Row>
         <Row title="內容版本" hint="遠端內容更新於 P5 實作">
-          <div className="flex items-center justify-between">
-            <span className="text-muted">內建內容　—</span>
+          <div className="flex items-center justify-between gap-3">
+            <span className="text-muted">內建示範內容：工序 {procedures.length}・材料 {materials.length}・術語 {terms.length}・計算機 {calculators.length}</span>
             <button type="button" disabled className="tap rounded-xl border border-line px-4 font-bold text-muted">檢查更新</button>
           </div>
         </Row>

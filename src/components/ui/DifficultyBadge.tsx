@@ -1,4 +1,4 @@
-import type { Difficulty } from '@/data/placeholder';
+import type { Difficulty } from '@/schema';
 
 const map: Record<Difficulty, { label: string; dots: number; cls: string }> = {
   beginner: { label: '新手', dots: 1, cls: 'text-success border-success' },

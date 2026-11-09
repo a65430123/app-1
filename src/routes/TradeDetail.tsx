@@ -2,51 +2,53 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
-import { LinkRow, Placeholder } from '@/components/ui/Card';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { trades, procedures } from '@/data/placeholder';
+import { Empty } from '@/components/ui/Card';
+import { EntryRow } from '@/components/content/EntryRow';
+import { ModalTextView } from '@/components/content/ModalTextView';
+import { getTrade, procedures, materials, terms } from '@/content';
 import NotFound from './NotFound';
 
-const tabs = ['工序', '材料', '術語'] as const;
+type Tab = 'procedure' | 'material' | 'term';
 
 export default function TradeDetail() {
   const { tradeId } = useParams();
-  const trade = trades.find((t) => t.id === tradeId);
-  const [tab, setTab] = useState<(typeof tabs)[number]>('工序');
+  const trade = getTrade(tradeId);
+  const [tab, setTab] = useState<Tab>('procedure');
   if (!trade) return <NotFound />;
-  const list = procedures.filter((p) => p.tradeId === trade.id);
+
+  const lists = {
+    procedure: procedures.filter((p) => p.tradeIds.includes(trade.id)),
+    material: materials.filter((m) => m.tradeIds.includes(trade.id)),
+    term: terms.filter((t) => t.tradeIds?.includes(trade.id)),
+  };
+  const list = lists[tab];
 
   return (
     <>
-      <TopBar title={trade.name} back />
+      <TopBar title={trade.title} back />
       <Page>
-        <p className="mb-4 text-muted">{trade.blurb}</p>
+        <ModalTextView text={trade.description} className="mb-4 text-muted" />
         <div role="tablist" className="mb-4 grid grid-cols-3 rounded-2xl bg-surface-2 p-1">
-          {tabs.map((t) => (
-            <button
-              key={t}
-              role="tab"
-              aria-selected={tab === t}
-              onClick={() => setTab(t)}
-              className={`tap rounded-xl text-lg font-bold ${tab === t ? 'bg-surface text-primary-ink shadow-sm' : 'text-muted'}`}
-            >
-              {t}
+          {(
+            [
+              ['procedure', '工序'],
+              ['material', '材料'],
+              ['term', '術語'],
+            ] as const
+          ).map(([v, l]) => (
+            <button key={v} role="tab" aria-selected={tab === v} onClick={() => setTab(v)}
+              className={`tap rounded-xl text-lg font-bold ${tab === v ? 'bg-surface text-primary-ink shadow-sm' : 'text-muted'}`}>
+              {l} <span className="text-sm">{lists[v].length}</span>
             </button>
           ))}
         </div>
-        {tab === '工序' &&
-          (list.length ? (
-            <div className="flex flex-col gap-2">
-              {list.map((p) => (
-                <LinkRow key={p.id} to={`/procedures/${p.id}`} title={p.title} subtitle={p.summary} right={<DifficultyBadge level={p.difficulty} />} />
-              ))}
-            </div>
-          ) : (
-            <Placeholder text="此工種的工序內容建置中" />
-          ))}
-        {tab === '材料' && <Placeholder text="相關材料（P2 實作）" />}
-        {tab === '術語' && <Placeholder text="相關術語（P2 實作）" />}
+        {list.length ? (
+          <div className="flex flex-col gap-2">{list.map((e) => <EntryRow key={e.id} type={tab} id={e.id} showType={false} />)}</div>
+        ) : (
+          <Empty text="此分類內容建置中" />
+        )}
       </Page>
     </>
   );
 }
+

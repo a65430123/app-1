@@ -1,0 +1,26 @@
+{
+  "id": "dou-lai-ba",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "工具"
+  ],
+  "difficulty": "beginner",
+  "title": "斗賴把",
+  "summary": "螺絲起子",
+  "type": "term",
+  "origin": "ja",
+  "definition": {
+    "default": "螺絲起子。源自日語「ドライバー」（driver）。"
+  },
+  "reading": {
+    "kana": "ドライバー",
+    "romaji": "doraibā"
+  },
+  "aliases": [
+    "螺絲起子",
+    "起子",
+    "driver"
+  ],
+  "formalName": "螺絲起子"
+}

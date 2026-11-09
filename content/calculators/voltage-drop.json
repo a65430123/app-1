@@ -1,0 +1,111 @@
+{
+  "id": "voltage-drop",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電"
+  ],
+  "difficulty": "master",
+  "title": "電線壓降",
+  "summary": "依電流、距離與線徑估算單相二線壓降",
+  "type": "calculator",
+  "engine": "voltageDrop",
+  "inputs": [
+    {
+      "key": "current",
+      "label": "負載電流",
+      "unit": "A",
+      "kind": "number",
+      "default": 15,
+      "min": 0,
+      "step": 0.5
+    },
+    {
+      "key": "length",
+      "label": "單程距離",
+      "unit": "m",
+      "kind": "number",
+      "default": 25,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "key": "voltage",
+      "label": "系統電壓",
+      "unit": "V",
+      "kind": "select",
+      "default": 110,
+      "options": [
+        {
+          "value": 110,
+          "label": "110 V"
+        },
+        {
+          "value": 220,
+          "label": "220 V"
+        }
+      ]
+    },
+    {
+      "key": "area",
+      "label": "導線截面積",
+      "unit": "mm²",
+      "kind": "select",
+      "default": 3.14,
+      "options": [
+        {
+          "value": 3.14,
+          "label": "2.0 mm 單芯（≈3.14 mm²）"
+        },
+        {
+          "value": 3.5,
+          "label": "3.5 mm² 絞線"
+        },
+        {
+          "value": 5.5,
+          "label": "5.5 mm² 絞線"
+        },
+        {
+          "value": 8,
+          "label": "8 mm² 絞線"
+        },
+        {
+          "value": 14,
+          "label": "14 mm² 絞線"
+        }
+      ]
+    }
+  ],
+  "params": [
+    {
+      "key": "rho",
+      "label": "銅電阻率",
+      "value": 0.0178,
+      "unit": "Ω·mm²/m",
+      "note": "約 20°C，未計溫升"
+    },
+    {
+      "key": "limit",
+      "label": "分路壓降參考上限",
+      "value": 3,
+      "unit": "%"
+    }
+  ],
+  "formulaDisplay": [
+    "單程電阻 R = ρ × 距離 ÷ 截面積",
+    "壓降 Vd = 2 × I × R（單相二線，往返）",
+    "壓降率 = Vd ÷ 系統電壓 × 100%"
+  ],
+  "notes": [
+    "僅計電阻，未計電抗與溫升，為簡化估算",
+    "線徑選擇另須符合安培容量（安全電流）規定",
+    "實際依用戶用電設備裝置規則與專業技師判斷"
+  ],
+  "relatedProcedureIds": [
+    "outlet-wiring"
+  ],
+  "aliases": [
+    "線徑",
+    "壓降"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "interior",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "裝修"
+  ],
+  "difficulty": "beginner",
+  "title": "裝修",
+  "summary": "統包、收邊、軟裝",
+  "icon": "sofa",
+  "order": 9,
+  "description": {
+    "default": "把各工種串起來的室內裝修整合。",
+    "master": "工序排程、介面整合、驗收。"
+  }
+}

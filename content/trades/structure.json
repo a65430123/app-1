@@ -1,0 +1,18 @@
+{
+  "id": "structure",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "土木結構"
+  ],
+  "difficulty": "beginner",
+  "title": "土木結構",
+  "summary": "模板、鋼筋、混凝土",
+  "icon": "building",
+  "order": 1,
+  "description": {
+    "default": "房子的骨架：柱、樑、樓板、牆，決定建築安不安全。",
+    "master": "結構體：模板、鋼筋、混凝土澆置與養護。"
+  }
+}

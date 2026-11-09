@@ -1,0 +1,32 @@
+{
+  "id": "kong-gu-li",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構"
+  ],
+  "difficulty": "beginner",
+  "title": "控固力",
+  "summary": "混凝土",
+  "type": "term",
+  "origin": "ja",
+  "definition": {
+    "default": "混凝土。源自日語「コンクリート」（concrete）的音譯。"
+  },
+  "reading": {
+    "kana": "コンクリート",
+    "romaji": "konkurīto"
+  },
+  "aliases": [
+    "混凝土",
+    "concrete",
+    "康固力"
+  ],
+  "formalName": "混凝土",
+  "examples": [
+    "明天要灌控固力。"
+  ],
+  "tradeIds": [
+    "structure"
+  ]
+}

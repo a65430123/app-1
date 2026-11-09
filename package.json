@@ -5,15 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run validate:content && tsc --noEmit && vite build",
     "preview": "vite preview --host",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:content": "tsx scripts/validate-content.ts"
   },
   "dependencies": {
     "lucide-react": "^1.70.0",
+    "minisearch": "^7.2.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5",
+    "zod": "^3.25.76",
     "zustand": "^5.1.0"
   },
   "devDependencies": {
@@ -23,6 +26,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
     "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vite": "^8.3.6"
   }

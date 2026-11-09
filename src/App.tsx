@@ -11,7 +11,12 @@ import CalculatorPage from '@/routes/CalculatorPage';
 import Me from '@/routes/Me';
 import Settings from '@/routes/Settings';
 import NotFound from '@/routes/NotFound';
-import { Materials, MaterialDetail, Glossary, TermDetail, Favorites, History } from '@/routes/Simple';
+import Materials from '@/routes/Materials';
+import MaterialDetail from '@/routes/MaterialDetail';
+import Glossary from '@/routes/Glossary';
+import TermDetail from '@/routes/TermDetail';
+import Favorites from '@/routes/Favorites';
+import History from '@/routes/History';
 
 export default function App() {
   useApplySettings();

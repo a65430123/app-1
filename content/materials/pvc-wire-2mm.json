@@ -1,0 +1,61 @@
+{
+  "id": "pvc-wire-2mm",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "電線",
+    "水電",
+    "配電"
+  ],
+  "difficulty": "intermediate",
+  "title": "PVC 絕緣電線 2.0 mm 單芯",
+  "summary": "一般插座、照明迴路常用的單芯銅線",
+  "type": "material",
+  "aliases": [
+    "2.0 單芯線",
+    "2.0 實心線",
+    "電線"
+  ],
+  "category": "電線電纜",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "導體",
+      "value": "單芯軟銅線，直徑 2.0 mm（截面積約 3.14 mm²）"
+    },
+    {
+      "label": "絕緣",
+      "value": "PVC"
+    },
+    {
+      "label": "包裝",
+      "value": "100 m／捲（常見）"
+    }
+  ],
+  "uses": [
+    "一般插座迴路",
+    "照明迴路"
+  ],
+  "pros": [
+    "價格低、好施工",
+    "接點牢固"
+  ],
+  "cons": [
+    "較硬，彎折次數多易斷",
+    "容量有限，不適合大電流設備"
+  ],
+  "brandTypes": [
+    "國產合格標示電線（認明商品檢驗標識）"
+  ],
+  "priceUnit": "捲（100 m）",
+  "storage": [
+    "避免日曬與高溫",
+    "避免外皮刮傷"
+  ],
+  "cautions": [
+    "請選用經商品檢驗合格之產品",
+    "線色依 L/N/E 區分"
+  ]
+}

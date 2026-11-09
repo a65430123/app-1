@@ -3,7 +3,7 @@ import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
 import { LinkRow } from '@/components/ui/Card';
 import { Disclaimer } from '@/components/ui/Disclaimer';
-import { calculators } from '@/data/placeholder';
+import { calculators } from '@/content';
 
 export default function Tools() {
   return (
@@ -12,7 +12,8 @@ export default function Tools() {
       <Page>
         <div className="flex flex-col gap-2">
           {calculators.map((c) => (
-            <LinkRow key={c.id} to={`/tools/${c.id}`} title={c.title} subtitle={c.desc} right={<Calculator className="size-6 text-primary" aria-hidden />} />
+            <LinkRow key={c.id} to={`/tools/${c.id}`} title={c.title} subtitle={c.summary}
+              left={<span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/15"><Calculator className="size-7 text-primary-ink" aria-hidden /></span>} />
           ))}
         </div>
         <Disclaimer className="mt-6" />

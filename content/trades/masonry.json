@@ -1,0 +1,22 @@
+{
+  "id": "masonry",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作"
+  ],
+  "difficulty": "beginner",
+  "title": "泥作",
+  "summary": "砌磚、粉刷、磁磚",
+  "icon": "brick",
+  "order": 2,
+  "description": {
+    "default": "俗稱「土水」，負責砌牆、抹水泥、貼磁磚，是裝修中最常見的工種之一。",
+    "master": "土水：砌磚、打底、粉光、貼磚、地坪。"
+  },
+  "aliases": [
+    "土水",
+    "thôo-tsuí"
+  ]
+}

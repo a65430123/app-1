@@ -1,0 +1,18 @@
+{
+  "id": "hvac",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "空調"
+  ],
+  "difficulty": "beginner",
+  "title": "空調",
+  "summary": "冷媒管、排水、風管",
+  "icon": "wind",
+  "order": 4,
+  "description": {
+    "default": "冷氣與通風的安裝與配管。",
+    "master": "分離式／吊隱式安裝、冷媒配管、排水坡度。"
+  }
+}

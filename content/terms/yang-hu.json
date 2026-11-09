@@ -1,0 +1,28 @@
+{
+  "id": "yang-hu",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "結構"
+  ],
+  "difficulty": "beginner",
+  "title": "養護",
+  "summary": "水泥類材料硬化期間的保濕保護",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "混凝土、砂漿施作後，於一定期間內保持濕潤與適當溫度，使水泥充分水化以達到應有強度。"
+  },
+  "aliases": [
+    "養生"
+  ],
+  "tradeIds": [
+    "masonry",
+    "structure"
+  ],
+  "relatedProcedureIds": [
+    "plastering-finish",
+    "waterproof-coating"
+  ]
+}

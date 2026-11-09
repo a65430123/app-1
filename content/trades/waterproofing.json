@@ -1,0 +1,18 @@
+{
+  "id": "waterproofing",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "防水"
+  ],
+  "difficulty": "beginner",
+  "title": "防水",
+  "summary": "屋頂、浴室、外牆",
+  "icon": "droplets",
+  "order": 8,
+  "description": {
+    "default": "防止漏水、壁癌。浴室、陽台、屋頂都需要防水層。",
+    "master": "彈性水泥、PU、防水毯；試水與抓漏。"
+  }
+}

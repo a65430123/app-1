@@ -1,0 +1,25 @@
+{
+  "id": "fen-guang",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作"
+  ],
+  "difficulty": "beginner",
+  "title": "粉光",
+  "summary": "牆面以細砂漿壓光的工序",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "在打底層上以細砂漿鏝壓出平整光滑面層的工序。"
+  },
+  "aliases": [
+    "粉刷"
+  ],
+  "tradeIds": [
+    "masonry"
+  ],
+  "relatedProcedureIds": [
+    "plastering-finish"
+  ]
+}

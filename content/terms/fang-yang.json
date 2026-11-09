@@ -1,0 +1,24 @@
+{
+  "id": "fang-yang",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "測量"
+  ],
+  "difficulty": "beginner",
+  "title": "放樣",
+  "summary": "依圖面在現場標出位置與高程",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "將設計圖上的位置、尺寸與高程，用墨線、雷射等方式標示到現場。",
+    "beginner": "就是把圖紙上的線「畫」到地上、牆上，讓師傅照著做。"
+  },
+  "aliases": [
+    "彈線",
+    "打墨線"
+  ],
+  "relatedProcedureIds": [
+    "tile-laying"
+  ]
+}

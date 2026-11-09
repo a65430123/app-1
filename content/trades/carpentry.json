@@ -1,0 +1,18 @@
+{
+  "id": "carpentry",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "木作"
+  ],
+  "difficulty": "beginner",
+  "title": "木作",
+  "summary": "天花板、隔間、櫃體",
+  "icon": "hammer",
+  "order": 6,
+  "description": {
+    "default": "用木料或板材做天花板、隔間牆與收納櫃。",
+    "master": "骨架、封板、櫃體、收邊。"
+  }
+}

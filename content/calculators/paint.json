@@ -1,0 +1,68 @@
+{
+  "id": "paint",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆"
+  ],
+  "difficulty": "beginner",
+  "title": "油漆用量",
+  "summary": "依面積、塗刷道數與塗佈率估算公升與加侖數",
+  "type": "calculator",
+  "engine": "paint",
+  "inputs": [
+    {
+      "key": "area",
+      "label": "塗刷面積",
+      "unit": "m²",
+      "kind": "number",
+      "default": 30,
+      "min": 0,
+      "step": 0.1
+    },
+    {
+      "key": "coats",
+      "label": "塗刷道數",
+      "unit": "道",
+      "kind": "number",
+      "default": 2,
+      "min": 1,
+      "step": 1
+    },
+    {
+      "key": "coverage",
+      "label": "塗佈率（每道）",
+      "unit": "m²/L",
+      "kind": "number",
+      "default": 10,
+      "min": 0,
+      "step": 0.5,
+      "help": "依產品標示，常見約 8–12 m²/L"
+    },
+    {
+      "key": "waste",
+      "label": "損耗率",
+      "unit": "%",
+      "kind": "number",
+      "default": 10,
+      "min": 0,
+      "step": 1
+    }
+  ],
+  "params": [
+    {
+      "key": "gallon",
+      "label": "1 加侖",
+      "value": 3.785,
+      "unit": "L"
+    }
+  ],
+  "formulaDisplay": [
+    "用量 L = 面積 × 道數 ÷ 塗佈率 × (1 + 損耗率)",
+    "加侖數 = L ÷ 3.785"
+  ],
+  "notes": [
+    "粗糙或吸水性高的面需要較多",
+    "底漆與面漆塗佈率不同，請分開計算"
+  ]
+}

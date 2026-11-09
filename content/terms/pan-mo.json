@@ -1,0 +1,25 @@
+{
+  "id": "pan-mo",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構"
+  ],
+  "difficulty": "beginner",
+  "title": "板模",
+  "summary": "混凝土澆置用的模板",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "灌漿前組立、用來讓混凝土成形的模板，也指模板工程或模板師傅。",
+    "beginner": "就像做蛋糕的模具，混凝土倒進去硬化後拆掉，就變成柱子、樑或樓板。"
+  },
+  "aliases": [
+    "模板",
+    "板模工"
+  ],
+  "formalName": "模板",
+  "tradeIds": [
+    "structure"
+  ]
+}

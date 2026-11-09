@@ -1,0 +1,18 @@
+{
+  "id": "steel",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "鋼構"
+  ],
+  "difficulty": "beginner",
+  "title": "鋼構",
+  "summary": "鋼骨、焊接、鎖固",
+  "icon": "construction",
+  "order": 5,
+  "description": {
+    "default": "用鋼材做結構或加蓋，常見於廠房、夾層、雨遮。",
+    "master": "鋼骨組立、焊接、高拉力螺栓、防鏽。"
+  }
+}

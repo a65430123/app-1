@@ -1,0 +1,18 @@
+{
+  "id": "electrical-plumbing",
+  "type": "trade",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電"
+  ],
+  "difficulty": "beginner",
+  "title": "水電",
+  "summary": "給排水、配電、弱電",
+  "icon": "zap",
+  "order": 3,
+  "description": {
+    "default": "負責家裡的水管與電線，關係到用水用電安全，配電須由合格人員施作。",
+    "master": "給排水、配電迴路、弱電；依用戶用電設備裝置規則施作。"
+  }
+}
