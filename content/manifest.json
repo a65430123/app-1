@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.11.09-1",
+  "contentVersion": "2026.11.09-2",
   "minAppVersion": "0.1.0",
   "publishedAt": "2026-11-09",
   "note": "發佈新內容時，請把 contentVersion 往上調（格式 YYYY.MM.DD-序號），App 才會偵測到更新。schemaVersion 只有在資料結構有破壞性變更時才 +1。"

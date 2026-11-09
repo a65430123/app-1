@@ -1,6 +1,6 @@
 {
   "id": "kong-gu-li",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "結構"
@@ -11,7 +11,7 @@
   "type": "term",
   "origin": "ja",
   "definition": {
-    "default": "混凝土。源自日語「コンクリート」（concrete）的音譯。"
+    "default": "混凝土。源自日語「コンクリート」（konkurīto，即英語 concrete）的音譯。"
   },
   "reading": {
     "kana": "コンクリート",

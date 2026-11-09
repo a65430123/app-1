@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
-import { getTerm, originLabel } from '@/content';
+import { getTerm } from '@/content';
 import { ModalTextView } from './ModalTextView';
 
 /** 術語晶片：點了從底部彈出解釋卡，不用離開目前頁面 */
@@ -37,10 +37,7 @@ export function TermChips({ ids }: { ids: string[] }) {
             <div className="flex items-start gap-3">
               <div className="flex-1">
                 <div className="text-2xl font-bold">{t.title}</div>
-                <div className="text-sm text-muted">
-                  {originLabel[t.origin]}
-                  {t.formalName && `・正式名稱：${t.formalName}`}
-                </div>
+                {t.formalName && <div className="text-sm text-muted">正式名稱：{t.formalName}</div>}
               </div>
               <button type="button" onClick={() => setOpen(null)} className="tap flex items-center justify-center rounded-full bg-surface-2" aria-label="關閉">
                 <X className="size-6" />

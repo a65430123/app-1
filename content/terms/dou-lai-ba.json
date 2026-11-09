@@ -1,6 +1,6 @@
 {
   "id": "dou-lai-ba",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "工具"
@@ -11,7 +11,7 @@
   "type": "term",
   "origin": "ja",
   "definition": {
-    "default": "螺絲起子。源自日語「ドライバー」（driver）。"
+    "default": "螺絲起子。源自日語「ドライバー」（doraibā，即英語 driver）的音譯。"
   },
   "reading": {
     "kana": "ドライバー",

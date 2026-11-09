@@ -1,6 +1,6 @@
 {
   "id": "tu-shui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作"
@@ -11,7 +11,7 @@
   "type": "term",
   "origin": "tw",
   "definition": {
-    "default": "台語對「泥作」的稱呼，也指泥作師傅（土水師）。工作包含砌磚、粉刷、貼磚等。"
+    "default": "台語對「泥作」的稱呼（台語讀作 thôo-tsuí），也指泥作師傅（土水師）。工作包含砌磚、粉刷、貼磚等。"
   },
   "reading": {
     "tailo": "thôo-tsuí"

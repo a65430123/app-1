@@ -1,6 +1,6 @@
 {
   "id": "tie-jin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "結構"
@@ -11,7 +11,7 @@
   "type": "term",
   "origin": "ja",
   "definition": {
-    "default": "即鋼筋，日語漢字「鉄筋」。綁鋼筋的師傅常稱「鐵筋工」。"
+    "default": "即鋼筋。源自日語漢字「鉄筋」（てっきん，tekkin）。綁鋼筋的師傅常稱「鐵筋工」。"
   },
   "reading": {
     "kana": "てっきん",

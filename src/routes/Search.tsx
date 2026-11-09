@@ -68,7 +68,7 @@ export default function Search() {
               ))}
             </div>
             <p className="mt-6 text-sm text-muted">
-              可以用台語、日語外來語或俗稱搜尋，例如「土水」「控固力」。也可以到 <Link to="/glossary" className="font-bold text-primary-ink underline">術語辭典</Link> 依語源瀏覽。
+              可以用工地俗稱搜尋，例如「土水」「控固力」。也可以到 <Link to="/glossary" className="font-bold text-primary-ink underline">術語辭典</Link> 瀏覽所有工地用語。
             </p>
           </>
         )}

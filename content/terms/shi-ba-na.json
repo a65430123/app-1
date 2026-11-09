@@ -1,6 +1,6 @@
 {
   "id": "shi-ba-na",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "工具"
@@ -11,7 +11,7 @@
   "type": "term",
   "origin": "ja",
   "definition": {
-    "default": "扳手。源自日語「スパナ」（英語 spanner）。"
+    "default": "扳手。源自日語「スパナ」（supana，即英語 spanner）的音譯。"
   },
   "reading": {
     "kana": "スパナ",

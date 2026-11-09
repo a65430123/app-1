@@ -5,7 +5,7 @@ import { SectionTitle, Card, SpecTable } from '@/components/ui/Card';
 import { FavoriteButton } from '@/components/ui/FavoriteButton';
 import { ModalTextView } from '@/components/content/ModalTextView';
 import { EntryRow } from '@/components/content/EntryRow';
-import { getTerm, originLabel } from '@/content';
+import { getTerm } from '@/content';
 import { useTrackView } from '@/stores/library';
 import NotFound from './NotFound';
 
@@ -15,13 +15,11 @@ export default function TermDetail() {
   useTrackView('term', t?.id);
   if (!t) return <NotFound />;
 
+  // 只顯示中文名稱；外語來源與讀音寫在「解釋」內文中
+  const zhAliases = t.aliases?.filter((a) => /[\u3400-\u9fff]/.test(a) && a !== t.title && a !== t.formalName) ?? [];
   const rows = [
-    { label: '語源', value: originLabel[t.origin] },
     t.formalName && { label: '正式名稱', value: t.formalName },
-    t.reading?.zhuyin && { label: '注音', value: t.reading.zhuyin },
-    t.reading?.tailo && { label: '台羅拼音', value: t.reading.tailo },
-    t.reading?.kana && { label: '日文', value: t.reading.kana + (t.reading.romaji ? `（${t.reading.romaji}）` : '') },
-    t.aliases?.length && { label: '其他說法', value: t.aliases.join('、') },
+    zhAliases.length > 0 && { label: '其他說法', value: zhAliases.join('、') },
   ].filter(Boolean) as { label: string; value: string }[];
 
   return (
@@ -37,8 +35,12 @@ export default function TermDetail() {
         </div>
         <SectionTitle>解釋</SectionTitle>
         <Card><ModalTextView text={t.definition} className="text-lg" /></Card>
-        <SectionTitle>讀音與語源</SectionTitle>
-        <SpecTable rows={rows} />
+        {rows.length > 0 && (
+          <>
+            <SectionTitle>名稱</SectionTitle>
+            <SpecTable rows={rows} />
+          </>
+        )}
         {t.examples && (
           <>
             <SectionTitle>例句</SectionTitle>

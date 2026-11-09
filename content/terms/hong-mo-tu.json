@@ -1,6 +1,6 @@
 {
   "id": "hong-mo-tu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -12,7 +12,7 @@
   "type": "term",
   "origin": "tw",
   "definition": {
-    "default": "台語對「水泥」的稱呼，源自早期水泥由西方（紅毛）傳入。",
+    "default": "台語對「水泥」的稱呼（台語讀作 âng-mn̂g-thôo），源自早期水泥由西方（紅毛）傳入。",
     "beginner": "聽到師傅說「紅毛土」，就是在說水泥。"
   },
   "reading": {
