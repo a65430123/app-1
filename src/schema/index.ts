@@ -142,3 +142,34 @@ export type ContentType = 'trade' | 'procedure' | 'material' | 'term' | 'calcula
 export type AnyEntry = Trade | Procedure | Material | Term | CalculatorMeta;
 
 export const schemas = { trade: Trade, procedure: Procedure, material: Material, term: Term, calculator: CalculatorMeta } as const;
+
+/* ---------- 遠端內容更新 ---------- */
+
+/** App 目前支援的資料結構版本；遠端內容 schemaVersion 不同時不套用 */
+export const SCHEMA_VERSION = 1;
+
+export const ContentBundle = z.object({
+  schemaVersion: z.number(),
+  contentVersion: z.string(),
+  minAppVersion: z.string(),
+  publishedAt: z.string(),
+  data: z.object({
+    trades: z.array(Trade),
+    procedures: z.array(Procedure),
+    materials: z.array(Material),
+    terms: z.array(Term),
+    calculators: z.array(CalculatorMeta),
+  }),
+});
+export type ContentBundle = z.infer<typeof ContentBundle>;
+
+export const ContentManifest = z.object({
+  schemaVersion: z.number(),
+  contentVersion: z.string(),
+  minAppVersion: z.string(),
+  publishedAt: z.string(),
+  bundle: z.string(),
+  hash: z.string(),
+  size: z.number(),
+});
+export type ContentManifest = z.infer<typeof ContentManifest>;

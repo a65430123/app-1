@@ -4,7 +4,7 @@
  * 也會搜尋 aliases（台語、日語、注音、俗稱）。
  */
 import MiniSearch from 'minisearch';
-import { procedures, materials, terms, calculators, trades } from '@/content';
+import { procedures, materials, terms, calculators, trades, onContentChange } from '@/content';
 import type { ContentType, ModalText } from '@/schema';
 
 export interface SearchDoc {
@@ -71,6 +71,7 @@ function buildDocs(): SearchDoc[] {
 }
 
 let ms: MiniSearch<SearchDoc> | null = null;
+onContentChange(() => (ms = null)); // 內容更新後下次搜尋時重建索引
 function index() {
   if (ms) return ms;
   ms = new MiniSearch<SearchDoc>({

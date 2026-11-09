@@ -4,7 +4,7 @@
  */
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, basename } from 'node:path';
-import { schemas, type ContentType } from '../src/schema/index.ts';
+import { schemas, SCHEMA_VERSION, type ContentType } from '../src/schema/index.ts';
 
 const root = join(import.meta.dirname, '..', 'content');
 const dirs: Record<string, ContentType> = {
@@ -38,6 +38,16 @@ for (const { file, data } of all) {
   ref(file, 'term', data.relatedTermIds);
   ref(file, 'calculator', data.calculatorIds);
   ref(file, 'material', data.materials?.map((m: any) => m.materialId).filter(Boolean));
+}
+
+// manifest.json：版本格式
+try {
+  const m = JSON.parse(readFileSync(join(root, 'manifest.json'), 'utf8'));
+  if (!/^\d{4}\.\d{2}\.\d{2}-\d+$/.test(m.contentVersion)) errors.push('manifest.json: contentVersion 格式須為 YYYY.MM.DD-序號');
+  if (m.schemaVersion !== SCHEMA_VERSION) errors.push(`manifest.json: schemaVersion（${m.schemaVersion}）與程式（${SCHEMA_VERSION}）不一致`);
+  if (!/^\d+\.\d+\.\d+$/.test(m.minAppVersion)) errors.push('manifest.json: minAppVersion 須為 semver');
+} catch (e) {
+  errors.push(`manifest.json: 讀取失敗 ${e}`);
 }
 
 if (errors.length) {

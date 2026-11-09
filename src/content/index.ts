@@ -1,9 +1,14 @@
 /**
- * 內容載入層：讀取 /content 下所有 JSON。
- * P5 起會先檢查本機是否有「遠端更新後的內容」，有就優先使用。
+ * 內容載入層。
+ * 預設使用打包在 App 內的「內建內容」（/content），
+ * 若本機有較新且通過驗證的「遠端更新內容」，則由 applyBundle() 替換。
+ *
+ * 注意：下方以 `export let` 匯出，屬於 ES module 的 live binding，
+ * 替換後其他模組讀到的就是新資料；畫面重繪由 content-update store 的 revision 觸發。
  */
-import type { CalculatorMeta, Material, Procedure, Term, Trade, ContentType, AnyEntry } from '@/schema';
+import type { CalculatorMeta, Material, Procedure, Term, Trade, ContentType, AnyEntry, ContentBundle } from '@/schema';
 import { schemas } from '@/schema';
+import builtinMeta from '../../content/manifest.json';
 
 const load = <T,>(mods: Record<string, unknown>, type: ContentType): T[] =>
   Object.entries(mods).map(([path, data]) => {
@@ -14,24 +19,56 @@ const load = <T,>(mods: Record<string, unknown>, type: ContentType): T[] =>
     return data as T;
   });
 
-export const trades = load<Trade>(import.meta.glob('/content/trades/*.json', { eager: true, import: 'default' }), 'trade').sort(
-  (a, b) => a.order - b.order,
-);
-export const procedures = load<Procedure>(import.meta.glob('/content/procedures/*.json', { eager: true, import: 'default' }), 'procedure');
-export const materials = load<Material>(import.meta.glob('/content/materials/*.json', { eager: true, import: 'default' }), 'material');
-export const terms = load<Term>(import.meta.glob('/content/terms/*.json', { eager: true, import: 'default' }), 'term').sort((a, b) =>
-  a.title.localeCompare(b.title, 'zh-Hant-TW'),
-);
-export const calculators = load<CalculatorMeta>(import.meta.glob('/content/calculators/*.json', { eager: true, import: 'default' }), 'calculator');
+export const builtinBundle: ContentBundle = {
+  schemaVersion: builtinMeta.schemaVersion,
+  contentVersion: builtinMeta.contentVersion,
+  minAppVersion: builtinMeta.minAppVersion,
+  publishedAt: builtinMeta.publishedAt,
+  data: {
+    trades: load<Trade>(import.meta.glob('/content/trades/*.json', { eager: true, import: 'default' }), 'trade'),
+    procedures: load<Procedure>(import.meta.glob('/content/procedures/*.json', { eager: true, import: 'default' }), 'procedure'),
+    materials: load<Material>(import.meta.glob('/content/materials/*.json', { eager: true, import: 'default' }), 'material'),
+    terms: load<Term>(import.meta.glob('/content/terms/*.json', { eager: true, import: 'default' }), 'term'),
+    calculators: load<CalculatorMeta>(import.meta.glob('/content/calculators/*.json', { eager: true, import: 'default' }), 'calculator'),
+  },
+};
+
+export let trades: Trade[] = [];
+export let procedures: Procedure[] = [];
+export let materials: Material[] = [];
+export let terms: Term[] = [];
+export let calculators: CalculatorMeta[] = [];
+export let activeContent: { version: string; publishedAt: string; source: 'builtin' | 'remote' } = {
+  version: builtinBundle.contentVersion,
+  publishedAt: builtinBundle.publishedAt,
+  source: 'builtin',
+};
 
 const index = <T extends { id: string }>(arr: T[]) => new Map(arr.map((x) => [x.id, x]));
-const maps = {
-  trade: index(trades),
-  procedure: index(procedures),
-  material: index(materials),
-  term: index(terms),
-  calculator: index(calculators),
+let maps = {
+  trade: new Map<string, Trade>(),
+  procedure: new Map<string, Procedure>(),
+  material: new Map<string, Material>(),
+  term: new Map<string, Term>(),
+  calculator: new Map<string, CalculatorMeta>(),
 };
+
+const listeners = new Set<() => void>();
+/** 內容替換時通知（例：搜尋索引需重建） */
+export const onContentChange = (fn: () => void) => (listeners.add(fn), () => listeners.delete(fn));
+
+export function applyBundle(b: ContentBundle, source: 'builtin' | 'remote') {
+  const published = <T extends { status?: string }>(arr: T[]) => arr.filter((x) => x.status !== 'draft');
+  trades = published(b.data.trades).sort((a, c) => a.order - c.order);
+  procedures = published(b.data.procedures);
+  materials = published(b.data.materials);
+  terms = published(b.data.terms).sort((a, c) => a.title.localeCompare(c.title, 'zh-Hant-TW'));
+  calculators = published(b.data.calculators);
+  maps = { trade: index(trades), procedure: index(procedures), material: index(materials), term: index(terms), calculator: index(calculators) };
+  activeContent = { version: b.contentVersion, publishedAt: b.publishedAt, source };
+  listeners.forEach((fn) => fn());
+}
+applyBundle(builtinBundle, 'builtin');
 
 export const getTrade = (id?: string) => (id ? maps.trade.get(id) : undefined);
 export const getProcedure = (id?: string) => (id ? maps.procedure.get(id) : undefined);

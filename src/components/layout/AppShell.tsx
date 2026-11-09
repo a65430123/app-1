@@ -1,16 +1,20 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { BottomNav } from './BottomNav';
+import { UpdateBanner } from './UpdateBanner';
+import { useContentUpdate } from '@/features/content-update';
 
 /** 全站外框：內容區 + 底部導覽列。換頁時捲回頂端。 */
 export function AppShell() {
   const { pathname } = useLocation();
+  const revision = useContentUpdate((s) => s.revision); // 內容替換後重新渲染頁面
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
     <div className="min-h-full pb-[calc(68px+env(safe-area-inset-bottom))]">
-      <Outlet />
+      <Outlet key={revision} />
+      <UpdateBanner />
       <BottomNav />
     </div>
   );
