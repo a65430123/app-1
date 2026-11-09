@@ -4,6 +4,7 @@ import { Page } from '@/components/layout/AppShell';
 import { Empty } from '@/components/ui/Card';
 import { EntryRow } from '@/components/content/EntryRow';
 import { useLibrary } from '@/stores/library';
+import { ConfirmButton } from '@/components/ui/ConfirmButton';
 
 export default function History() {
   const history = useLibrary((s) => s.history);
@@ -15,9 +16,9 @@ export default function History() {
         {history.length ? (
           <>
             <div className="mb-3 flex justify-end">
-              <button type="button" onClick={() => confirm('確定清除所有瀏覽紀錄？') && clear()} className="tap flex items-center gap-2 rounded-2xl px-3 font-bold text-danger">
+              <ConfirmButton onConfirm={clear} confirmText="再按一次清除" className="tap flex items-center gap-2 rounded-2xl px-3 font-bold text-danger">
                 <Trash2 className="size-5" aria-hidden />清除紀錄
-              </button>
+              </ConfirmButton>
             </div>
             <div className="flex flex-col gap-2">{history.map((x) => <EntryRow key={x.type + x.id} type={x.type} id={x.id} />)}</div>
           </>

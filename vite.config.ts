@@ -2,6 +2,7 @@ import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { viteSingleFile } from 'vite-plugin-singlefile';
 import { fileURLToPath, URL } from 'node:url';
 import { readFileSync } from 'node:fs';
 import { buildContentBundle } from './scripts/content-bundle';
@@ -32,13 +33,19 @@ function contentApi(): Plugin {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ mode }) => {
+  /** 試用版：打包成單一 HTML（npm run build:artifact） */
+  const trial = mode === 'artifact';
+  return {
+  ...(trial && { build: { outDir: 'dist-artifact' } }),
   define: { __APP_VERSION__: JSON.stringify(pkg.version) },
   plugins: [
     react(),
     tailwindcss(),
-    contentApi(),
+    !trial && contentApi(),
+    trial && viteSingleFile(),
     VitePWA({
+      disable: trial,
       registerType: 'prompt', // 有新版程式時由使用者按「重新整理」套用，避免操作到一半被換掉
       injectRegister: false, // 由 src/features/pwa 自行註冊（APP 內不註冊）
       includeAssets: ['icons/icon.svg', 'icons/apple-touch-icon.png'],
@@ -82,4 +89,5 @@ export default defineConfig({
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
+};
 });

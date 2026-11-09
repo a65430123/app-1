@@ -15,6 +15,7 @@ async function start() {
     </StrictMode>,
   );
 
+  if (import.meta.env.MODE === 'artifact') return; // 試用版：不註冊離線快取、不連線檢查更新
   setupPwa();
   // 啟動後背景檢查內容更新
   setTimeout(() => checkForUpdate(), 2000);

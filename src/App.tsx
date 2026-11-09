@@ -1,4 +1,7 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
+
+// 試用版（嵌入單一頁面）網址不能隨頁面變動，改用記憶體路由
+const Router = import.meta.env.MODE === 'artifact' ? MemoryRouter : BrowserRouter;
 import { AppShell } from '@/components/layout/AppShell';
 import { useApplySettings } from '@/lib/useApplySettings';
 import Home from '@/routes/Home';
@@ -21,7 +24,7 @@ import History from '@/routes/History';
 export default function App() {
   useApplySettings();
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route element={<AppShell />}>
           <Route index element={<Home />} />
@@ -42,6 +45,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }

@@ -4,6 +4,10 @@ import { activeContent, procedures, materials, terms, calculators } from '@/cont
 import { useContentUpdate, checkForUpdate, applyPending, resetToBuiltin } from '@/features/content-update';
 import { usePwa, promptInstall } from '@/features/pwa';
 import { isIOS, isNative } from '@/services/platform';
+import { ConfirmButton } from '@/components/ui/ConfirmButton';
+
+/** 試用版（單一頁面）沒有內容主機與離線快取 */
+const isTrial = import.meta.env.MODE === 'artifact';
 
 const statusText: Record<string, string> = {
   checking: '檢查中…',
@@ -35,7 +39,9 @@ export function ContentVersionCard() {
         </p>
       )}
 
-      {status === 'ready' && pendingVersion ? (
+      {isTrial ? (
+        <p className="rounded-xl bg-surface-2 px-3 py-2 text-muted">試用版不連線檢查更新；正式網頁版與 App 會在開啟時自動檢查。</p>
+      ) : status === 'ready' && pendingVersion ? (
         <button type="button" onClick={applyPending} className="tap flex w-full items-center justify-center gap-2 rounded-2xl bg-primary text-lg font-bold text-on-primary">
           <Download className="size-6" />套用新內容（{pendingVersion}）
         </button>
@@ -46,10 +52,9 @@ export function ContentVersionCard() {
         </button>
       )}
       {activeContent.source === 'remote' && (
-        <button type="button" onClick={() => confirm('確定刪除已下載的內容，還原為 App 內建版本？') && resetToBuiltin()}
-          className="tap mt-2 w-full rounded-2xl font-bold text-muted">
+        <ConfirmButton onConfirm={resetToBuiltin} confirmText="再按一次還原" className="tap mt-2 w-full rounded-2xl font-bold text-muted">
           還原為內建內容
-        </button>
+        </ConfirmButton>
       )}
       <p className="mt-2 text-sm text-muted">App 開啟時會自動檢查。內容更新不需重新安裝 App。</p>
     </Card>
@@ -58,7 +63,7 @@ export function ContentVersionCard() {
 
 export function InstallCard() {
   const { canInstall, installed } = usePwa();
-  if (isNative()) return null;
+  if (isNative() || isTrial) return null;
   return (
     <Card className="mb-3">
       <div className="mb-2 flex items-center gap-2 text-lg font-bold"><Smartphone className="size-6 text-primary" />加到主畫面</div>
