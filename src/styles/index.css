@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+/* 深色模式：由 <html class="dark"> 控制（設定頁可選 跟隨系統/淺色/深色） */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ===== 配色方案 A：安全橘 × 碳灰 ===== */
+:root {
+  --c-bg: #f5f5f2;
+  --c-surface: #ffffff;
+  --c-surface-2: #ecece7;
+  --c-border: #d9d9d2;
+  --c-text: #1f2225;
+  --c-text-muted: #5b6168;
+  --c-primary: #f2700d;        /* 安全橘：底色、圖示、強調 */
+  --c-primary-text: #b84f00;   /* 深橘：白底上的文字（對比足夠） */
+  --c-on-primary: #ffffff;
+  --c-charcoal: #2b2f33;       /* 碳灰：頂部列 */
+  --c-on-charcoal: #ffffff;
+  --c-success: #2e7d32;
+  --c-warning: #b26a00;
+  --c-danger: #c62828;
+  --c-danger-bg: #fdecea;
+  --c-warning-bg: #fff4e0;
+  color-scheme: light;
+}
+
+.dark {
+  --c-bg: #121416;
+  --c-surface: #1c1f22;
+  --c-surface-2: #262a2e;
+  --c-border: #363b40;
+  --c-text: #eceeef;
+  --c-text-muted: #a3aab1;
+  --c-primary: #ff8a33;
+  --c-primary-text: #ffa35c;
+  --c-on-primary: #1a1a1a;
+  --c-charcoal: #0b0c0d;
+  --c-on-charcoal: #eceeef;
+  --c-success: #66bb6a;
+  --c-warning: #ffb74d;
+  --c-danger: #ef5350;
+  --c-danger-bg: #3a1d1d;
+  --c-warning-bg: #3a2c14;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-line: var(--c-border);
+  --color-ink: var(--c-text);
+  --color-muted: var(--c-text-muted);
+  --color-primary: var(--c-primary);
+  --color-primary-ink: var(--c-primary-text);
+  --color-on-primary: var(--c-on-primary);
+  --color-charcoal: var(--c-charcoal);
+  --color-on-charcoal: var(--c-on-charcoal);
+  --color-success: var(--c-success);
+  --color-warning: var(--c-warning);
+  --color-danger: var(--c-danger);
+  --color-danger-bg: var(--c-danger-bg);
+  --color-warning-bg: var(--c-warning-bg);
+  --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+}
+
+/* 字級：標準 18px / 大 20px / 特大 22px（全站 rem 跟著放大） */
+html { font-size: 18px; }
+html[data-font-scale='large'] { font-size: 20px; }
+html[data-font-scale='xlarge'] { font-size: 22px; }
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* 戴手套也好按：可點元素最小 56px（.tap） */
+.tap { min-height: 56px; min-width: 56px; }
+
+:focus-visible { outline: 3px solid var(--c-primary); outline-offset: 2px; }
+
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.pt-safe { padding-top: env(safe-area-inset-top); }
