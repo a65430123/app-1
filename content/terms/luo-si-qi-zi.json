@@ -1,0 +1,24 @@
+{
+  "id": "luo-si-qi-zi",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "工具"
+  ],
+  "difficulty": "beginner",
+  "title": "螺絲起子",
+  "summary": "鎖緊或鬆開螺絲的手工具",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "用來鎖緊或鬆開螺絲的手工具，依刀頭分為一字、十字（PH）、六角等。工地常稱「斗賴把」，源自日語「ドライバー」（doraibā，即英語 driver）的音譯；也常簡稱「起子」。"
+  },
+  "aliases": [
+    "斗賴把",
+    "起子",
+    "ドライバー",
+    "doraibā",
+    "driver",
+    "screwdriver"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gang-jin",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構",
+    "材料"
+  ],
+  "difficulty": "beginner",
+  "title": "鋼筋",
+  "summary": "埋在混凝土中、承受拉力的鋼條",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "埋設在混凝土中的鋼條，用來承受拉力，與混凝土共同組成鋼筋混凝土（RC）結構。工地常稱「鐵筋」，源自日語漢字「鉄筋」（てっきん，tekkin）；綁紮鋼筋的師傅常稱「鐵筋工」。",
+    "beginner": "混凝土很耐壓但怕被拉扯，鋼筋就是用來補足這個弱點。"
+  },
+  "aliases": [
+    "鐵筋",
+    "鐵筋工",
+    "鉄筋",
+    "tekkin",
+    "rebar"
+  ],
+  "tradeIds": [
+    "structure"
+  ]
+}

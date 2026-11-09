@@ -1,0 +1,24 @@
+{
+  "id": "ban-shou",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "工具"
+  ],
+  "difficulty": "beginner",
+  "title": "扳手",
+  "summary": "轉動螺栓、螺帽的手工具",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "用來轉動螺栓、螺帽的手工具，常見開口扳手、梅花扳手、活動扳手等。工地常稱「史巴拿」，源自日語「スパナ」（supana，即英語 spanner）的音譯。"
+  },
+  "aliases": [
+    "史巴拿",
+    "スパナ",
+    "supana",
+    "spanner",
+    "wrench",
+    "活動扳手"
+  ]
+}

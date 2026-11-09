@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
-import { SectionTitle, Card, SpecTable } from '@/components/ui/Card';
+import { SectionTitle, Card } from '@/components/ui/Card';
 import { FavoriteButton } from '@/components/ui/FavoriteButton';
 import { ModalTextView } from '@/components/content/ModalTextView';
 import { EntryRow } from '@/components/content/EntryRow';
@@ -15,12 +15,6 @@ export default function TermDetail() {
   useTrackView('term', t?.id);
   if (!t) return <NotFound />;
 
-  // 只顯示中文名稱；外語來源與讀音寫在「解釋」內文中
-  const zhAliases = t.aliases?.filter((a) => /[\u3400-\u9fff]/.test(a) && a !== t.title && a !== t.formalName) ?? [];
-  const rows = [
-    t.formalName && { label: '正式名稱', value: t.formalName },
-    zhAliases.length > 0 && { label: '其他說法', value: zhAliases.join('、') },
-  ].filter(Boolean) as { label: string; value: string }[];
 
   return (
     <>
@@ -35,12 +29,6 @@ export default function TermDetail() {
         </div>
         <SectionTitle>解釋</SectionTitle>
         <Card><ModalTextView text={t.definition} className="text-lg" /></Card>
-        {rows.length > 0 && (
-          <>
-            <SectionTitle>名稱</SectionTitle>
-            <SpecTable rows={rows} />
-          </>
-        )}
         {t.examples && (
           <>
             <SectionTitle>例句</SectionTitle>

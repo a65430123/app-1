@@ -1,0 +1,31 @@
+{
+  "id": "shui-ni",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "材料"
+  ],
+  "difficulty": "beginner",
+  "title": "水泥",
+  "summary": "與水拌合後會硬化的膠結材料，用來做砂漿與混凝土",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "與水拌合後會產生化學反應而硬化的粉狀膠結材料，是砂漿與混凝土的主要成分。台語稱為「紅毛土」（âng-mn̂g-thôo），源自早期水泥由西方（紅毛）傳入。",
+    "beginner": "聽到師傅說「紅毛土」，就是在說水泥。"
+  },
+  "aliases": [
+    "紅毛土",
+    "âng-mn̂g-thôo",
+    "洋灰",
+    "cement"
+  ],
+  "tradeIds": [
+    "masonry",
+    "structure"
+  ],
+  "relatedProcedureIds": [
+    "plastering-finish"
+  ]
+}

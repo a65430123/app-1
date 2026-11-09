@@ -1,0 +1,31 @@
+{
+  "id": "hun-ning-tu",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構",
+    "材料"
+  ],
+  "difficulty": "beginner",
+  "title": "混凝土",
+  "summary": "水泥、砂、石子與水拌合硬化而成的建築材料",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "由水泥、砂、碎石（粗骨材）與水依配比拌合，硬化後形成的建築材料，用於柱、樑、樓板、基礎等結構。工地常稱「控固力」，源自日語「コンクリート」（konkurīto，即英語 concrete）的音譯。",
+    "beginner": "「灌漿」通常就是指把混凝土倒進模板裡。"
+  },
+  "aliases": [
+    "控固力",
+    "康固力",
+    "コンクリート",
+    "concrete",
+    "RC"
+  ],
+  "examples": [
+    "明天要澆置混凝土（現場常說「明天要灌控固力」）。"
+  ],
+  "tradeIds": [
+    "structure"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": "elcb",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "水電",
@@ -10,15 +10,15 @@
   "title": "漏電斷路器",
   "summary": "偵測漏電、自動跳脫的開關",
   "type": "term",
-  "origin": "en",
+  "origin": "zh",
   "definition": {
-    "default": "偵測到漏電電流時自動切斷電路，保護人員避免觸電。英文縮寫為 ELCB（Earth Leakage Circuit Breaker），配電盤上常見此標示。浴室、廚房、戶外等潮濕場所迴路應裝設。",
-    "master": "ELCB；額定感度電流依場所選用，定期按 TEST 鈕測試。"
+    "default": "偵測到漏電電流時自動切斷電路，保護人員避免觸電。浴室、廚房、戶外等潮濕場所的迴路應裝設。英文縮寫為 ELCB（Earth Leakage Circuit Breaker），配電盤上常見此標示；俗稱「漏電開關」。",
+    "master": "ELCB；額定感度電流依場所選用，定期按測試鈕（TEST）確認動作。"
   },
   "aliases": [
     "ELCB",
     "漏電開關",
-    "漏電斷路器"
+    "漏電保護"
   ],
   "tradeIds": [
     "electrical-plumbing"

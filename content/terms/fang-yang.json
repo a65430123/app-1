@@ -1,6 +1,6 @@
 {
   "id": "fang-yang",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "測量"
@@ -11,12 +11,13 @@
   "type": "term",
   "origin": "zh",
   "definition": {
-    "default": "將設計圖上的位置、尺寸與高程，用墨線、雷射等方式標示到現場。",
+    "default": "將設計圖上的位置、尺寸與高程，用墨線、雷射水平儀等方式標示到現場，作為施工的基準。彈墨線的動作常稱「彈線」或「打墨線」。",
     "beginner": "就是把圖紙上的線「畫」到地上、牆上，讓師傅照著做。"
   },
   "aliases": [
     "彈線",
-    "打墨線"
+    "打墨線",
+    "放線"
   ],
   "relatedProcedureIds": [
     "tile-laying"

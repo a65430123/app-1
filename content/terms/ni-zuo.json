@@ -1,0 +1,34 @@
+{
+  "id": "ni-zuo",
+  "version": "1.2.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作"
+  ],
+  "difficulty": "beginner",
+  "title": "泥作",
+  "summary": "負責砌磚、粉刷、貼磚等工作的工種",
+  "type": "term",
+  "origin": "zh",
+  "definition": {
+    "default": "負責砌磚、打底、粉光、貼磁磚、做地坪等工作的工種，也指從事這些工作的師傅。台語稱為「土水」（thôo-tsuí），泥作師傅則稱「土水師」。",
+    "beginner": "聽到師傅說「叫土水來」，意思就是找泥作師傅。"
+  },
+  "aliases": [
+    "土水",
+    "土水師",
+    "泥水",
+    "thôo-tsuí",
+    "泥作師傅"
+  ],
+  "examples": [
+    "這面牆要請泥作師傅來補（現場常說「叫土水來補」）。"
+  ],
+  "tradeIds": [
+    "masonry"
+  ],
+  "relatedProcedureIds": [
+    "plastering-finish",
+    "tile-laying"
+  ]
+}

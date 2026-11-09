@@ -9,7 +9,7 @@ import { terms } from '@/content';
 export default function Glossary() {
   const [q, setQ] = useState('');
   const ql = q.trim().toLowerCase();
-  // 仍可用讀音、外文別名查到詞條（例：輸入 spanner 找到「史巴拿」），但畫面只顯示中文
+  // 仍可用讀音、外文別名查到詞條（例：輸入「斗賴把」可找到「螺絲起子」），但畫面只顯示中文
   const list = terms.filter(
     (t) =>
       !ql ||
@@ -24,7 +24,7 @@ export default function Glossary() {
       <Page>
         <label className="tap mb-1 flex items-center gap-3 rounded-2xl border-2 border-line bg-surface px-4 focus-within:border-primary">
           <Search className="size-6 text-primary" aria-hidden />
-          <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="查詞：鐵筋、土水…" className="h-14 min-w-0 flex-1 bg-transparent text-lg outline-none" />
+          <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="查詞：鋼筋、模板…" className="h-14 min-w-0 flex-1 bg-transparent text-lg outline-none" />
         </label>
         <p className="mb-3 text-sm text-muted">共 {list.length} 個詞條</p>
         <ul className="flex flex-col gap-2">

@@ -1,6 +1,6 @@
 {
   "id": "fen-guang",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作"
@@ -11,10 +11,11 @@
   "type": "term",
   "origin": "zh",
   "definition": {
-    "default": "在打底層上以細砂漿鏝壓出平整光滑面層的工序。"
+    "default": "在打底層上以細砂漿薄抹，再用鐵鏝壓出平整光滑面層的工序。粉光後的牆面可直接上漆或作為貼磚的基面。"
   },
   "aliases": [
-    "粉刷"
+    "粉刷",
+    "水泥粉光"
   ],
   "tradeIds": [
     "masonry"

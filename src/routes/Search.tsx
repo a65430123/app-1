@@ -11,7 +11,7 @@ import { typeLabel } from '@/content';
 import type { ContentType } from '@/schema';
 
 type Filter = 'all' | ContentType;
-const suggestions = ['粉光', '防水', '空心', '鐵筋', 'ELCB', '水泥', '壓降', '紅毛土'];
+const suggestions = ['粉光', '防水', '空心', '鋼筋', '漏電斷路器', '水泥', '壓降', '混凝土'];
 
 export default function Search() {
   const [params, setParams] = useSearchParams();
@@ -37,7 +37,7 @@ export default function Search() {
         <label className="tap flex items-center gap-3 rounded-2xl border-2 border-primary bg-surface pl-4">
           <SearchIcon className="size-6 shrink-0 text-primary" aria-hidden />
           <input autoFocus type="search" enterKeyHint="search" value={q} onChange={(e) => update({ q: e.target.value })}
-            placeholder="工序、材料、術語、台語、日語…" className="h-14 min-w-0 flex-1 bg-transparent text-lg outline-none [&::-webkit-search-cancel-button]:hidden" />
+            placeholder="工序、材料、術語、工地俗稱…" className="h-14 min-w-0 flex-1 bg-transparent text-lg outline-none [&::-webkit-search-cancel-button]:hidden" />
           {q && (
             <button type="button" onClick={() => update({ q: '' })} className="tap flex items-center justify-center" aria-label="清除">
               <X className="size-6 text-muted" />

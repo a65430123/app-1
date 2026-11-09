@@ -1,6 +1,6 @@
 {
   "id": "kong-xin",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -8,17 +8,19 @@
   ],
   "difficulty": "beginner",
   "title": "空心",
-  "summary": "磁磚或粉刷層與底層未密合",
+  "summary": "磁磚或粉刷層與底層之間沒有密合",
   "type": "term",
   "origin": "zh",
   "definition": {
-    "default": "磁磚或粉刷層與底層之間有空隙，敲擊時發出空洞聲。嚴重時會剝落或膨拱。",
+    "default": "磁磚或粉刷層與底層之間有空隙，敲擊時發出空洞的聲音，嚴重時會剝落或膨起。又稱「空鼓」；台語常說「膨共」（phòng-kōng），磁磚整片拱起則稱「膨拱」。",
     "beginner": "拿硬物輕敲磁磚，聲音「咚咚」悶悶的就是空心；扎實的聲音比較清脆。",
     "master": "又稱空鼓。以敲擊棒檢查，依合約規範判定。"
   },
   "aliases": [
     "空鼓",
-    "膨共"
+    "膨共",
+    "膨拱",
+    "phòng-kōng"
   ],
   "tradeIds": [
     "masonry"
