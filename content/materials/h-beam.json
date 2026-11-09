@@ -1,0 +1,60 @@
+{
+  "id": "h-beam",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "鋼筋與鋼材"
+  ],
+  "difficulty": "master",
+  "title": "H 型鋼",
+  "summary": "斷面呈 H 形的熱軋型鋼，鋼構建築的柱與樑",
+  "type": "material",
+  "category": "鋼筋與鋼材",
+  "tradeIds": [
+    "steel",
+    "structure"
+  ],
+  "specs": [
+    {
+      "label": "常見材質",
+      "value": "SN400、SN490（建築結構用）、SS400"
+    },
+    {
+      "label": "尺寸標示",
+      "value": "高 × 寬 × 腹板厚 × 翼板厚，例如 H300×150×6.5×9"
+    },
+    {
+      "label": "計價",
+      "value": "以公噸計"
+    }
+  ],
+  "uses": [
+    "鋼構廠房、夾層",
+    "鋼構樓房柱樑"
+  ],
+  "pros": [
+    "強度高、施工快",
+    "可預先在工廠加工"
+  ],
+  "cons": [
+    "須防火被覆與防鏽處理",
+    "接頭品質決定安全"
+  ],
+  "brandTypes": [
+    "熱軋 H 型鋼",
+    "組合 H 型鋼（焊接組立）"
+  ],
+  "priceUnit": "公噸",
+  "storage": [
+    "墊高堆放、防雨防鏽"
+  ],
+  "cautions": [
+    "材質須有出廠證明（Mill Sheet）",
+    "焊接、螺栓接合由合格人員施作並檢驗"
+  ],
+  "aliases": [
+    "H 鋼",
+    "H 型鋼樑",
+    "鋼骨"
+  ]
+}

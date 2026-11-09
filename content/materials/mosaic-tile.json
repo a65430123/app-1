@@ -1,0 +1,61 @@
+{
+  "id": "mosaic-tile",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "磁磚"
+  ],
+  "difficulty": "beginner",
+  "title": "馬賽克磚",
+  "summary": "小尺寸磁磚預先排列在網背上，整片鋪貼",
+  "type": "material",
+  "category": "磁磚",
+  "tradeIds": [
+    "masonry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "單片尺寸",
+      "value": "常見 2.5 × 2.5 cm 等"
+    },
+    {
+      "label": "整片尺寸",
+      "value": "約 30 × 30 cm（依產品）"
+    },
+    {
+      "label": "材質",
+      "value": "陶瓷、玻璃、石材等"
+    }
+  ],
+  "uses": [
+    "浴室地面（防滑）",
+    "曲面、圓柱",
+    "裝飾牆"
+  ],
+  "pros": [
+    "縫多，止滑效果佳",
+    "可貼曲面"
+  ],
+  "cons": [
+    "填縫多，清潔較費工",
+    "施工對位要細心"
+  ],
+  "brandTypes": [
+    "陶瓷馬賽克",
+    "玻璃馬賽克",
+    "石材馬賽克"
+  ],
+  "priceUnit": "片或才",
+  "storage": [
+    "防潮"
+  ],
+  "cautions": [
+    "網背朝內貼，避免網片外露",
+    "填縫劑建議選防霉型"
+  ],
+  "aliases": [
+    "馬賽克",
+    "小口磚"
+  ]
+}

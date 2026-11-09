@@ -1,0 +1,60 @@
+{
+  "id": "emt-conduit",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "管材"
+  ],
+  "difficulty": "intermediate",
+  "title": "EMT 管",
+  "summary": "薄壁金屬電線導管，用於明管配線，可防止電線受撞擊",
+  "type": "material",
+  "category": "管材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "材質",
+      "value": "鍍鋅鋼管（薄壁）"
+    },
+    {
+      "label": "常見管徑",
+      "value": "1/2 吋、3/4 吋、1 吋等"
+    },
+    {
+      "label": "接合",
+      "value": "專用接頭、束節"
+    }
+  ],
+  "uses": [
+    "明管配線（天花、廠房、地下室）",
+    "需要防撞的配線路徑"
+  ],
+  "pros": [
+    "防機械損傷",
+    "外觀整齊"
+  ],
+  "cons": [
+    "彎管需專用彎管器",
+    "潮濕環境需注意鏽蝕"
+  ],
+  "brandTypes": [
+    "EMT 管",
+    "RSG 厚金屬管（較重型）",
+    "PVC 電管（暗管）"
+  ],
+  "priceUnit": "支",
+  "storage": [
+    "防潮、避免壓扁"
+  ],
+  "cautions": [
+    "管口裝護圈，避免割傷電線",
+    "固定間距依規範"
+  ],
+  "aliases": [
+    "電管",
+    "金屬管",
+    "EMT"
+  ]
+}

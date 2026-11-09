@@ -1,0 +1,58 @@
+{
+  "id": "ppr-pipe",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "管材"
+  ],
+  "difficulty": "intermediate",
+  "title": "PPR 熱熔管",
+  "summary": "聚丙烯給水管，以熱熔機加熱接合，冷熱水都可用",
+  "type": "material",
+  "category": "管材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "接合",
+      "value": "熱熔接合（熱熔機）"
+    },
+    {
+      "label": "用途",
+      "value": "冷水、熱水給水"
+    },
+    {
+      "label": "規格",
+      "value": "依管徑與壓力等級"
+    }
+  ],
+  "uses": [
+    "室內冷熱水給水"
+  ],
+  "pros": [
+    "接合處與管身一體成型，不易漏",
+    "不生鏽"
+  ],
+  "cons": [
+    "熱熔溫度與時間要準確",
+    "熱膨脹較大，長管需注意固定"
+  ],
+  "brandTypes": [
+    "一般 PPR 管",
+    "複合 PPR 管（加強層）"
+  ],
+  "priceUnit": "支或公尺",
+  "storage": [
+    "避免日曬"
+  ],
+  "cautions": [
+    "熱熔時間依管徑與熱熔機說明",
+    "完成後做打壓試驗"
+  ],
+  "aliases": [
+    "PPR",
+    "熱熔管",
+    "PP-R"
+  ]
+}

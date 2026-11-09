@@ -1,0 +1,56 @@
+{
+  "id": "treated-pine",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "景觀材料"
+  ],
+  "difficulty": "beginner",
+  "title": "防腐木（南方松）",
+  "summary": "經加壓防腐處理的松木，用於戶外木平台、圍籬",
+  "type": "material",
+  "category": "景觀材料",
+  "tradeIds": [
+    "landscape",
+    "carpentry"
+  ],
+  "specs": [
+    {
+      "label": "處理",
+      "value": "加壓注入防腐藥劑"
+    },
+    {
+      "label": "常見規格",
+      "value": "依斷面，例如 2 × 4 吋、2 × 6 吋"
+    }
+  ],
+  "uses": [
+    "戶外木平台、木棧道",
+    "花台、圍籬、涼亭"
+  ],
+  "pros": [
+    "自然木質感",
+    "價格比硬木低"
+  ],
+  "cons": [
+    "需定期上護木油",
+    "會龜裂、變色"
+  ],
+  "brandTypes": [
+    "南方松防腐材",
+    "其他防腐處理木材"
+  ],
+  "priceUnit": "才或支",
+  "storage": [
+    "墊高、通風、遮雨"
+  ],
+  "cautions": [
+    "切口要補塗防腐劑",
+    "施工時戴手套與口罩，木屑不要焚燒"
+  ],
+  "aliases": [
+    "南方松",
+    "防腐木",
+    "戶外木"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "welded-wire-mesh",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "鋼筋與鋼材"
+  ],
+  "difficulty": "beginner",
+  "title": "點焊鋼絲網",
+  "summary": "鋼線交叉點焊成網狀，用於地坪與樓板防裂",
+  "type": "material",
+  "category": "鋼筋與鋼材",
+  "tradeIds": [
+    "structure",
+    "masonry"
+  ],
+  "specs": [
+    {
+      "label": "線徑",
+      "value": "常見 2.6–6 mm"
+    },
+    {
+      "label": "網目",
+      "value": "常見 10×10、15×15 cm"
+    },
+    {
+      "label": "規格",
+      "value": "依片或捲計"
+    }
+  ],
+  "uses": [
+    "地坪、車道混凝土防裂",
+    "樓板溫度筋（依設計）"
+  ],
+  "pros": [
+    "施工快速，間距一致"
+  ],
+  "cons": [
+    "不能取代結構主筋",
+    "需墊高才有效果"
+  ],
+  "brandTypes": [
+    "片裝",
+    "捲裝",
+    "鍍鋅網"
+  ],
+  "priceUnit": "片",
+  "storage": [
+    "墊高、防雨"
+  ],
+  "cautions": [
+    "需以墊塊撐起，放在混凝土中間，貼地等於沒放",
+    "搭接長度至少一個網目以上（依設計）"
+  ],
+  "aliases": [
+    "鋼絲網",
+    "點焊網",
+    "wire mesh"
+  ]
+}

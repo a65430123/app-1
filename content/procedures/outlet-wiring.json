@@ -1,7 +1,7 @@
 {
   "id": "outlet-wiring",
   "type": "procedure",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "水電",
@@ -124,18 +124,21 @@
     },
     {
       "name": "PVC 電管或 EMT 管",
-      "spec": "依管徑與場所"
+      "spec": "依管徑與場所",
+      "materialId": "emt-conduit"
     },
     {
       "name": "接地型插座（三孔）",
-      "spec": "15A 125V 等，依用途"
+      "spec": "15A 125V 等，依用途",
+      "materialId": "grounded-outlet"
     },
     {
       "name": "出線盒、蓋板"
     },
     {
       "name": "無熔絲開關（NFB）／漏電斷路器（ELCB）",
-      "spec": "依迴路容量"
+      "spec": "依迴路容量",
+      "materialId": "nfb"
     }
   ],
   "tools": [

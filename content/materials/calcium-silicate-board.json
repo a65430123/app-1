@@ -1,0 +1,60 @@
+{
+  "id": "calcium-silicate-board",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "天花與隔間"
+  ],
+  "difficulty": "beginner",
+  "title": "矽酸鈣板",
+  "summary": "防火、防潮性能佳的無機板材，天花板與隔間常用",
+  "type": "material",
+  "category": "天花與隔間",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "常見厚度",
+      "value": "6 mm（天花）、9–12 mm（隔間）"
+    },
+    {
+      "label": "常見尺寸",
+      "value": "3 × 6 尺、4 × 8 尺"
+    },
+    {
+      "label": "防火",
+      "value": "依產品認證，常見耐燃一級"
+    }
+  ],
+  "uses": [
+    "天花板",
+    "輕隔間牆面",
+    "浴室天花（選防潮產品）"
+  ],
+  "pros": [
+    "耐燃、防潮",
+    "不易變形"
+  ],
+  "cons": [
+    "較脆，搬運易斷角",
+    "鎖螺絲太靠邊會破裂"
+  ],
+  "brandTypes": [
+    "一般矽酸鈣板",
+    "高密度矽酸鈣板"
+  ],
+  "priceUnit": "片",
+  "storage": [
+    "平放、避免撞擊"
+  ],
+  "cautions": [
+    "確認產品的耐燃等級證明",
+    "板與板之間留縫，以 AB 膠或填縫材處理"
+  ],
+  "aliases": [
+    "矽酸鈣",
+    "矽酸鈣板天花"
+  ]
+}

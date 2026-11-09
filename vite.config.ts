@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 import { viteSingleFile } from 'vite-plugin-singlefile';
 import { fileURLToPath, URL } from 'node:url';
 import { readFileSync } from 'node:fs';
-import { buildContentBundle } from './scripts/content-bundle';
+import { buildContentBundle } from './scripts/content-bundle.ts';
 
 const contentRoot = fileURLToPath(new URL('./content', import.meta.url));
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));

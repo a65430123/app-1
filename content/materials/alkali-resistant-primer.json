@@ -1,0 +1,58 @@
+{
+  "id": "alkali-resistant-primer",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆塗料"
+  ],
+  "difficulty": "beginner",
+  "title": "抗鹼底漆",
+  "summary": "塗在新粉刷牆面上的底漆，阻隔水泥鹼性、增加面漆附著",
+  "type": "material",
+  "category": "油漆塗料",
+  "tradeIds": [
+    "painting"
+  ],
+  "specs": [
+    {
+      "label": "用途",
+      "value": "水泥類新牆面"
+    },
+    {
+      "label": "塗刷",
+      "value": "通常 1 道"
+    },
+    {
+      "label": "稀釋",
+      "value": "依產品標示"
+    }
+  ],
+  "uses": [
+    "新粉刷牆面上漆前",
+    "整修後的水泥面"
+  ],
+  "pros": [
+    "防止面漆變色、剝落",
+    "增加附著力"
+  ],
+  "cons": [
+    "多一道工序與費用"
+  ],
+  "brandTypes": [
+    "水性抗鹼底漆",
+    "封固底漆"
+  ],
+  "priceUnit": "加侖",
+  "storage": [
+    "避免結凍、日曬"
+  ],
+  "cautions": [
+    "水泥牆面須充分乾燥再上漆（含水率依產品要求）",
+    "不可省略在潮濕牆面直接上漆"
+  ],
+  "aliases": [
+    "底漆",
+    "封底漆",
+    "抗鹼封底"
+  ]
+}

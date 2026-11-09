@@ -1,0 +1,58 @@
+{
+  "id": "elcb-breaker",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "配電",
+    "安全"
+  ],
+  "difficulty": "intermediate",
+  "title": "漏電斷路器",
+  "summary": "偵測到漏電時自動跳脫，保護人員避免觸電",
+  "type": "material",
+  "category": "配電器材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "額定感度電流",
+      "value": "住宅潮濕場所常見 15 mA 或 30 mA（依規定）"
+    },
+    {
+      "label": "動作時間",
+      "value": "高速型 0.1 秒以內"
+    },
+    {
+      "label": "額定電流",
+      "value": "15、20、30 A 等"
+    }
+  ],
+  "uses": [
+    "浴室、廚房、陽台迴路",
+    "戶外插座、熱水器、洗衣機"
+  ],
+  "pros": [
+    "防止觸電事故"
+  ],
+  "cons": [
+    "老舊電器微量漏電可能造成頻繁跳脫"
+  ],
+  "brandTypes": [
+    "漏電斷路器（ELCB）",
+    "漏電保護附過載功能"
+  ],
+  "priceUnit": "個",
+  "storage": [
+    "保持乾燥"
+  ],
+  "cautions": [
+    "每月按測試鈕（TEST）確認會跳脫",
+    "跳脫後先找出原因再復歸"
+  ],
+  "aliases": [
+    "ELCB",
+    "漏電開關"
+  ]
+}

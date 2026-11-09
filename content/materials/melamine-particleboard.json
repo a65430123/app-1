@@ -1,0 +1,63 @@
+{
+  "id": "melamine-particleboard",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "板材"
+  ],
+  "difficulty": "beginner",
+  "title": "系統板（塑合板）",
+  "summary": "木屑壓製的塑合板，表面貼美耐皿飾面，系統櫃主要板材",
+  "type": "material",
+  "category": "板材",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "常見厚度",
+      "value": "18 mm（櫃體）、25 mm（層板）"
+    },
+    {
+      "label": "表面",
+      "value": "美耐皿（三聚氰胺）飾面"
+    },
+    {
+      "label": "甲醛等級",
+      "value": "F1、F3 等"
+    }
+  ],
+  "uses": [
+    "系統櫃、衣櫃",
+    "廚具櫃體"
+  ],
+  "pros": [
+    "表面耐磨、好清潔",
+    "工廠裁切、施工快"
+  ],
+  "cons": [
+    "怕水，泡水會膨脹",
+    "不適合做造型與曲面",
+    "鎖點反覆拆裝會鬆"
+  ],
+  "brandTypes": [
+    "一般塑合板",
+    "防潮塑合板（綠芯）",
+    "低甲醛（F1）"
+  ],
+  "priceUnit": "片或依櫃體報價",
+  "storage": [
+    "避免受潮"
+  ],
+  "cautions": [
+    "封邊要完整",
+    "廚房、浴室選防潮板，並避免長期接觸水"
+  ],
+  "aliases": [
+    "塑合板",
+    "系統櫃板",
+    "美耐板",
+    "粒片板"
+  ]
+}

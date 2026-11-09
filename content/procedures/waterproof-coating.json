@@ -1,7 +1,7 @@
 {
   "id": "waterproof-coating",
   "type": "procedure",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "防水",
@@ -105,7 +105,8 @@
     },
     {
       "name": "不織布或玻璃纖維網",
-      "spec": "補強用"
+      "spec": "補強用",
+      "materialId": "nonwoven-fabric"
     }
   ],
   "tools": [

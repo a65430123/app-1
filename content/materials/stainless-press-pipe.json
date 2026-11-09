@@ -1,0 +1,60 @@
+{
+  "id": "stainless-press-pipe",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "管材"
+  ],
+  "difficulty": "intermediate",
+  "title": "不鏽鋼壓接管",
+  "summary": "不鏽鋼給水管，以專用工具壓接接頭，冷熱水都可用",
+  "type": "material",
+  "category": "管材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "材質",
+      "value": "SUS304、SUS316"
+    },
+    {
+      "label": "接合",
+      "value": "壓接式接頭（專用壓接鉗）"
+    },
+    {
+      "label": "用途",
+      "value": "冷水、熱水給水"
+    }
+  ],
+  "uses": [
+    "室內冷熱水給水管",
+    "熱水器出水管"
+  ],
+  "pros": [
+    "耐熱、不生鏽、衛生",
+    "壽命長"
+  ],
+  "cons": [
+    "材料費較高",
+    "需專用壓接工具"
+  ],
+  "brandTypes": [
+    "SUS304 壓接管",
+    "SUS316 壓接管（耐腐蝕較佳）"
+  ],
+  "priceUnit": "公尺或支",
+  "storage": [
+    "避免刮傷、碰撞"
+  ],
+  "cautions": [
+    "壓接前確認插入深度",
+    "埋設於牆內前先做打壓試驗"
+  ],
+  "aliases": [
+    "不鏽鋼管",
+    "白鐵管",
+    "壓接管"
+  ]
+}

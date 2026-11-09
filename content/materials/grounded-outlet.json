@@ -1,0 +1,58 @@
+{
+  "id": "grounded-outlet",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "配電器材"
+  ],
+  "difficulty": "beginner",
+  "title": "接地型插座",
+  "summary": "三孔插座，第三孔連接地線，電器漏電時把電導走",
+  "type": "material",
+  "category": "配電器材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "常見規格",
+      "value": "15 A 125 V"
+    },
+    {
+      "label": "型式",
+      "value": "單聯、雙聯；附蓋防水型"
+    },
+    {
+      "label": "配件",
+      "value": "出線盒、蓋板"
+    }
+  ],
+  "uses": [
+    "一般室內插座",
+    "廚房、浴室（搭配漏電斷路器與防水蓋）"
+  ],
+  "pros": [
+    "提升用電安全"
+  ],
+  "cons": [
+    "接地線沒有實際接到接地系統就沒有作用"
+  ],
+  "brandTypes": [
+    "一般接地插座",
+    "附 USB 插座",
+    "防水蓋插座"
+  ],
+  "priceUnit": "個",
+  "storage": [
+    "保持乾燥"
+  ],
+  "cautions": [
+    "安裝後用插座測試器確認極性與接地",
+    "大功率電器使用專用插座，不要用延長線串接"
+  ],
+  "aliases": [
+    "三孔插座",
+    "插座",
+    "接地插座"
+  ]
+}

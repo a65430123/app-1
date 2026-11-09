@@ -1,0 +1,58 @@
+{
+  "id": "nfb",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "配電"
+  ],
+  "difficulty": "intermediate",
+  "title": "無熔絲開關",
+  "summary": "電流超過額定值時自動跳脫的開關，保護電線不過熱",
+  "type": "material",
+  "category": "配電器材",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "常見額定電流",
+      "value": "15、20、30 A 等"
+    },
+    {
+      "label": "極數",
+      "value": "1P、2P、3P"
+    },
+    {
+      "label": "啟斷容量",
+      "value": "以 kA 標示，依配電需求"
+    }
+  ],
+  "uses": [
+    "配電盤各分路"
+  ],
+  "pros": [
+    "跳脫後可直接復歸，不必換保險絲"
+  ],
+  "cons": [
+    "只保護過載與短路，不防漏電"
+  ],
+  "brandTypes": [
+    "一般無熔絲開關",
+    "附漏電保護（漏電斷路器）"
+  ],
+  "priceUnit": "個",
+  "storage": [
+    "保持乾燥"
+  ],
+  "cautions": [
+    "額定電流不可大於導線安全電流",
+    "更換須由合格電匠施作"
+  ],
+  "aliases": [
+    "NFB",
+    "無熔絲",
+    "斷路器",
+    "開關"
+  ]
+}

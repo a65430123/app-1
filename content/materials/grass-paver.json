@@ -1,0 +1,53 @@
+{
+  "id": "grass-paver",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "景觀材料"
+  ],
+  "difficulty": "beginner",
+  "title": "植草磚",
+  "summary": "有孔洞可種草的鋪面磚，兼顧車行與綠化",
+  "type": "material",
+  "category": "景觀材料",
+  "tradeIds": [
+    "landscape"
+  ],
+  "specs": [
+    {
+      "label": "材質",
+      "value": "混凝土、塑膠（PP、HDPE）"
+    },
+    {
+      "label": "鋪設",
+      "value": "級配基層 → 鋪磚 → 孔內填土植草"
+    }
+  ],
+  "uses": [
+    "停車位、消防通道（依設計）",
+    "庭院綠化"
+  ],
+  "pros": [
+    "透水、增加綠地",
+    "降低地表溫度"
+  ],
+  "cons": [
+    "草需維護，車常停的地方草長不好"
+  ],
+  "brandTypes": [
+    "混凝土植草磚",
+    "塑膠植草格"
+  ],
+  "priceUnit": "平方公尺或塊",
+  "storage": [
+    "堆放整齊"
+  ],
+  "cautions": [
+    "基層要夯實，否則會沉陷",
+    "選擇耐踩踏的草種"
+  ],
+  "aliases": [
+    "植草格",
+    "草磚"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "tile-laying",
   "type": "procedure",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -121,7 +121,8 @@
     {
       "name": "地磚",
       "spec": "依設計，如 60×60 cm 拋光石英磚",
-      "qtyNote": "可用「磁磚片數」計算機估算"
+      "qtyNote": "可用「磁磚片數」計算機估算",
+      "materialId": "porcelain-tile"
     },
     {
       "materialId": "tile-grout",

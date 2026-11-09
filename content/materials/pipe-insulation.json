@@ -1,0 +1,56 @@
+{
+  "id": "pipe-insulation",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "空調材料"
+  ],
+  "difficulty": "beginner",
+  "title": "保溫管",
+  "summary": "包覆在冷媒管、冷熱水管外的發泡保溫材，防止結露與熱損失",
+  "type": "material",
+  "category": "空調材料",
+  "tradeIds": [
+    "hvac",
+    "electrical-plumbing"
+  ],
+  "specs": [
+    {
+      "label": "材質",
+      "value": "PE 發泡、橡塑發泡（NBR）"
+    },
+    {
+      "label": "厚度",
+      "value": "依管徑與使用環境，常見 10–25 mm"
+    }
+  ],
+  "uses": [
+    "冷氣冷媒管",
+    "冰水管、熱水管"
+  ],
+  "pros": [
+    "防止結露滴水",
+    "節能"
+  ],
+  "cons": [
+    "日曬會劣化，外露須包覆保護",
+    "接縫沒封好會結露"
+  ],
+  "brandTypes": [
+    "PE 保溫管",
+    "橡塑保溫管（較耐候、阻燃）"
+  ],
+  "priceUnit": "支或公尺",
+  "storage": [
+    "避免日曬、重壓"
+  ],
+  "cautions": [
+    "接縫以專用膠帶確實封住",
+    "室外段外層再包覆保護膠帶或護套"
+  ],
+  "aliases": [
+    "保溫棉",
+    "保溫套",
+    "發泡管"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ceramic-wall-tile",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "磁磚"
+  ],
+  "difficulty": "beginner",
+  "title": "釉面陶質壁磚",
+  "summary": "吸水率較高、表面上釉的陶質磚，主要用於牆面",
+  "type": "material",
+  "category": "磁磚",
+  "tradeIds": [
+    "masonry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "吸水率",
+      "value": "較高（陶質，依產品）"
+    },
+    {
+      "label": "常見尺寸",
+      "value": "25×40、30×60 cm 等"
+    },
+    {
+      "label": "用途",
+      "value": "牆面為主"
+    }
+  ],
+  "uses": [
+    "浴室、廚房牆面"
+  ],
+  "pros": [
+    "花色多、價格較低",
+    "重量輕，好施工"
+  ],
+  "cons": [
+    "強度與耐磨不如石英磚，不適合地面",
+    "吸水率高，背面須處理好"
+  ],
+  "brandTypes": [
+    "亮面釉磚",
+    "霧面釉磚",
+    "花磚"
+  ],
+  "priceUnit": "箱",
+  "storage": [
+    "防潮、直立存放"
+  ],
+  "cautions": [
+    "不建議用於地面",
+    "硬底施工時注意黏著劑覆蓋率"
+  ],
+  "aliases": [
+    "壁磚",
+    "牆磚",
+    "釉面磚"
+  ]
+}

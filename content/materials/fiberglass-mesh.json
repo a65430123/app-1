@@ -1,0 +1,62 @@
+{
+  "id": "fiberglass-mesh",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "磁磚輔材"
+  ],
+  "difficulty": "beginner",
+  "title": "耐鹼玻璃纖維網",
+  "summary": "埋入砂漿或塗料中，用來分散應力、防止裂縫",
+  "type": "material",
+  "category": "磁磚輔材",
+  "tradeIds": [
+    "masonry",
+    "waterproofing",
+    "painting"
+  ],
+  "specs": [
+    {
+      "label": "規格",
+      "value": "常見網目約 4–5 mm"
+    },
+    {
+      "label": "特性",
+      "value": "須為耐鹼型"
+    },
+    {
+      "label": "寬度",
+      "value": "常見 1 m 寬成捲"
+    }
+  ],
+  "uses": [
+    "粉刷層防裂",
+    "不同材料交接處補強",
+    "防水層補強"
+  ],
+  "pros": [
+    "輕、好施工",
+    "有效降低細裂縫"
+  ],
+  "cons": [
+    "非耐鹼型會在水泥中劣化",
+    "不能修補結構性裂縫"
+  ],
+  "brandTypes": [
+    "耐鹼玻璃纖維網",
+    "自黏網帶（板材接縫用）"
+  ],
+  "priceUnit": "捲",
+  "storage": [
+    "避免重壓折損"
+  ],
+  "cautions": [
+    "必須完全埋入材料中",
+    "搭接約 5–10 cm"
+  ],
+  "aliases": [
+    "玻纖網",
+    "網布",
+    "抗裂網"
+  ]
+}

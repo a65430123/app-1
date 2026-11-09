@@ -1,0 +1,55 @@
+{
+  "id": "anti-rust-primer",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆塗料"
+  ],
+  "difficulty": "intermediate",
+  "title": "防鏽底漆",
+  "summary": "塗在鐵件上的第一道漆，延緩鋼材生鏽",
+  "type": "material",
+  "category": "油漆塗料",
+  "tradeIds": [
+    "painting",
+    "steel"
+  ],
+  "specs": [
+    {
+      "label": "種類",
+      "value": "醇酸防鏽漆、環氧防鏽漆、富鋅底漆"
+    },
+    {
+      "label": "前處理",
+      "value": "除鏽（手工、電動工具或噴砂）"
+    }
+  ],
+  "uses": [
+    "鐵門、欄杆、鐵窗",
+    "鋼構"
+  ],
+  "pros": [
+    "延長鐵件壽命"
+  ],
+  "cons": [
+    "除鏽不確實，再好的漆也會起鏽"
+  ],
+  "brandTypes": [
+    "醇酸防鏽漆",
+    "環氧防鏽漆",
+    "富鋅底漆（鍍鋅修補、鋼構）"
+  ],
+  "priceUnit": "加侖",
+  "storage": [
+    "遠離火源，通風處存放"
+  ],
+  "cautions": [
+    "先徹底除鏽、除油",
+    "鍍鋅面要用適用的底漆，否則會剝落",
+    "溶劑型漆施工須通風"
+  ],
+  "aliases": [
+    "防鏽漆",
+    "鐵件底漆"
+  ]
+}

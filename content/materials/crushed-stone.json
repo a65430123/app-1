@@ -1,0 +1,58 @@
+{
+  "id": "crushed-stone",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "骨材"
+  ],
+  "difficulty": "beginner",
+  "title": "碎石（粗骨材）",
+  "summary": "由岩石軋碎而成的石料，用於混凝土、級配與排水層",
+  "type": "material",
+  "category": "骨材",
+  "tradeIds": [
+    "structure",
+    "landscape"
+  ],
+  "specs": [
+    {
+      "label": "常見粒徑",
+      "value": "3/8 吋、3/4 吋、1 吋等（依用途）"
+    },
+    {
+      "label": "計價",
+      "value": "立方米（m³）或噸"
+    }
+  ],
+  "uses": [
+    "混凝土粗骨材",
+    "地坪墊層、級配",
+    "排水層、景觀鋪面"
+  ],
+  "pros": [
+    "取得容易",
+    "排水性佳"
+  ],
+  "cons": [
+    "含泥量高會影響混凝土品質",
+    "運費佔成本比例高"
+  ],
+  "brandTypes": [
+    "碎石",
+    "卵石",
+    "級配料"
+  ],
+  "priceUnit": "立方米（m³）",
+  "storage": [
+    "堆放於乾淨地面，避免混入泥土"
+  ],
+  "cautions": [
+    "依用途選擇粒徑",
+    "搬運堆置注意邊坡滑落"
+  ],
+  "aliases": [
+    "石子",
+    "骨材",
+    "級配"
+  ]
+}

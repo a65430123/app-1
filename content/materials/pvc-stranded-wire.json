@@ -1,0 +1,63 @@
+{
+  "id": "pvc-stranded-wire",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "電線"
+  ],
+  "difficulty": "intermediate",
+  "title": "PVC 絞線",
+  "summary": "多股細銅線絞合的絕緣電線，用於較大電流的迴路",
+  "type": "material",
+  "category": "電線電纜",
+  "tradeIds": [
+    "electrical-plumbing",
+    "hvac"
+  ],
+  "specs": [
+    {
+      "label": "常見截面積",
+      "value": "3.5、5.5、8、14、22 mm²"
+    },
+    {
+      "label": "絕緣",
+      "value": "PVC"
+    },
+    {
+      "label": "包裝",
+      "value": "捲裝或依公尺"
+    }
+  ],
+  "uses": [
+    "冷氣專用迴路",
+    "廚房高功率電器",
+    "幹線"
+  ],
+  "pros": [
+    "柔軟好穿管",
+    "可承載較大電流"
+  ],
+  "cons": [
+    "接頭須使用端子，不可直接繞鎖",
+    "價格比單芯線高"
+  ],
+  "brandTypes": [
+    "PVC 絞線",
+    "耐熱絞線"
+  ],
+  "priceUnit": "公尺或捲",
+  "storage": [
+    "避免日曬與外皮刮傷"
+  ],
+  "cautions": [
+    "選用有商品檢驗標識的產品",
+    "線徑依負載電流與壓降選用",
+    "壓接端子用適用的壓接鉗"
+  ],
+  "aliases": [
+    "絞線",
+    "5.5 平方",
+    "3.5 平方"
+  ]
+}

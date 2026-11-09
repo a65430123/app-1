@@ -1,0 +1,55 @@
+{
+  "id": "nonwoven-fabric",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "防水材"
+  ],
+  "difficulty": "beginner",
+  "title": "防水補強不織布",
+  "summary": "夾在防水塗料中的補強布，用於陰角、管邊等易裂處",
+  "type": "material",
+  "category": "防水材",
+  "tradeIds": [
+    "waterproofing"
+  ],
+  "specs": [
+    {
+      "label": "材質",
+      "value": "聚酯纖維（PET）等"
+    },
+    {
+      "label": "規格",
+      "value": "常見 1 m 寬成捲，或裁成條狀"
+    }
+  ],
+  "uses": [
+    "浴室陰角、管線周邊",
+    "落水頭周邊",
+    "裂縫補強"
+  ],
+  "pros": [
+    "便宜、好施工",
+    "提升防水層抗裂能力"
+  ],
+  "cons": [
+    "須被塗料完全包覆，否則反而形成滲水路徑"
+  ],
+  "brandTypes": [
+    "一般不織布",
+    "防水專用加強布"
+  ],
+  "priceUnit": "捲",
+  "storage": [
+    "保持乾淨、乾燥"
+  ],
+  "cautions": [
+    "貼布時把氣泡趕出",
+    "布邊要壓實並再塗一道"
+  ],
+  "aliases": [
+    "不織布",
+    "加強布",
+    "補強布"
+  ]
+}

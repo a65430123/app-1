@@ -153,6 +153,8 @@ export const ContentBundle = z.object({
   contentVersion: z.string(),
   minAppVersion: z.string(),
   publishedAt: z.string(),
+  /** 材料庫分類的顯示順序 */
+  materialCategories: z.array(z.string()).optional(),
   data: z.object({
     trades: z.array(Trade),
     procedures: z.array(Procedure),

@@ -1,6 +1,6 @@
 {
   "id": "portland-cement",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "水泥",
@@ -16,7 +16,7 @@
     "紅毛土",
     "波特蘭水泥"
   ],
-  "category": "水泥類",
+  "category": "水泥與混凝土",
   "tradeIds": [
     "masonry",
     "structure"

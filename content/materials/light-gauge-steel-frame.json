@@ -1,0 +1,63 @@
+{
+  "id": "light-gauge-steel-frame",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "天花與隔間"
+  ],
+  "difficulty": "beginner",
+  "title": "輕鋼架",
+  "summary": "鍍鋅鋼材做成的天花與隔間骨架",
+  "type": "material",
+  "category": "天花與隔間",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "天花",
+      "value": "明架（T-bar，搭配 60×60 cm 板）、暗架（C 型）"
+    },
+    {
+      "label": "隔間",
+      "value": "上下槽鐵＋立柱"
+    },
+    {
+      "label": "材質",
+      "value": "鍍鋅鋼板滾軋成型"
+    }
+  ],
+  "uses": [
+    "辦公室、商業空間天花",
+    "輕隔間骨架"
+  ],
+  "pros": [
+    "不怕白蟻、防火",
+    "施工快、尺寸精準"
+  ],
+  "cons": [
+    "吊掛重物要另外加強",
+    "明架天花質感較商業化"
+  ],
+  "brandTypes": [
+    "明架天花系統",
+    "暗架天花系統",
+    "隔間立柱系統"
+  ],
+  "priceUnit": "支或依面積計價",
+  "storage": [
+    "避免受潮生鏽、彎折"
+  ],
+  "cautions": [
+    "吊筋間距依產品與規範",
+    "燈具、空調設備另外吊掛，不可直接壓在骨架上"
+  ],
+  "aliases": [
+    "T-bar",
+    "T 霸",
+    "明架",
+    "暗架",
+    "輕鋼架天花"
+  ]
+}

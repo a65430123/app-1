@@ -1,0 +1,54 @@
+{
+  "id": "mineral-fiber-ceiling-board",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "天花與隔間"
+  ],
+  "difficulty": "beginner",
+  "title": "礦纖天花板",
+  "summary": "搭配明架輕鋼架使用的吸音天花板",
+  "type": "material",
+  "category": "天花與隔間",
+  "tradeIds": [
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "常見尺寸",
+      "value": "60 × 60 cm"
+    },
+    {
+      "label": "特性",
+      "value": "吸音、輕量"
+    }
+  ],
+  "uses": [
+    "辦公室、教室、商業空間"
+  ],
+  "pros": [
+    "吸音好",
+    "好拆換，方便檢修天花內設備"
+  ],
+  "cons": [
+    "怕潮，受潮會下垂",
+    "外觀較商業"
+  ],
+  "brandTypes": [
+    "一般礦纖板",
+    "防潮礦纖板"
+  ],
+  "priceUnit": "片或箱",
+  "storage": [
+    "平放、防潮"
+  ],
+  "cautions": [
+    "拿取時戴手套保持清潔",
+    "有漏水會留下水漬，需更換"
+  ],
+  "aliases": [
+    "礦纖板",
+    "天花板",
+    "吸音板"
+  ]
+}

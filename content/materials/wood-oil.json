@@ -1,0 +1,56 @@
+{
+  "id": "wood-oil",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆塗料"
+  ],
+  "difficulty": "beginner",
+  "title": "護木油",
+  "summary": "滲入木材保護木料的塗料，用於戶外木作與木平台",
+  "type": "material",
+  "category": "油漆塗料",
+  "tradeIds": [
+    "painting",
+    "landscape",
+    "carpentry"
+  ],
+  "specs": [
+    {
+      "label": "種類",
+      "value": "油性、水性"
+    },
+    {
+      "label": "保養週期",
+      "value": "戶外常見 1–2 年補塗一次（依日曬雨淋）"
+    }
+  ],
+  "uses": [
+    "戶外木平台、木棧道",
+    "木圍籬、涼亭"
+  ],
+  "pros": [
+    "保留木紋質感",
+    "可防水、抗紫外線"
+  ],
+  "cons": [
+    "需定期補塗",
+    "顏色會隨時間變淡"
+  ],
+  "brandTypes": [
+    "透明護木油",
+    "有色護木油（含顏料，抗 UV 較佳）"
+  ],
+  "priceUnit": "加侖",
+  "storage": [
+    "遠離火源"
+  ],
+  "cautions": [
+    "沾油的抹布要攤開晾乾或泡水，堆在一起可能自燃",
+    "木材要乾燥再塗"
+  ],
+  "aliases": [
+    "木油",
+    "護木漆"
+  ]
+}

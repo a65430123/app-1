@@ -1,0 +1,59 @@
+{
+  "id": "c-channel",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "鋼筋與鋼材"
+  ],
+  "difficulty": "intermediate",
+  "title": "C 型鋼",
+  "summary": "薄鋼板冷彎成 C 形斷面的輕型鋼，常作屋頂桁條",
+  "type": "material",
+  "category": "鋼筋與鋼材",
+  "tradeIds": [
+    "steel"
+  ],
+  "specs": [
+    {
+      "label": "常見厚度",
+      "value": "約 1.6–3.2 mm"
+    },
+    {
+      "label": "表面",
+      "value": "鍍鋅或黑鐵烤漆"
+    },
+    {
+      "label": "尺寸",
+      "value": "依高度與翼寬，例如 100 × 50 mm"
+    }
+  ],
+  "uses": [
+    "屋頂桁條",
+    "雨遮、鐵皮屋骨架",
+    "輕型隔間"
+  ],
+  "pros": [
+    "輕、便宜、施工快"
+  ],
+  "cons": [
+    "斷面小，不適合承受大載重",
+    "黑鐵需防鏽處理"
+  ],
+  "brandTypes": [
+    "鍍鋅 C 型鋼",
+    "黑鐵 C 型鋼"
+  ],
+  "priceUnit": "支或公斤",
+  "storage": [
+    "防雨、避免彎折"
+  ],
+  "cautions": [
+    "跨距與厚度依結構計算",
+    "切斷、鑽孔處補防鏽漆"
+  ],
+  "aliases": [
+    "C 型鋼",
+    "輕型鋼",
+    "桁條"
+  ]
+}

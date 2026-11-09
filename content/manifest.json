@@ -1,7 +1,26 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.11.09-3",
+  "contentVersion": "2026.11.09-4",
   "minAppVersion": "0.1.0",
   "publishedAt": "2026-11-09",
-  "note": "發佈新內容時，請把 contentVersion 往上調（格式 YYYY.MM.DD-序號），App 才會偵測到更新。schemaVersion 只有在資料結構有破壞性變更時才 +1。"
+  "materialCategories": [
+    "水泥與混凝土",
+    "骨材",
+    "鋼筋與鋼材",
+    "磚材",
+    "磁磚",
+    "磁磚輔材",
+    "防水材",
+    "填縫與密封",
+    "油漆塗料",
+    "板材",
+    "天花與隔間",
+    "五金與錨栓",
+    "電線電纜",
+    "配電器材",
+    "管材",
+    "空調材料",
+    "景觀材料"
+  ],
+  "note": "發佈新內容時，請把 contentVersion 往上調（格式 YYYY.MM.DD-序號），App 才會偵測到更新。schemaVersion 只有在資料結構有破壞性變更時才 +1。 materialCategories 決定材料庫分類的顯示順序，未列出的分類排在最後。"
 }

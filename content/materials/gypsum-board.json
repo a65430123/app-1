@@ -1,0 +1,56 @@
+{
+  "id": "gypsum-board",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "天花與隔間"
+  ],
+  "difficulty": "beginner",
+  "title": "石膏板",
+  "summary": "以石膏為芯、兩面貼紙的板材，價格低，常用於乾式隔間與天花",
+  "type": "material",
+  "category": "天花與隔間",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "specs": [
+    {
+      "label": "常見厚度",
+      "value": "9.5、12、15 mm"
+    },
+    {
+      "label": "種類",
+      "value": "一般、防火、防潮石膏板"
+    }
+  ],
+  "uses": [
+    "輕隔間牆",
+    "天花板"
+  ],
+  "pros": [
+    "價格低、施工快",
+    "防火性佳（防火型）"
+  ],
+  "cons": [
+    "怕潮濕",
+    "吊掛重物需加強"
+  ],
+  "brandTypes": [
+    "一般石膏板",
+    "防火石膏板",
+    "防潮石膏板"
+  ],
+  "priceUnit": "片",
+  "storage": [
+    "平放、防潮"
+  ],
+  "cautions": [
+    "潮濕區改用防潮型或矽酸鈣板",
+    "接縫處貼網帶再批土，避免裂縫"
+  ],
+  "aliases": [
+    "石膏",
+    "石膏板隔間"
+  ]
+}
