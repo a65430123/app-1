@@ -46,6 +46,7 @@ try {
   if (!/^\d{4}\.\d{2}\.\d{2}-\d+$/.test(m.contentVersion)) errors.push('manifest.json: contentVersion 格式須為 YYYY.MM.DD-序號');
   if (m.schemaVersion !== SCHEMA_VERSION) errors.push(`manifest.json: schemaVersion（${m.schemaVersion}）與程式（${SCHEMA_VERSION}）不一致`);
   if (!/^\d+\.\d+\.\d+$/.test(m.minAppVersion)) errors.push('manifest.json: minAppVersion 須為 semver');
+  for (const id of m.featuredProcedures ?? []) if (!ids.procedure.has(id)) errors.push(`manifest.json: featuredProcedures 找不到工序「${id}」`);
   const used = new Set(all.filter((x) => x.type === 'material').map((x) => x.data.category));
   for (const c of used) if (!(m.materialCategories ?? []).includes(c)) errors.push(`manifest.json: materialCategories 未列出分類「${c}」（會排在最後）`);
 } catch (e) {

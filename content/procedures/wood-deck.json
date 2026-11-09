@@ -1,0 +1,177 @@
+{
+  "id": "wood-deck",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "景觀",
+    "木作",
+    "戶外"
+  ],
+  "difficulty": "intermediate",
+  "title": "戶外木平台",
+  "summary": "以防腐木或塑木搭建戶外木平台",
+  "tradeIds": [
+    "landscape",
+    "carpentry"
+  ],
+  "overview": {
+    "default": "設置基礎墩座，架設龍骨並調平，再鋪設面板並留伸縮縫，以不鏽鋼螺絲固定，最後塗佈護木油（防腐木）。",
+    "beginner": "戶外木平台最怕積水與通風不良，龍骨不能直接貼在潮濕地面上，面板之間也要留縫。",
+    "master": "放樣 → 基礎墩 → 龍骨（調平、坡度）→ 面板留縫 → 不鏽鋼螺絲 → 切口防腐 → 護木油。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣與基礎",
+      "body": {
+        "default": "放樣範圍，設置混凝土墩座或可調式支撐，使龍骨離地。"
+      },
+      "keyPoints": [
+        "龍骨不可直接放在泥土上"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "龍骨",
+      "body": {
+        "default": "架設龍骨並調平，預留微小排水坡度。"
+      },
+      "specs": [
+        {
+          "label": "龍骨間距（常見）",
+          "value": "約 40–60 cm（依面板厚度與產品）"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "鋪面板",
+      "body": {
+        "default": "面板之間留縫，方便排水與熱脹冷縮。",
+        "beginner": "木頭遇水會膨脹、乾了會收縮，不留縫會拱起來。"
+      },
+      "specs": [
+        {
+          "label": "面板間隙（常見）",
+          "value": "約 5 mm（依材料與產品說明）"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "固定",
+      "body": {
+        "default": "以不鏽鋼螺絲固定，先預鑽孔避免木材裂開。"
+      },
+      "keyPoints": [
+        "一般鐵螺絲會生鏽並在木頭上留下黑色鏽痕"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "切口防腐與塗裝",
+      "body": {
+        "default": "防腐木的切口補塗防腐劑，完成後塗護木油（塑木免塗）。"
+      },
+      "waitTime": "依產品乾燥時間"
+    }
+  ],
+  "materials": [
+    {
+      "name": "防腐木（南方松）",
+      "materialId": "treated-pine",
+      "spec": "面板與龍骨"
+    },
+    {
+      "name": "塑木地板",
+      "materialId": "wpc-decking",
+      "spec": "替代方案"
+    },
+    {
+      "name": "不鏽鋼螺絲"
+    },
+    {
+      "name": "護木油",
+      "materialId": "wood-oil"
+    }
+  ],
+  "tools": [
+    {
+      "name": "電鑽、電動起子"
+    },
+    {
+      "name": "圓鋸"
+    },
+    {
+      "name": "水平尺"
+    },
+    {
+      "name": "捲尺"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "龍骨貼地",
+      "consequence": "潮濕腐朽、白蟻",
+      "prevention": "墩座架高、保持通風"
+    },
+    {
+      "mistake": "面板不留縫",
+      "consequence": "拱起、積水",
+      "prevention": "依產品留縫"
+    },
+    {
+      "mistake": "使用一般鐵螺絲",
+      "consequence": "鏽蝕、黑色鏽痕",
+      "prevention": "使用不鏽鋼螺絲"
+    },
+    {
+      "mistake": "沒有定期上油",
+      "consequence": "龜裂、褪色",
+      "prevention": "每 1–2 年補塗護木油"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "水平與坡度",
+      "criteria": "平整、略有排水坡度",
+      "method": "水平尺"
+    },
+    {
+      "item": "面板間隙",
+      "criteria": "一致",
+      "method": "目視、量測"
+    },
+    {
+      "item": "固定",
+      "criteria": "螺絲無鬆動、無凸出",
+      "method": "目視、手觸"
+    },
+    {
+      "item": "塗裝",
+      "criteria": "均勻無漏塗",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "切割防腐木時戴口罩與手套，木屑不要焚燒。"
+    },
+    {
+      "level": "info",
+      "text": "使用圓鋸注意手指位置。"
+    }
+  ],
+  "aliases": [
+    "木平台",
+    "木棧道",
+    "戶外木地板",
+    "露台木地板"
+  ],
+  "duration": "依面積，常見 2–5 天",
+  "relatedProcedureIds": [
+    "paver-installation"
+  ]
+}

@@ -8,6 +8,7 @@ import Home from '@/routes/Home';
 import Trades from '@/routes/Trades';
 import TradeDetail from '@/routes/TradeDetail';
 import Procedure from '@/routes/Procedure';
+import Procedures from '@/routes/Procedures';
 import Search from '@/routes/Search';
 import Tools from '@/routes/Tools';
 import CalculatorPage from '@/routes/CalculatorPage';
@@ -30,6 +31,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="trades" element={<Trades />} />
           <Route path="trades/:tradeId" element={<TradeDetail />} />
+          <Route path="procedures" element={<Procedures />} />
           <Route path="procedures/:id" element={<Procedure />} />
           <Route path="materials" element={<Materials />} />
           <Route path="materials/:id" element={<MaterialDetail />} />

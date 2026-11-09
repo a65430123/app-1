@@ -1,0 +1,178 @@
+{
+  "id": "wall-repainting",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆",
+    "牆面",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "室內牆面重新粉刷",
+  "summary": "舊牆面的修補、批土、研磨與乳膠漆塗刷",
+  "tradeIds": [
+    "painting"
+  ],
+  "overview": {
+    "default": "保護家具與地面後，刮除剝落舊漆、修補裂縫孔洞、批土研磨，再塗底漆與兩道面漆。",
+    "beginner": "油漆好不好看，七成在「前置作業」：批土、研磨做得好，漆才會平順。這也是屋主最常自己動手的項目。",
+    "master": "遮蔽 → 刮除 → 修補批土 → 研磨 → 底漆 → 面漆 2 道 → 收尾。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "遮蔽保護",
+      "body": {
+        "default": "移開或覆蓋家具，地面鋪保護材，插座蓋板拆下，門框、踢腳板貼遮蔽膠帶。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "刮除與修補",
+      "body": {
+        "default": "刮除起泡、剝落的舊漆，裂縫與孔洞以批土填補；壁癌處需先找出水源處理。",
+        "beginner": "壁癌是牆裡有水分，只刷油漆蓋過去，很快又會長出來。"
+      },
+      "keyPoints": [
+        "有壁癌先處理漏水源"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "批土與研磨",
+      "body": {
+        "default": "大面積薄批，乾燥後以砂紙研磨，必要時重複。",
+        "master": "薄批多次、逐道研磨。"
+      },
+      "waitTime": "每道批土需乾透"
+    },
+    {
+      "order": 4,
+      "title": "底漆",
+      "body": {
+        "default": "全面塗佈底漆（新粉刷牆面用抗鹼底漆）。"
+      },
+      "waitTime": "依產品乾燥時間"
+    },
+    {
+      "order": 5,
+      "title": "面漆",
+      "body": {
+        "default": "先用刷子沿牆角、邊緣刷一圈，再以滾筒大面積塗刷，共 2 道。",
+        "beginner": "滾筒用「W」字形來回滾，比較均勻；每次沾漆不要太多，避免流下來。"
+      },
+      "waitTime": "兩道之間依產品乾燥時間"
+    },
+    {
+      "order": 6,
+      "title": "收尾",
+      "body": {
+        "default": "漆未完全乾時撕除遮蔽膠帶，裝回蓋板，清潔。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "批土",
+      "materialId": "wall-putty",
+      "spec": "水性批土"
+    },
+    {
+      "name": "底漆",
+      "materialId": "alkali-resistant-primer"
+    },
+    {
+      "name": "乳膠漆或水泥漆",
+      "materialId": "latex-paint",
+      "qtyNote": "可用「油漆用量」計算機估算"
+    },
+    {
+      "name": "遮蔽膠帶、保護膜"
+    }
+  ],
+  "tools": [
+    {
+      "name": "滾筒、延長桿"
+    },
+    {
+      "name": "油漆刷"
+    },
+    {
+      "name": "刮刀"
+    },
+    {
+      "name": "砂紙（磨板）"
+    },
+    {
+      "name": "合梯"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "沒有研磨就上漆",
+      "consequence": "牆面粗糙、瑕疵明顯",
+      "prevention": "批土後確實研磨"
+    },
+    {
+      "mistake": "一次塗太厚",
+      "consequence": "流垂、乾燥慢",
+      "prevention": "薄塗多道"
+    },
+    {
+      "mistake": "壁癌直接蓋漆",
+      "consequence": "很快又剝落",
+      "prevention": "先處理水源"
+    },
+    {
+      "mistake": "膠帶太晚撕",
+      "consequence": "把漆一起撕下來",
+      "prevention": "漆半乾時撕"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "平整度",
+      "criteria": "側光下無明顯凹凸",
+      "method": "手電筒斜照"
+    },
+    {
+      "item": "色澤",
+      "criteria": "均勻無色差、無透底",
+      "method": "目視"
+    },
+    {
+      "item": "邊緣",
+      "criteria": "收邊整齊",
+      "method": "目視"
+    },
+    {
+      "item": "清潔",
+      "criteria": "無滴漆污染",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "研磨時戴口罩；施工期間保持通風。"
+    },
+    {
+      "level": "info",
+      "text": "使用合梯時，梯子要完全展開並鎖定。"
+    }
+  ],
+  "aliases": [
+    "刷油漆",
+    "牆面油漆",
+    "重新油漆",
+    "粉刷牆面"
+  ],
+  "duration": "一般房間約 2–3 天",
+  "relatedProcedureIds": [
+    "calcium-silicate-ceiling"
+  ],
+  "calculatorIds": [
+    "paint"
+  ]
+}

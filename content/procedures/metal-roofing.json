@@ -1,0 +1,194 @@
+{
+  "id": "metal-roofing",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "鋼構",
+    "屋頂"
+  ],
+  "difficulty": "master",
+  "title": "鐵皮屋頂（烤漆浪板）施工",
+  "summary": "以 C 型鋼桁條與烤漆浪板施作屋頂或雨遮",
+  "tradeIds": [
+    "steel"
+  ],
+  "overview": {
+    "default": "在鋼構骨架上配置 C 型鋼桁條，鋪設烤漆浪板並以附防水墊片的自攻螺絲固定，最後施作屋脊蓋板與收邊，確保不漏水。",
+    "beginner": "鐵皮屋頂施工最大的風險是「從屋頂摔落」，每年都有工安意外，安全措施絕對不能省。另外，加蓋可能涉及法規，施工前請先確認。",
+    "master": "骨架 → 桁條 → 浪板（順水搭接）→ 自攻螺絲（波峰）→ 屋脊、收邊 → 檢查。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "確認骨架與法規",
+      "body": {
+        "default": "確認鋼構骨架已完成並穩固；加蓋、增建依法規可能需申請，施工前確認。"
+      },
+      "keyPoints": [
+        "違章建築可能被拆除"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "配置桁條",
+      "body": {
+        "default": "依跨距與設計配置 C 型鋼桁條，固定於主樑上，並確保坡度足夠排水。",
+        "master": "桁條間距依浪板規格與荷重。"
+      },
+      "specs": [
+        {
+          "label": "屋頂坡度",
+          "value": "依浪板型式與設計，坡度不足易漏水"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "鋪設浪板",
+      "body": {
+        "default": "由屋簷往屋脊、順著雨水方向搭接；橫向搭接至少一個波以上，縱向搭接長度依設計。",
+        "beginner": "上面那片要蓋在下面那片上面，像屋瓦一樣，雨水才不會流進縫裡。"
+      },
+      "keyPoints": [
+        "順著主要風向與雨水方向搭接",
+        "切割用剪刀或專用工具"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "固定",
+      "body": {
+        "default": "自攻螺絲鎖在浪板的波峰（高處），使用附防水墊片的螺絲，力道適中。",
+        "beginner": "鎖在波谷的話，雨水正好流經螺絲孔，很容易漏水。",
+        "master": "鎖於波峰、防水墊片壓實但不壓壞。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "屋脊與收邊",
+      "body": {
+        "default": "施作屋脊蓋板、山牆收邊、簷口收邊與天溝，接縫處以密封材處理。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "清理與檢查",
+      "body": {
+        "default": "清除鐵屑（會生鏽留下鏽斑），灑水檢查有無漏水。"
+      },
+      "keyPoints": [
+        "鐵屑一定要掃乾淨"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "C 型鋼",
+      "materialId": "c-channel",
+      "spec": "桁條"
+    },
+    {
+      "name": "烤漆浪板",
+      "materialId": "metal-roofing-sheet",
+      "spec": "依設計板型"
+    },
+    {
+      "name": "自攻螺絲",
+      "spec": "附防水墊片"
+    },
+    {
+      "name": "屋脊蓋板、收邊料"
+    },
+    {
+      "name": "矽利康或防水膠",
+      "materialId": "silicone-sealant",
+      "spec": "接縫"
+    }
+  ],
+  "tools": [
+    {
+      "name": "電動起子（自攻螺絲用）"
+    },
+    {
+      "name": "浪板剪、浪板切割機"
+    },
+    {
+      "name": "捲尺、水線"
+    },
+    {
+      "name": "安全帶、救生索"
+    },
+    {
+      "name": "吊車或捲揚機"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "螺絲鎖在波谷",
+      "consequence": "漏水",
+      "prevention": "鎖在波峰並使用防水墊片"
+    },
+    {
+      "mistake": "搭接方向錯誤",
+      "consequence": "雨水灌入",
+      "prevention": "由下往上、順水搭接"
+    },
+    {
+      "mistake": "鐵屑沒清除",
+      "consequence": "鏽斑、穿孔",
+      "prevention": "施工後清掃"
+    },
+    {
+      "mistake": "坡度不足",
+      "consequence": "積水、漏水",
+      "prevention": "依板型確認最小坡度"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "搭接",
+      "criteria": "方向正確、長度足夠",
+      "method": "目視、量測"
+    },
+    {
+      "item": "螺絲",
+      "criteria": "位置在波峰、墊片完整",
+      "method": "目視"
+    },
+    {
+      "item": "收邊",
+      "criteria": "密合無縫隙",
+      "method": "目視"
+    },
+    {
+      "item": "漏水",
+      "criteria": "灑水無滲漏",
+      "method": "灑水測試"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "屋頂作業須設置安全母索並使用安全帶，嚴禁踩踏採光罩與老舊浪板。"
+    },
+    {
+      "level": "danger",
+      "text": "強風、下雨天不可在屋頂作業。"
+    },
+    {
+      "level": "warning",
+      "text": "浪板邊緣鋒利，戴手套搬運。"
+    }
+  ],
+  "aliases": [
+    "鐵皮屋",
+    "鐵皮屋頂",
+    "浪板屋頂",
+    "加蓋屋頂"
+  ],
+  "duration": "依面積，常見數天",
+  "relatedProcedureIds": [
+    "rust-proof-painting"
+  ]
+}

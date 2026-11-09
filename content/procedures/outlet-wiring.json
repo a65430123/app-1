@@ -1,7 +1,7 @@
 {
   "id": "outlet-wiring",
   "type": "procedure",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "水電",
@@ -236,5 +236,9 @@
       "title": "用戶用電設備裝置規則（經濟部）",
       "note": "實際規定以最新公告版本為準"
     }
+  ],
+  "relatedProcedureIds": [
+    "home-panel-check",
+    "renovation-sequence"
   ]
 }

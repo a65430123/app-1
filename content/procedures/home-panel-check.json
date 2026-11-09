@@ -1,0 +1,132 @@
+{
+  "id": "home-panel-check",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "安全",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "居家配電盤檢查",
+  "summary": "屋主也能做的配電盤日常檢查與漏電斷路器測試",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "overview": {
+    "default": "定期打開配電盤外蓋（不拆內部面板），確認各開關標示清楚、沒有異味或發熱，並按漏電斷路器的測試鈕確認會跳脫。",
+    "beginner": "這是屋主自己可以做的安全檢查，只看、只按測試鈕，不要拆面板或碰內部電線。發現異常請找合格電匠。",
+    "master": "標示 → 外觀 → 溫度／異味 → ELCB 測試 → 記錄。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "確認標示",
+      "body": {
+        "default": "每個開關都應標示控制的區域（例如：客廳插座、廚房、冷氣）。",
+        "beginner": "停電或跳電時，有標示才知道是哪一路出問題。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "外觀與異味",
+      "body": {
+        "default": "查看開關有無變色、焦黑、異音，聞看看有沒有燒焦味。"
+      },
+      "keyPoints": [
+        "有焦味或變色，立即找電匠"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "測試漏電斷路器",
+      "body": {
+        "default": "按下漏電斷路器上的「TEST」測試鈕，應會立即跳脫；再把開關扳回。",
+        "beginner": "按了沒反應，代表漏電保護可能已經失效，要請電匠更換。"
+      },
+      "specs": [
+        {
+          "label": "建議頻率",
+          "value": "每月一次"
+        }
+      ],
+      "keyPoints": [
+        "測試會讓該迴路斷電，先關掉電腦等設備"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "記錄",
+      "body": {
+        "default": "記下檢查日期與結果，常跳電的迴路請電匠檢查負載。"
+      }
+    }
+  ],
+  "materials": [],
+  "tools": [
+    {
+      "name": "手電筒"
+    },
+    {
+      "name": "紙筆或手機記錄"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "自己拆開內部面板",
+      "consequence": "觸電危險",
+      "prevention": "只開外蓋，不碰內部"
+    },
+    {
+      "mistake": "常跳電就換大一點的開關",
+      "consequence": "電線過熱引起火災",
+      "prevention": "找電匠檢查負載與線徑"
+    },
+    {
+      "mistake": "從不測試漏電斷路器",
+      "consequence": "失效也不知道",
+      "prevention": "每月按一次測試鈕"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "標示",
+      "criteria": "每個開關都有標示",
+      "method": "目視"
+    },
+    {
+      "item": "外觀",
+      "criteria": "無焦黑、變色",
+      "method": "目視、聞"
+    },
+    {
+      "item": "漏電斷路器",
+      "criteria": "按測試鈕會跳脫",
+      "method": "按 TEST"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "不要拆開配電盤內部面板，也不要用手或金屬碰觸內部。"
+    },
+    {
+      "level": "warning",
+      "text": "手濕時不要操作開關。"
+    }
+  ],
+  "aliases": [
+    "配電盤",
+    "電箱",
+    "總開關",
+    "跳電"
+  ],
+  "duration": "約 10 分鐘",
+  "relatedTermIds": [
+    "elcb"
+  ],
+  "relatedProcedureIds": [
+    "outlet-wiring"
+  ]
+}

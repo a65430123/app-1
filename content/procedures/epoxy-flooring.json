@@ -1,0 +1,158 @@
+{
+  "id": "epoxy-flooring",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆",
+    "地坪"
+  ],
+  "difficulty": "master",
+  "title": "環氧樹脂地坪施作",
+  "summary": "停車場、廠房常用的環氧樹脂（Epoxy）地坪施工",
+  "tradeIds": [
+    "painting",
+    "interior"
+  ],
+  "overview": {
+    "default": "研磨清潔混凝土地面並修補後，依序施作底漆、中塗（加砂或批土整平）與面漆，形成耐磨、易清潔的無縫地坪。",
+    "beginner": "地面的濕氣和清潔度決定成敗：地下水氣太大會讓地坪起泡剝落。",
+    "master": "含水率檢測 → 研磨 → 吸塵 → 修補 → 底漆 → 中塗 → 研磨 → 面漆 → 養護。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "檢測與研磨",
+      "body": {
+        "default": "確認混凝土強度與含水率，以研磨機去除浮漿與舊塗層，吸塵清潔。"
+      },
+      "keyPoints": [
+        "含水率過高不可施作"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "修補",
+      "body": {
+        "default": "裂縫、坑洞以環氧樹脂砂漿修補。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "底漆",
+      "body": {
+        "default": "主劑與硬化劑依比例混合，滾塗底漆使其滲入地面。"
+      },
+      "waitTime": "依產品，常見隔日"
+    },
+    {
+      "order": 4,
+      "title": "中塗",
+      "body": {
+        "default": "以環氧樹脂加石英砂或批土整平，形成足夠厚度。",
+        "master": "中塗厚度依系統設計，乾後研磨。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "面漆",
+      "body": {
+        "default": "研磨清潔後施作面漆（薄塗或自流平），需要止滑處加止滑砂。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "養護",
+      "body": {
+        "default": "依產品養護，期間禁止通行與放置重物。"
+      },
+      "waitTime": "可步行與可行車時間依產品"
+    }
+  ],
+  "materials": [
+    {
+      "name": "環氧樹脂（底漆、中塗、面漆）",
+      "materialId": "epoxy-floor-coating"
+    },
+    {
+      "name": "石英砂",
+      "spec": "中塗、止滑"
+    }
+  ],
+  "tools": [
+    {
+      "name": "地坪研磨機"
+    },
+    {
+      "name": "工業吸塵器"
+    },
+    {
+      "name": "攪拌器"
+    },
+    {
+      "name": "鏝刀、滾筒、釘鞋"
+    },
+    {
+      "name": "含水率計"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "含水率過高仍施工",
+      "consequence": "起泡、剝離",
+      "prevention": "先檢測，必要時改用透氣系統"
+    },
+    {
+      "mistake": "比例錯誤或攪拌不均",
+      "consequence": "不硬化、發黏",
+      "prevention": "依比例秤量並充分攪拌"
+    },
+    {
+      "mistake": "研磨不足",
+      "consequence": "附著不良",
+      "prevention": "確實研磨至新鮮面"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "含水率",
+      "criteria": "符合產品要求",
+      "method": "含水率計"
+    },
+    {
+      "item": "外觀",
+      "criteria": "無起泡、針孔、色差",
+      "method": "目視"
+    },
+    {
+      "item": "厚度",
+      "criteria": "符合設計",
+      "method": "量測"
+    },
+    {
+      "item": "止滑",
+      "criteria": "坡道等處有止滑處理",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "溶劑型產品易燃，施工中嚴禁煙火並保持通風。"
+    },
+    {
+      "level": "warning",
+      "text": "戴防毒口罩、手套與護目鏡。"
+    }
+  ],
+  "aliases": [
+    "Epoxy",
+    "環氧地坪",
+    "EPOXY",
+    "停車場地坪"
+  ],
+  "duration": "約 3–5 天（含養護）",
+  "relatedProcedureIds": [
+    "self-leveling-floor"
+  ]
+}

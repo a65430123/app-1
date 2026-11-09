@@ -1,0 +1,154 @@
+{
+  "id": "crack-injection",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "防水",
+    "抓漏"
+  ],
+  "difficulty": "master",
+  "title": "混凝土裂縫灌注止漏",
+  "summary": "以 PU 止水劑高壓灌注，止住混凝土裂縫滲漏",
+  "tradeIds": [
+    "waterproofing"
+  ],
+  "overview": {
+    "default": "找出滲水裂縫後，沿縫兩側斜向鑽孔與裂縫交會，埋設止水針頭，以高壓灌注機注入 PU 止水劑，使其在裂縫中發泡堵住水路。",
+    "beginner": "俗稱「打針」。可以從室內止漏、不必打掉磁磚，但它是止漏不是根治，找錯漏水路徑就沒效。",
+    "master": "判斷漏水路徑 → 交叉斜鑽 → 清孔 → 埋針 → 由下往上灌注 → 觀察 → 拆針封孔。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "判斷漏水路徑",
+      "body": {
+        "default": "觀察滲水位置、時間（下雨或用水時），判斷水源與裂縫走向。"
+      },
+      "keyPoints": [
+        "漏水處不一定是進水處，必要時做試水"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "鑽孔",
+      "body": {
+        "default": "在裂縫兩側交錯斜向鑽孔，使孔與裂縫在牆體內部交會。"
+      },
+      "specs": [
+        {
+          "label": "孔距",
+          "value": "依裂縫寬度與牆厚（常見約 15–30 cm）"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "清孔與埋針",
+      "body": {
+        "default": "清除孔內粉塵，埋設止水針頭並鎖緊。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "灌注",
+      "body": {
+        "default": "由低處往高處逐孔灌注，直到相鄰孔或裂縫表面出料。",
+        "master": "由下而上、逐孔灌注，觀察出料。"
+      },
+      "keyPoints": [
+        "注意壓力，避免灌注材從其他地方噴出"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "觀察與收尾",
+      "body": {
+        "default": "觀察滲水是否停止，必要時補灌；確認後拆除針頭並封孔修補。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "PU 止水劑",
+      "materialId": "pu-grout",
+      "spec": "親水性或疏水性"
+    },
+    {
+      "name": "止水針頭"
+    },
+    {
+      "name": "修補砂漿",
+      "materialId": "premixed-mortar",
+      "spec": "封孔"
+    }
+  ],
+  "tools": [
+    {
+      "name": "高壓灌注機"
+    },
+    {
+      "name": "電鑽（鑽頭）"
+    },
+    {
+      "name": "吹塵器"
+    },
+    {
+      "name": "扳手"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "漏水路徑判斷錯誤",
+      "consequence": "灌了也沒用",
+      "prevention": "先試水、觀察確認"
+    },
+    {
+      "mistake": "鑽孔沒有與裂縫交會",
+      "consequence": "止水劑灌不進裂縫",
+      "prevention": "斜鑽交會"
+    },
+    {
+      "mistake": "期待一次根治",
+      "consequence": "過一陣子又漏",
+      "prevention": "搭配外側防水或定期追蹤"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "出料",
+      "criteria": "相鄰孔或裂縫有出料",
+      "method": "目視"
+    },
+    {
+      "item": "止漏",
+      "criteria": "滲水停止",
+      "method": "觀察、下雨後再確認"
+    },
+    {
+      "item": "收尾",
+      "criteria": "針孔封補平整",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "高壓灌注可能噴濺，必須戴護目鏡與手套。"
+    },
+    {
+      "level": "warning",
+      "text": "鑽孔前確認牆內無電線、水管。"
+    }
+  ],
+  "aliases": [
+    "打針",
+    "抓漏",
+    "灌注止漏",
+    "高壓灌注"
+  ],
+  "duration": "依裂縫長度，常見半天至 1 天",
+  "relatedProcedureIds": [
+    "roof-pu-waterproofing"
+  ]
+}

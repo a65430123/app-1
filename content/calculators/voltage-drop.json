@@ -1,6 +1,6 @@
 {
   "id": "voltage-drop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "水電"
@@ -102,7 +102,8 @@
     "實際依用戶用電設備裝置規則與專業技師判斷"
   ],
   "relatedProcedureIds": [
-    "outlet-wiring"
+    "outlet-wiring",
+    "split-ac-installation"
   ],
   "aliases": [
     "線徑",

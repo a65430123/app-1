@@ -1,7 +1,7 @@
 {
   "id": "waterproof-coating",
   "type": "procedure",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "防水",
@@ -181,6 +181,9 @@
     "yang-hu"
   ],
   "relatedProcedureIds": [
-    "tile-laying"
+    "tile-laying",
+    "silicone-resealing",
+    "roof-pu-waterproofing",
+    "wall-tiling"
   ]
 }

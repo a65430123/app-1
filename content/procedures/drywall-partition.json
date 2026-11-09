@@ -1,0 +1,168 @@
+{
+  "id": "drywall-partition",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "木作",
+    "隔間"
+  ],
+  "difficulty": "intermediate",
+  "title": "輕隔間牆施工",
+  "summary": "以輕鋼架骨架、兩面封板並填隔音材的乾式隔間牆",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "overview": {
+    "default": "在地面與天花放樣，安裝上下槽鐵與立柱，先封一面板材，配管配線後填入隔音材，再封另一面，最後處理接縫。",
+    "beginner": "輕隔間施工快、重量輕，但隔音效果取決於內部有沒有填隔音材、縫隙有沒有封好。",
+    "master": "放樣 → 上下槽 → 立柱 → 單面封板 → 水電 → 隔音材 → 另一面封板 → 接縫。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣",
+      "body": {
+        "default": "在地面與天花彈出牆位置線，標示門框位置。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "上下槽與立柱",
+      "body": {
+        "default": "固定上下槽鐵，依間距插入立柱，門窗開口處加強。"
+      },
+      "specs": [
+        {
+          "label": "立柱間距（常見）",
+          "value": "約 40–60 cm（依板材與設計）"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "單面封板",
+      "body": {
+        "default": "先封一面石膏板或矽酸鈣板，以螺絲固定。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "水電配管",
+      "body": {
+        "default": "在牆內配管、配線，預留插座、開關出線盒。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "填隔音材",
+      "body": {
+        "default": "填入岩棉或玻璃棉等隔音材，填滿不留空隙。",
+        "beginner": "隔音材塞得越滿越密，隔音效果越好。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "另一面封板與接縫",
+      "body": {
+        "default": "封另一面板材（板縫與第一面錯開），接縫貼網帶、批土。"
+      },
+      "keyPoints": [
+        "吊掛櫃體、電視的位置先在牆內加強骨架"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "輕鋼架（上下槽、立柱）",
+      "materialId": "light-gauge-steel-frame"
+    },
+    {
+      "name": "石膏板或矽酸鈣板",
+      "materialId": "gypsum-board"
+    },
+    {
+      "name": "岩棉或玻璃棉",
+      "spec": "隔音"
+    },
+    {
+      "name": "批土、網帶",
+      "materialId": "wall-putty"
+    }
+  ],
+  "tools": [
+    {
+      "name": "雷射水平儀"
+    },
+    {
+      "name": "電動起子"
+    },
+    {
+      "name": "板材切割刀"
+    },
+    {
+      "name": "鐵剪"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "沒填隔音材",
+      "consequence": "隔音差",
+      "prevention": "全面填實"
+    },
+    {
+      "mistake": "要掛重物處沒加強",
+      "consequence": "櫃子、電視掉落",
+      "prevention": "預先在牆內加強"
+    },
+    {
+      "mistake": "上下縫隙沒封",
+      "consequence": "聲音從縫隙傳過去",
+      "prevention": "以密封材封邊"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "垂直度",
+      "criteria": "符合規範",
+      "method": "雷射、垂直尺"
+    },
+    {
+      "item": "隔音材",
+      "criteria": "填滿無空隙",
+      "method": "封板前拍照記錄"
+    },
+    {
+      "item": "接縫",
+      "criteria": "平整無裂縫",
+      "method": "目視"
+    },
+    {
+      "item": "加強位置",
+      "criteria": "有標示並記錄",
+      "method": "照片"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "岩棉、玻璃棉施工戴口罩、手套、長袖。"
+    },
+    {
+      "level": "warning",
+      "text": "切割輕鋼架邊緣鋒利，戴手套。"
+    }
+  ],
+  "aliases": [
+    "輕隔間",
+    "乾式隔間",
+    "石膏板隔間",
+    "隔間牆"
+  ],
+  "duration": "一面牆約 1–3 天",
+  "relatedProcedureIds": [
+    "calcium-silicate-ceiling",
+    "brick-wall"
+  ]
+}

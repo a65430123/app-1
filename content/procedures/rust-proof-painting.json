@@ -1,0 +1,153 @@
+{
+  "id": "rust-proof-painting",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "油漆",
+    "鋼構",
+    "防鏽"
+  ],
+  "difficulty": "beginner",
+  "title": "鐵件除鏽與防鏽塗裝",
+  "summary": "鐵門、欄杆、鐵窗的除鏽與重新上漆",
+  "tradeIds": [
+    "painting",
+    "steel"
+  ],
+  "overview": {
+    "default": "將鐵件上的鏽與舊漆去除，清潔後塗防鏽底漆，再塗兩道面漆，延長鐵件壽命。",
+    "beginner": "防鏽塗裝的關鍵在「除鏽」：鏽沒清乾淨就上漆，過不久會從漆底下再鏽出來。",
+    "master": "除鏽（St 2/St 3 手工具或噴砂）→ 除油 → 防鏽底漆 → 面漆 2 道。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "保護周邊",
+      "body": {
+        "default": "地面與牆面以帆布、遮蔽膠帶保護。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "除鏽",
+      "body": {
+        "default": "以鋼刷、砂紙、電動鋼刷或砂輪片去除鏽斑與剝落舊漆，直到露出金屬面或牢固的舊漆。",
+        "master": "去除浮鏽與鬆動舊漆，牢固舊漆打毛。"
+      },
+      "keyPoints": [
+        "角落、接縫處最容易殘留鏽"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "清潔除油",
+      "body": {
+        "default": "清除粉塵，以溶劑或清潔劑去除油污，待乾燥。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "塗防鏽底漆",
+      "body": {
+        "default": "均勻塗佈防鏽底漆，鏽蝕嚴重處可補塗一道。"
+      },
+      "waitTime": "依產品乾燥時間"
+    },
+    {
+      "order": 5,
+      "title": "塗面漆",
+      "body": {
+        "default": "依產品說明塗 2 道面漆，兩道之間等乾燥。"
+      },
+      "waitTime": "依產品乾燥時間"
+    }
+  ],
+  "materials": [
+    {
+      "name": "防鏽底漆",
+      "materialId": "anti-rust-primer",
+      "spec": "依鐵件與環境"
+    },
+    {
+      "name": "面漆",
+      "spec": "油性調合漆或適用的金屬漆"
+    },
+    {
+      "name": "稀釋劑",
+      "spec": "依產品"
+    }
+  ],
+  "tools": [
+    {
+      "name": "鋼刷、砂紙"
+    },
+    {
+      "name": "電動鋼刷或砂輪機"
+    },
+    {
+      "name": "油漆刷、小滾筒"
+    },
+    {
+      "name": "遮蔽膠帶、帆布"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "鏽沒除乾淨",
+      "consequence": "漆膜下再生鏽、起泡",
+      "prevention": "除鏽到牢固面"
+    },
+    {
+      "mistake": "直接在鍍鋅面上塗一般漆",
+      "consequence": "漆膜剝落",
+      "prevention": "使用鍍鋅面適用底漆"
+    },
+    {
+      "mistake": "下雨天或濕度高時施工",
+      "consequence": "附著不良、反白",
+      "prevention": "選擇乾燥天氣"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "除鏽",
+      "criteria": "無浮鏽、無鬆動舊漆",
+      "method": "目視、刮擦"
+    },
+    {
+      "item": "漆膜",
+      "criteria": "均勻、無漏塗、無流垂",
+      "method": "目視"
+    },
+    {
+      "item": "道數",
+      "criteria": "底漆 1 道＋面漆 2 道",
+      "method": "施工記錄"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "使用砂輪機戴護目鏡、手套，注意火花。"
+    },
+    {
+      "level": "warning",
+      "text": "溶劑型油漆施工須通風、禁煙火。"
+    },
+    {
+      "level": "info",
+      "text": "高處作業使用穩固的梯子或施工架。"
+    }
+  ],
+  "aliases": [
+    "除鏽",
+    "鐵門油漆",
+    "鐵件油漆",
+    "防鏽漆"
+  ],
+  "duration": "約 1–2 天",
+  "relatedProcedureIds": [
+    "metal-roofing"
+  ]
+}

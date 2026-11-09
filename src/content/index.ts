@@ -25,6 +25,7 @@ export const builtinBundle: ContentBundle = {
   minAppVersion: builtinMeta.minAppVersion,
   publishedAt: builtinMeta.publishedAt,
   materialCategories: builtinMeta.materialCategories,
+  featuredProcedures: builtinMeta.featuredProcedures,
   data: {
     trades: load<Trade>(import.meta.glob('/content/trades/*.json', { eager: true, import: 'default' }), 'trade'),
     procedures: load<Procedure>(import.meta.glob('/content/procedures/*.json', { eager: true, import: 'default' }), 'procedure'),
@@ -41,6 +42,8 @@ export let terms: Term[] = [];
 export let calculators: CalculatorMeta[] = [];
 /** 材料分類（依內容設定的順序；未列出的依名稱排在後面） */
 export let materialCategories: string[] = [];
+/** 首頁精選工序（依內容設定；沒設定時取前 6 筆） */
+export let featuredProcedures: Procedure[] = [];
 export let activeContent: { version: string; publishedAt: string; source: 'builtin' | 'remote' } = {
   version: builtinBundle.contentVersion,
   publishedAt: builtinBundle.publishedAt,
@@ -69,6 +72,8 @@ export function applyBundle(b: ContentBundle, source: 'builtin' | 'remote') {
   calculators = published(b.data.calculators);
   const order = b.materialCategories ?? [];
   const extra = [...new Set(materials.map((m) => m.category))].filter((c) => !order.includes(c)).sort((x, y) => x.localeCompare(y, 'zh-Hant-TW'));
+  const featured = (b.featuredProcedures ?? []).map((id) => procedures.find((p) => p.id === id)).filter((p): p is Procedure => !!p);
+  featuredProcedures = featured.length ? featured : procedures.slice(0, 6);
   materialCategories = [...order.filter((c) => materials.some((m) => m.category === c)), ...extra];
   maps = { trade: index(trades), procedure: index(procedures), material: index(materials), term: index(terms), calculator: index(calculators) };
   activeContent = { version: b.contentVersion, publishedAt: b.publishedAt, source };

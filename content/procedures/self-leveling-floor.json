@@ -1,0 +1,156 @@
+{
+  "id": "self-leveling-floor",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "地坪"
+  ],
+  "difficulty": "intermediate",
+  "title": "自平水泥地坪",
+  "summary": "以自平水泥找平地面，作為木地板、塑膠地板的底層",
+  "tradeIds": [
+    "masonry",
+    "interior"
+  ],
+  "overview": {
+    "default": "清潔研磨地面、塗佈界面劑後，將拌好的自平水泥倒在地面，以刮板推開，讓它自行流平，形成平整的底層。",
+    "beginner": "鋪木地板或塑膠地板前，地面越平，完成後越不會有踩起來咚咚響或凹凸的問題。",
+    "master": "研磨清潔 → 修補 → 界面劑 → 定量攪拌 → 澆倒刮平 → 消泡 → 養護。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "基面處理",
+      "body": {
+        "default": "研磨去除浮漿、油污與起砂部分，大裂縫與坑洞先修補，吸塵清潔。"
+      },
+      "keyPoints": [
+        "起砂地面一定要處理"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "塗佈界面劑",
+      "body": {
+        "default": "依產品說明塗佈底塗（界面劑），封住毛細孔並增加附著。",
+        "beginner": "不塗界面劑，地面會把自平水泥的水吸走，產生氣泡和剝離。"
+      },
+      "waitTime": "依產品說明乾燥時間"
+    },
+    {
+      "order": 3,
+      "title": "攪拌",
+      "body": {
+        "default": "依產品標示的加水量，用電動攪拌器攪拌均勻。",
+        "master": "精準加水量、攪拌至無結塊。"
+      },
+      "keyPoints": [
+        "用量杯量水，不要憑感覺"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "澆倒與刮平",
+      "body": {
+        "default": "分區連續澆倒，以齒刮板推開到設定厚度，再用消泡滾筒滾壓。"
+      },
+      "specs": [
+        {
+          "label": "厚度",
+          "value": "依產品，常見約 3–10 mm"
+        }
+      ],
+      "keyPoints": [
+        "前後兩批要在材料還能流動時接上，避免接痕"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "養護",
+      "body": {
+        "default": "施工中與完成後避免強風直吹與日曬，依產品時間後才可行走與鋪設地板。"
+      },
+      "waitTime": "可步行常見數小時；鋪設地板依產品與含水率"
+    }
+  ],
+  "materials": [
+    {
+      "name": "自平水泥",
+      "materialId": "self-leveling-compound"
+    },
+    {
+      "name": "界面劑（底塗）"
+    }
+  ],
+  "tools": [
+    {
+      "name": "電動攪拌器"
+    },
+    {
+      "name": "齒刮板"
+    },
+    {
+      "name": "消泡滾筒"
+    },
+    {
+      "name": "釘鞋"
+    },
+    {
+      "name": "研磨機、吸塵器"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "沒有塗界面劑",
+      "consequence": "起泡、剝離",
+      "prevention": "依產品塗佈底塗"
+    },
+    {
+      "mistake": "加水過多",
+      "consequence": "表面起砂、強度不足、分層",
+      "prevention": "依標示精準加水"
+    },
+    {
+      "mistake": "一次倒太厚或太薄",
+      "consequence": "開裂或無法流平",
+      "prevention": "依產品建議厚度"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "平整度",
+      "criteria": "符合鋪設地板需求",
+      "method": "2 m 靠尺"
+    },
+    {
+      "item": "表面",
+      "criteria": "無起砂、氣泡",
+      "method": "目視、手刮"
+    },
+    {
+      "item": "厚度",
+      "criteria": "符合設計",
+      "method": "量測"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "研磨時戴防塵口罩、護目鏡。"
+    },
+    {
+      "level": "info",
+      "text": "攪拌時注意電線與漏電保護。"
+    }
+  ],
+  "aliases": [
+    "自流平",
+    "地板找平"
+  ],
+  "duration": "約 1–2 天（含底塗乾燥）",
+  "relatedProcedureIds": [
+    "tile-laying"
+  ]
+}

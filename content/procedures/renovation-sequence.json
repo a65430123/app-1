@@ -1,0 +1,176 @@
+{
+  "id": "renovation-sequence",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "裝修",
+    "工序",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "室內裝修工序安排",
+  "summary": "老屋翻新、新屋裝修的施工順序與各階段重點",
+  "tradeIds": [
+    "interior"
+  ],
+  "overview": {
+    "default": "室內裝修牽涉多個工種，順序大致為：拆除 → 水電配管 → 泥作（防水、砌牆、貼磚）→ 空調配管 → 木作 → 油漆 → 系統櫃與廚具 → 地板 → 燈具設備安裝 → 清潔 → 驗收。順序錯了常導致重工。",
+    "beginner": "原則是「先藏後露、先濕後乾、先粗後細」：埋在牆裡的管線先做，有水的泥作先做，最後才是怕髒怕碰的油漆、地板和家具。",
+    "master": "拆除 → 水電 → 泥作 → 空調 → 木作 → 油漆 → 系統櫃／廚具 → 地板 → 燈具、設備 → 清潔 → 驗收。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "規劃與申請",
+      "body": {
+        "default": "確認需求、預算、設計圖與工期；集合住宅需向管委會申請，涉及結構或外觀變更依法規辦理。"
+      },
+      "keyPoints": [
+        "保護電梯、公共走道",
+        "不可任意拆除結構牆、柱、樑"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "拆除",
+      "body": {
+        "default": "拆除舊裝修、磁磚與設備，清運廢棄物。",
+        "beginner": "拆除後常會發現原本看不到的問題（漏水、管線老舊），預算要留一點彈性。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "水電配管",
+      "body": {
+        "default": "依新配置重拉電線與給排水管，完成後打壓測試、拍照記錄管線位置。",
+        "master": "封牆前打壓並拍照存證。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "泥作",
+      "body": {
+        "default": "浴室與陽台防水、砌牆、粉刷、貼磚。",
+        "master": "防水試水合格後才貼磚。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "空調配管",
+      "body": {
+        "default": "冷媒管、排水管與電源，配合天花高度。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "木作",
+      "body": {
+        "default": "天花板、隔間、木作櫃。"
+      }
+    },
+    {
+      "order": 7,
+      "title": "油漆",
+      "body": {
+        "default": "批土、研磨、上漆。",
+        "beginner": "油漆排在木作之後、地板之前，才不會被其他工程弄髒。"
+      }
+    },
+    {
+      "order": 8,
+      "title": "系統櫃、廚具、地板",
+      "body": {
+        "default": "安裝系統櫃、廚具與木地板等。"
+      }
+    },
+    {
+      "order": 9,
+      "title": "燈具與設備安裝",
+      "body": {
+        "default": "燈具、插座面板、衛浴設備、冷氣室內機安裝與測試。"
+      }
+    },
+    {
+      "order": 10,
+      "title": "細部清潔與驗收",
+      "body": {
+        "default": "全室清潔後逐項驗收，列出缺失請各工種改善。"
+      }
+    }
+  ],
+  "materials": [],
+  "tools": [
+    {
+      "name": "工程進度表"
+    },
+    {
+      "name": "各工種聯絡表"
+    },
+    {
+      "name": "照片記錄（手機）"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "先做木作再做水電",
+      "consequence": "木作要拆掉重來",
+      "prevention": "先藏後露"
+    },
+    {
+      "mistake": "浴室沒試水就貼磚",
+      "consequence": "漏水需打掉重做",
+      "prevention": "防水試水後再貼磚"
+    },
+    {
+      "mistake": "管線沒拍照記錄",
+      "consequence": "日後鑽牆打到水管電線",
+      "prevention": "封牆前拍照並標示尺寸"
+    },
+    {
+      "mistake": "油漆後才做重工程",
+      "consequence": "牆面撞傷、髒污",
+      "prevention": "油漆排在後段"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "工序順序",
+      "criteria": "依先藏後露原則",
+      "method": "核對進度表"
+    },
+    {
+      "item": "各階段查驗",
+      "criteria": "水電打壓、防水試水等有記錄",
+      "method": "照片與記錄"
+    },
+    {
+      "item": "公共區域保護",
+      "criteria": "電梯、走道有保護",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "拆除時注意粉塵與噪音，遵守社區施工時間。"
+    },
+    {
+      "level": "warning",
+      "text": "不可拆除結構牆、柱、樑；不確定時請結構技師判斷。"
+    }
+  ],
+  "aliases": [
+    "裝潢順序",
+    "裝修流程",
+    "老屋翻新",
+    "統包"
+  ],
+  "duration": "一般住宅全室翻新常見 1.5–3 個月",
+  "relatedProcedureIds": [
+    "handover-inspection",
+    "water-supply-piping",
+    "waterproof-coating",
+    "wall-repainting"
+  ]
+}

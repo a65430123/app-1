@@ -1,0 +1,172 @@
+{
+  "id": "handover-inspection",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "裝修",
+    "驗收",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "裝修完工驗收",
+  "summary": "屋主驗收新屋或裝修完工時的檢查重點與方法",
+  "tradeIds": [
+    "interior"
+  ],
+  "overview": {
+    "default": "裝修完成或新屋交屋時，依項目逐一檢查：磁磚、牆面、門窗、水電、給排水、防水與設備，記錄缺失並要求改善。",
+    "beginner": "驗收不需要很專業，只要帶對工具、照順序檢查、拍照記錄就能找到大部分問題。",
+    "master": "準備工具 → 外觀 → 磁磚空心 → 門窗 → 插座 → 給排水 → 防水 → 設備 → 缺失清單。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "準備工具",
+      "body": {
+        "default": "敲擊棒（或硬幣）、插座測試器、水平尺、手電筒、紙膠帶（標記缺失）、手機（拍照）。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "牆面與天花",
+      "body": {
+        "default": "用手電筒斜照牆面，看平整度、裂縫、油漆是否均勻。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "磁磚",
+      "body": {
+        "default": "以敲擊棒輕敲地磚與壁磚，聽是否有空心聲；檢查高低差與磚縫。",
+        "beginner": "聲音悶悶的、跟旁邊不一樣，就是空心，用紙膠帶標記起來。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "門窗",
+      "body": {
+        "default": "每扇門窗開關數次，檢查是否順暢、密合、鎖具正常。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "電",
+      "body": {
+        "default": "以插座測試器逐一測試插座極性與接地，開關每一盞燈，測試漏電斷路器。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "給排水",
+      "body": {
+        "default": "打開所有水龍頭看水壓與冷熱水，同時放水檢查排水是否順暢、有無倒灌異味。"
+      }
+    },
+    {
+      "order": 7,
+      "title": "防水",
+      "body": {
+        "default": "浴室、陽台放水一段時間，檢查樓下或隔壁牆面有無滲水。"
+      }
+    },
+    {
+      "order": 8,
+      "title": "缺失清單",
+      "body": {
+        "default": "將所有缺失拍照、標示位置、列成清單，請廠商在期限內改善並複驗；確認保固內容與期限。"
+      },
+      "keyPoints": [
+        "保固書、竣工圖、管線照片要保存"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "紙膠帶",
+      "spec": "標記缺失"
+    }
+  ],
+  "tools": [
+    {
+      "name": "敲擊棒"
+    },
+    {
+      "name": "插座測試器"
+    },
+    {
+      "name": "水平尺"
+    },
+    {
+      "name": "手電筒"
+    },
+    {
+      "name": "手機（拍照、手電筒）"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看外觀不實測",
+      "consequence": "水電問題入住後才發現",
+      "prevention": "每個插座、水龍頭都實測"
+    },
+    {
+      "mistake": "口頭要求修改",
+      "consequence": "責任不清",
+      "prevention": "書面缺失清單並拍照"
+    },
+    {
+      "mistake": "沒有要保固文件",
+      "consequence": "日後維修爭議",
+      "prevention": "索取保固書與管線照片"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "磁磚空心",
+      "criteria": "無明顯空心",
+      "method": "敲擊"
+    },
+    {
+      "item": "插座",
+      "criteria": "極性與接地正常",
+      "method": "插座測試器"
+    },
+    {
+      "item": "排水",
+      "criteria": "順暢無異味",
+      "method": "放水"
+    },
+    {
+      "item": "門窗",
+      "criteria": "開關順暢、密合",
+      "method": "實際操作"
+    },
+    {
+      "item": "文件",
+      "criteria": "保固書、竣工圖齊全",
+      "method": "清點"
+    }
+  ],
+  "safety": [
+    {
+      "level": "info",
+      "text": "驗收時注意腳下，避免被施工遺留物絆倒。"
+    }
+  ],
+  "aliases": [
+    "驗屋",
+    "交屋",
+    "驗收",
+    "點交"
+  ],
+  "duration": "一般住宅約 2–4 小時",
+  "relatedTermIds": [
+    "kong-xin",
+    "elcb"
+  ],
+  "relatedProcedureIds": [
+    "renovation-sequence",
+    "home-panel-check"
+  ]
+}

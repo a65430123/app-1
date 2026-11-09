@@ -1,0 +1,190 @@
+{
+  "id": "formwork",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構",
+    "模板"
+  ],
+  "difficulty": "master",
+  "title": "模板組立與拆除",
+  "summary": "組立讓混凝土成形的模板與支撐，並在強度足夠後依序拆除",
+  "tradeIds": [
+    "structure"
+  ],
+  "overview": {
+    "default": "依圖面組立柱、樑、牆、樓板的模板與支撐系統，確保尺寸、垂直、水平與穩固；混凝土達到足夠強度後，依順序拆除。",
+    "beginner": "模板是混凝土的「模具」，支撐不夠的話，灌漿時整個模板可能爆開或倒塌，非常危險。",
+    "master": "放樣 → 組立側模／底模 → 支撐與斜撐 → 尺寸與垂直校正 → 預留孔、預埋件 → 查驗 → 澆置 → 依強度拆模。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣",
+      "body": {
+        "default": "依圖彈出柱、牆位置線與控制線。"
+      },
+      "keyPoints": [
+        "以控制線複核，避免誤差累積"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "組立模板",
+      "body": {
+        "default": "依序組立柱、牆、樑側模與樓板底模，接縫要密合。",
+        "master": "接縫密合、繫結螺栓間距依設計。"
+      },
+      "keyPoints": [
+        "接縫不密會漏漿造成蜂窩",
+        "塗脫模劑方便拆模"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "支撐與加固",
+      "body": {
+        "default": "設置支撐、斜撐與繫結，支撐底部要穩固。",
+        "beginner": "支撐就像桌腳，底下要墊穩，不能放在鬆軟的土上。"
+      },
+      "specs": [
+        {
+          "label": "支撐",
+          "value": "依模板設計圖（間距、斜撐、繫結）"
+        }
+      ],
+      "keyPoints": [
+        "支撐下方墊板，避免沉陷",
+        "高支撐須依設計並檢討"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "預留與預埋",
+      "body": {
+        "default": "配合水電、空調預留開口與套管，預埋件定位。",
+        "master": "套管、開口、預埋鐵件定位並固定。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "校正與查驗",
+      "body": {
+        "default": "檢查尺寸、垂直度、水平高程與支撐穩固，申請查驗。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "拆模",
+      "body": {
+        "default": "混凝土達到規定強度後拆模：一般先拆不承重的側模，再拆樓板與樑的底模支撐。",
+        "beginner": "太早拆模，混凝土還不夠硬，可能會裂開甚至塌下來。",
+        "master": "側模先拆；底模依強度與規範，必要時保留或回撐。"
+      },
+      "waitTime": "依規範與混凝土強度（底模通常需較長時間）"
+    }
+  ],
+  "materials": [
+    {
+      "name": "模板",
+      "spec": "木模板、鋼模板或系統模板"
+    },
+    {
+      "name": "支撐",
+      "spec": "鋼管支撐、可調式支撐"
+    },
+    {
+      "name": "脫模劑"
+    },
+    {
+      "name": "繫結螺栓、隔件"
+    }
+  ],
+  "tools": [
+    {
+      "name": "圓鋸、鐵鎚"
+    },
+    {
+      "name": "雷射水平儀、鉛錘"
+    },
+    {
+      "name": "捲尺、墨斗"
+    },
+    {
+      "name": "扳手"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "支撐不足或底部不穩",
+      "consequence": "澆置時模板爆模、倒塌",
+      "prevention": "依模板設計配置支撐，底部墊實"
+    },
+    {
+      "mistake": "接縫不密",
+      "consequence": "漏漿造成蜂窩、麻面",
+      "prevention": "接縫密合或封縫"
+    },
+    {
+      "mistake": "太早拆底模",
+      "consequence": "混凝土開裂、下垂甚至崩塌",
+      "prevention": "依規範與強度拆模，必要時回撐"
+    },
+    {
+      "mistake": "預留孔遺漏",
+      "consequence": "事後打鑿破壞結構",
+      "prevention": "澆置前與各工種會勘確認"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "尺寸",
+      "criteria": "符合設計",
+      "method": "量測"
+    },
+    {
+      "item": "垂直度與水平",
+      "criteria": "符合規範",
+      "method": "雷射、鉛錘"
+    },
+    {
+      "item": "支撐",
+      "criteria": "間距、斜撐、底部墊實",
+      "method": "目視、量測"
+    },
+    {
+      "item": "預留孔與預埋件",
+      "criteria": "位置正確並固定",
+      "method": "核對圖面"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "澆置時禁止人員在支撐下方停留。"
+    },
+    {
+      "level": "danger",
+      "text": "高處作業須設置護欄或使用安全帶。"
+    },
+    {
+      "level": "warning",
+      "text": "拆模時劃定警戒區，防止材料掉落傷人。"
+    }
+  ],
+  "aliases": [
+    "板模",
+    "組模",
+    "拆模"
+  ],
+  "duration": "依面積與構造，常見數天",
+  "relatedTermIds": [
+    "mo-ban",
+    "hun-ning-tu"
+  ],
+  "relatedProcedureIds": [
+    "rebar-tying",
+    "concrete-pouring"
+  ]
+}

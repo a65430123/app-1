@@ -1,0 +1,130 @@
+{
+  "id": "ac-maintenance",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "空調",
+    "保養",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "冷氣濾網清潔與保養",
+  "summary": "屋主可自行完成的冷氣濾網清潔與日常檢查",
+  "tradeIds": [
+    "hvac"
+  ],
+  "overview": {
+    "default": "關機斷電後打開室內機面板，取出濾網清洗、陰乾後裝回，順便檢查排水與室外機周邊。",
+    "beginner": "濾網髒了冷氣會變不冷、耗電、有異味。自己就能清，大約每 2 週到 1 個月一次。",
+    "master": "斷電 → 拆濾網 → 清洗陰乾 → 裝回 → 檢查排水與室外機。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "關機斷電",
+      "body": {
+        "default": "關閉冷氣並拔插頭或關閉該迴路開關。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "取出濾網",
+      "body": {
+        "default": "掀開室內機面板，依指示取出濾網。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "清洗",
+      "body": {
+        "default": "以吸塵器吸除灰塵，或用清水從背面往正面沖洗；油污可用中性清潔劑。"
+      },
+      "keyPoints": [
+        "不要用熱水或刷子用力刷，濾網會變形"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "陰乾",
+      "body": {
+        "default": "放在陰涼處自然風乾，不要曝曬。"
+      },
+      "waitTime": "完全乾燥後再裝回"
+    },
+    {
+      "order": 5,
+      "title": "裝回與檢查",
+      "body": {
+        "default": "裝回濾網，試機確認運轉；檢查室內機是否滴水、室外機周邊是否有雜物擋住。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "中性清潔劑",
+      "spec": "選用"
+    }
+  ],
+  "tools": [
+    {
+      "name": "軟毛刷或吸塵器"
+    },
+    {
+      "name": "乾淨的布"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "濾網沒乾就裝回",
+      "consequence": "發霉、異味",
+      "prevention": "完全陰乾"
+    },
+    {
+      "mistake": "用熱水或強力刷洗",
+      "consequence": "濾網變形破損",
+      "prevention": "清水溫和沖洗"
+    },
+    {
+      "mistake": "自行拆解內部清洗散熱片與風扇",
+      "consequence": "損壞或觸電",
+      "prevention": "深度清洗請專業人員"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "濾網",
+      "criteria": "乾淨無破損",
+      "method": "目視"
+    },
+    {
+      "item": "運轉",
+      "criteria": "正常出冷風、無異音",
+      "method": "試機"
+    },
+    {
+      "item": "排水",
+      "criteria": "室內機不滴水",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "清潔前務必斷電。"
+    },
+    {
+      "level": "info",
+      "text": "高處拆裝請使用穩固的梯子。"
+    }
+  ],
+  "aliases": [
+    "洗冷氣",
+    "冷氣保養",
+    "清濾網"
+  ],
+  "duration": "約 20–30 分鐘（不含陰乾）",
+  "relatedProcedureIds": [
+    "split-ac-installation"
+  ]
+}

@@ -7,13 +7,14 @@ export function Card({ children, className = '' }: { children: ReactNode; classN
 }
 
 /** 整列可點的清單卡片 */
-export function LinkRow({ to, title, subtitle, left, right }: { to: string; title: string; subtitle?: string; left?: ReactNode; right?: ReactNode }) {
+export function LinkRow({ to, title, subtitle, left, right, badge }: { to: string; title: string; subtitle?: string; left?: ReactNode; right?: ReactNode; badge?: ReactNode }) {
   return (
     <Link to={to} className="tap flex items-center gap-3 rounded-2xl border border-line bg-surface px-4 py-3 active:bg-surface-2">
       {left}
       <div className="min-w-0 flex-1">
         <div className="text-lg font-bold leading-snug">{title}</div>
         {subtitle && <div className="line-clamp-2 text-sm text-muted">{subtitle}</div>}
+        {badge && <div className="mt-1">{badge}</div>}
       </div>
       {right}
       <ChevronRight className="size-6 shrink-0 text-muted" aria-hidden />

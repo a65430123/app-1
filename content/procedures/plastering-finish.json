@@ -1,7 +1,7 @@
 {
   "id": "plastering-finish",
   "type": "procedure",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -227,7 +227,10 @@
     "yang-hu"
   ],
   "relatedProcedureIds": [
-    "tile-laying"
+    "tile-laying",
+    "brick-wall",
+    "wall-tiling",
+    "wall-repainting"
   ],
   "calculatorIds": [
     "mortar"

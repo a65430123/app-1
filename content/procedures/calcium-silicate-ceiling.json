@@ -1,0 +1,186 @@
+{
+  "id": "calcium-silicate-ceiling",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "木作",
+    "天花板"
+  ],
+  "difficulty": "intermediate",
+  "title": "矽酸鈣板天花板",
+  "summary": "以角材或輕鋼架骨架，封矽酸鈣板做平頂天花板",
+  "tradeIds": [
+    "carpentry",
+    "interior"
+  ],
+  "overview": {
+    "default": "依設計高度放樣，以吊筋與角材（或暗架輕鋼架）組立骨架，配合燈具與空調開孔，封上矽酸鈣板後處理接縫，最後批土油漆。",
+    "beginner": "天花板裡面藏了電線、空調管線，封板前要確認都做好了。日後要檢修，也要留檢修孔。",
+    "master": "放樣 → 吊筋、骨架 → 管線會勘 → 封板（留縫）→ 接縫處理 → 批土油漆。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣",
+      "body": {
+        "default": "依設計天花高度在牆面彈出水平線，標示燈具、出風口、檢修孔位置。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "吊筋與骨架",
+      "body": {
+        "default": "以吊筋固定在樓板上，組立主骨架與次骨架，調整水平。"
+      },
+      "specs": [
+        {
+          "label": "骨架間距",
+          "value": "依板材規格與設計（常見次骨架約 30–45 cm）"
+        }
+      ],
+      "keyPoints": [
+        "吊筋固定在結構上，不可吊在管線上"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "管線會勘",
+      "body": {
+        "default": "封板前確認水電、空調、消防管線完成並測試。",
+        "beginner": "封了板才發現管線沒拉，就要拆天花板重來。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "封板",
+      "body": {
+        "default": "矽酸鈣板以螺絲固定在骨架上，板與板之間留適當縫隙。",
+        "master": "板縫留約 3 mm（依產品），螺絲距板邊適當距離。"
+      },
+      "keyPoints": [
+        "螺絲太靠近板邊會破裂",
+        "板縫錯開，避免十字縫"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "接縫處理",
+      "body": {
+        "default": "板縫以 AB 膠或填縫材填平，貼網帶加強。",
+        "beginner": "接縫處理沒做好，過一陣子天花板會出現一條條裂痕。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "開孔與收邊",
+      "body": {
+        "default": "依位置開燈孔、出風口、檢修孔，牆角收邊。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "矽酸鈣板",
+      "materialId": "calcium-silicate-board",
+      "spec": "天花常見 6 mm"
+    },
+    {
+      "name": "骨架",
+      "materialId": "light-gauge-steel-frame",
+      "spec": "木角材或輕鋼架"
+    },
+    {
+      "name": "吊筋、螺絲"
+    },
+    {
+      "name": "AB 膠（批土）",
+      "materialId": "wall-putty",
+      "spec": "接縫"
+    },
+    {
+      "name": "網帶",
+      "materialId": "fiberglass-mesh",
+      "spec": "接縫補強"
+    }
+  ],
+  "tools": [
+    {
+      "name": "雷射水平儀"
+    },
+    {
+      "name": "電動起子"
+    },
+    {
+      "name": "圓鋸、開孔器"
+    },
+    {
+      "name": "釘槍"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "封板前沒會勘管線",
+      "consequence": "拆板重做",
+      "prevention": "封板前各工種確認"
+    },
+    {
+      "mistake": "板縫沒有留縫或處理不良",
+      "consequence": "天花板裂縫",
+      "prevention": "依產品留縫並貼網帶"
+    },
+    {
+      "mistake": "沒留檢修孔",
+      "consequence": "日後無法檢修",
+      "prevention": "在設備、管線接頭附近留孔"
+    },
+    {
+      "mistake": "骨架不水平",
+      "consequence": "天花板波浪",
+      "prevention": "雷射校正"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "水平",
+      "criteria": "無明顯波浪",
+      "method": "雷射、目視"
+    },
+    {
+      "item": "接縫",
+      "criteria": "平整無裂縫",
+      "method": "目視（側光）"
+    },
+    {
+      "item": "開孔",
+      "criteria": "位置正確、邊緣整齊",
+      "method": "核對圖面"
+    },
+    {
+      "item": "檢修孔",
+      "criteria": "可開啟",
+      "method": "實際操作"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "高處作業使用穩固的施工架或合梯，不要站在梯子頂端。"
+    },
+    {
+      "level": "warning",
+      "text": "切割板材戴防塵口罩。"
+    }
+  ],
+  "aliases": [
+    "天花板",
+    "平頂天花",
+    "木作天花",
+    "封天花"
+  ],
+  "duration": "一般住宅約 3–7 天",
+  "relatedProcedureIds": [
+    "drywall-partition",
+    "wall-repainting"
+  ]
+}

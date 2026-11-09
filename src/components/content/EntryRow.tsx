@@ -15,7 +15,7 @@ export function EntryRow({ type, id, showType = true, showDifficulty = true }: {
       title={e.title}
       subtitle={(showType ? `${typeLabel[type]}・` : '') + e.summary}
       left={showType ? <Icon className="size-6 shrink-0 text-primary" aria-hidden /> : undefined}
-      right={showDifficulty && type === 'procedure' ? <DifficultyBadge level={e.difficulty} /> : undefined}
+      badge={showDifficulty && type === 'procedure' ? <DifficultyBadge level={e.difficulty} /> : undefined}
     />
   );
 }

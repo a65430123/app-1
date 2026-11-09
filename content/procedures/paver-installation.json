@@ -1,0 +1,169 @@
+{
+  "id": "paver-installation",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "景觀",
+    "鋪面"
+  ],
+  "difficulty": "intermediate",
+  "title": "連鎖磚鋪設",
+  "summary": "庭院步道、停車位的連鎖磚鋪面施工",
+  "tradeIds": [
+    "landscape"
+  ],
+  "overview": {
+    "default": "開挖整地後，分層鋪設級配並夯實作為基層，設置收邊石，鋪砂墊層刮平，鋪設連鎖磚後灑砂掃縫，以平板夯實機壓實。",
+    "beginner": "連鎖磚會不會凹陷，看的是底下的「基層」有沒有夯實，表面的磚只是最後一層。",
+    "master": "開挖 → 級配分層夯實 → 收邊石 → 砂墊層 → 鋪磚 → 灑砂掃縫 → 夯實。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣與開挖",
+      "body": {
+        "default": "標出範圍與完成面高程，開挖至設計深度，並規劃排水坡度。"
+      },
+      "specs": [
+        {
+          "label": "排水坡度",
+          "value": "依設計，避免積水"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "基層",
+      "body": {
+        "default": "分層鋪設級配料並以夯實機夯實。",
+        "master": "分層夯實，每層厚度依機具能力。"
+      },
+      "keyPoints": [
+        "車行區域基層需加厚"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "收邊石",
+      "body": {
+        "default": "沿邊緣設置收邊石並以混凝土固定，防止磚向外推移。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "砂墊層",
+      "body": {
+        "default": "鋪設砂墊層並以刮尺刮平，鋪好後不要踩踏。"
+      },
+      "specs": [
+        {
+          "label": "砂墊層厚度（常見）",
+          "value": "約 3–5 cm"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "鋪磚",
+      "body": {
+        "default": "依花樣鋪設連鎖磚，邊緣切磚補齊。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "灑砂與夯實",
+      "body": {
+        "default": "灑細砂掃入磚縫，以平板夯實機壓實，再補砂掃縫。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "連鎖磚",
+      "materialId": "interlocking-paver",
+      "spec": "人行 6 cm、車行 8 cm"
+    },
+    {
+      "name": "級配料",
+      "materialId": "crushed-stone",
+      "spec": "基層"
+    },
+    {
+      "name": "砂",
+      "materialId": "fine-sand",
+      "spec": "墊層與填縫"
+    },
+    {
+      "name": "收邊石"
+    }
+  ],
+  "tools": [
+    {
+      "name": "平板夯實機"
+    },
+    {
+      "name": "切磚機"
+    },
+    {
+      "name": "刮尺、水線"
+    },
+    {
+      "name": "橡膠槌"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "基層沒夯實",
+      "consequence": "日後凹陷、不平",
+      "prevention": "分層夯實"
+    },
+    {
+      "mistake": "沒有收邊石",
+      "consequence": "磚往外擠開",
+      "prevention": "設置收邊石"
+    },
+    {
+      "mistake": "排水坡度不足",
+      "consequence": "積水",
+      "prevention": "放樣時規劃坡度"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "平整度",
+      "criteria": "無明顯凹凸",
+      "method": "靠尺、目視"
+    },
+    {
+      "item": "排水",
+      "criteria": "下雨或灑水不積水",
+      "method": "灑水"
+    },
+    {
+      "item": "磚縫",
+      "criteria": "填砂飽滿",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "使用切磚機戴護目鏡、耳塞與防塵口罩。"
+    },
+    {
+      "level": "warning",
+      "text": "夯實機操作注意腳部安全。"
+    }
+  ],
+  "aliases": [
+    "鋪連鎖磚",
+    "步道鋪設",
+    "高壓磚",
+    "透水鋪面"
+  ],
+  "duration": "依面積，一般庭院約 2–4 天",
+  "relatedProcedureIds": [
+    "wood-deck"
+  ]
+}

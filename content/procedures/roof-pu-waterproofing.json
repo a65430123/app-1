@@ -1,0 +1,188 @@
+{
+  "id": "roof-pu-waterproofing",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "防水",
+    "屋頂"
+  ],
+  "difficulty": "intermediate",
+  "title": "屋頂 PU 防水",
+  "summary": "平屋頂、露台的 PU 防水層施作",
+  "tradeIds": [
+    "waterproofing"
+  ],
+  "overview": {
+    "default": "清潔修補屋頂表面並確認乾燥後，塗佈底漆，在女兒牆角、落水頭等處加強，再施作 PU 中塗防水層與耐候面漆。",
+    "beginner": "頂樓漏水最常見的原因是舊防水層老化龜裂。重做防水最怕「下雨後馬上做」，地面沒乾就會起泡。",
+    "master": "清潔 → 修補 → 乾燥確認 → 底漆 → 細部加強 → PU 中塗 → 耐候面漆。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "清潔與修補",
+      "body": {
+        "default": "清除青苔、雜物與鬆動舊防水層，裂縫與坑洞修補，女兒牆角可做圓弧導角。"
+      },
+      "keyPoints": [
+        "落水頭周邊要特別清理"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "確認乾燥",
+      "body": {
+        "default": "表面須充分乾燥，雨後依天候需等待。",
+        "beginner": "可以把一小塊塑膠布貼在地上放一段時間，掀開有水珠就代表還太濕。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "底漆",
+      "body": {
+        "default": "均勻塗佈底漆，增加 PU 與地面的附著。"
+      },
+      "waitTime": "依產品乾燥時間"
+    },
+    {
+      "order": 4,
+      "title": "細部加強",
+      "body": {
+        "default": "女兒牆與地面交接處、落水頭、管線周邊先塗一道並埋入補強布。",
+        "master": "陰角、落水頭、出入口加強層＋補強布。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "PU 中塗",
+      "body": {
+        "default": "分道塗佈 PU 防水層，達到設計膜厚，女兒牆立面向上塗佈一段高度。"
+      },
+      "specs": [
+        {
+          "label": "膜厚",
+          "value": "依產品與設計"
+        },
+        {
+          "label": "女兒牆立面",
+          "value": "依設計向上塗佈"
+        }
+      ],
+      "keyPoints": [
+        "每道之間等乾燥，不要一次塗太厚"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "耐候面漆",
+      "body": {
+        "default": "塗佈耐候面漆保護 PU 層，避免紫外線劣化。"
+      }
+    },
+    {
+      "order": 7,
+      "title": "檢查",
+      "body": {
+        "default": "完全乾燥後檢查膜面，可灑水測試排水是否順暢、有無積水。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "PU 防水塗料（底漆、中塗、面漆）",
+      "materialId": "pu-waterproofing"
+    },
+    {
+      "name": "補強布",
+      "materialId": "nonwoven-fabric"
+    },
+    {
+      "name": "修補砂漿",
+      "materialId": "premixed-mortar"
+    }
+  ],
+  "tools": [
+    {
+      "name": "滾筒、刷子、刮板"
+    },
+    {
+      "name": "攪拌器"
+    },
+    {
+      "name": "高壓清洗機"
+    },
+    {
+      "name": "濕膜厚度規"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "基面未乾就施工",
+      "consequence": "起泡、剝離",
+      "prevention": "確認乾燥"
+    },
+    {
+      "mistake": "膜厚不足",
+      "consequence": "短期內滲漏",
+      "prevention": "依設計膜厚並檢查"
+    },
+    {
+      "mistake": "落水頭沒處理好",
+      "consequence": "落水頭周邊漏水",
+      "prevention": "加強層＋補強布"
+    },
+    {
+      "mistake": "沒塗面漆",
+      "consequence": "PU 層日曬劣化",
+      "prevention": "塗耐候面漆"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "膜面",
+      "criteria": "連續、無針孔、無起泡",
+      "method": "目視"
+    },
+    {
+      "item": "膜厚",
+      "criteria": "符合設計",
+      "method": "濕膜厚度規或抽測"
+    },
+    {
+      "item": "細部",
+      "criteria": "陰角、落水頭有加強",
+      "method": "目視、照片"
+    },
+    {
+      "item": "排水",
+      "criteria": "無積水",
+      "method": "灑水測試"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "屋頂周邊無女兒牆或高度不足時，須設置防墜措施。"
+    },
+    {
+      "level": "warning",
+      "text": "溶劑型產品施工時禁煙火、保持通風。"
+    },
+    {
+      "level": "warning",
+      "text": "夏季屋頂高溫，注意中暑。"
+    }
+  ],
+  "aliases": [
+    "頂樓防水",
+    "屋頂防水",
+    "露台防水",
+    "PU 防水"
+  ],
+  "duration": "約 3–5 天（依天候）",
+  "relatedProcedureIds": [
+    "crack-injection",
+    "waterproof-coating"
+  ]
+}

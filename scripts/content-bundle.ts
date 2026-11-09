@@ -35,6 +35,7 @@ export function buildContentBundle(root: string) {
     minAppVersion: meta.minAppVersion,
     publishedAt: meta.publishedAt,
     materialCategories: meta.materialCategories ?? [],
+    featuredProcedures: meta.featuredProcedures ?? [],
     data,
   };
   const bundleText = JSON.stringify(bundleObj);

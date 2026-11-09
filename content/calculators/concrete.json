@@ -1,6 +1,6 @@
 {
   "id": "concrete",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "結構"
@@ -69,5 +69,8 @@
     "混凝土",
     "控固力",
     "方數"
+  ],
+  "relatedProcedureIds": [
+    "concrete-pouring"
   ]
 }

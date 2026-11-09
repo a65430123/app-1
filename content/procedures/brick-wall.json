@@ -1,0 +1,197 @@
+{
+  "id": "brick-wall",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "砌磚",
+    "隔間"
+  ],
+  "difficulty": "intermediate",
+  "title": "紅磚砌築",
+  "summary": "以水泥砂漿把紅磚錯縫砌成牆",
+  "tradeIds": [
+    "masonry"
+  ],
+  "overview": {
+    "default": "將紅磚以水泥砂漿一層一層錯縫砌疊成牆，控制灰縫厚度、垂直與水平，並與柱、樑確實結合。",
+    "beginner": "紅磚牆是台灣住宅最傳統的隔間方式，隔音好、可以吊重物，但要注意每天不能砌太高。",
+    "master": "放樣 → 磚濕潤 → 拉線 → 錯縫砌築 → 與柱接合 → 頂部塞縫。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "放樣",
+      "body": {
+        "default": "彈出牆位置線，標示門窗開口。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "紅磚澆水濕潤",
+      "body": {
+        "default": "砌築前一天將紅磚澆水濕潤，表面乾、內部濕最好。",
+        "beginner": "紅磚很會吸水，乾磚會把砂漿的水吸走，砂漿就黏不牢。",
+        "master": "前一日澆水，表乾內濕。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "拉線砌築",
+      "body": {
+        "default": "兩端先砌出基準，拉水平線，依線逐層錯縫砌疊，灰縫填滿砂漿。",
+        "beginner": "上下兩層磚的接縫要錯開（交丁），牆才不會從同一條縫裂開。",
+        "master": "1:3 砂漿、灰縫約 1 cm、上下錯縫。"
+      },
+      "specs": [
+        {
+          "label": "砂漿配比",
+          "value": "水泥：砂 = 1：3"
+        },
+        {
+          "label": "灰縫",
+          "value": "約 1 cm"
+        },
+        {
+          "label": "每日砌高（常見建議）",
+          "value": "約 1.5 m 以內"
+        }
+      ],
+      "keyPoints": [
+        "灰縫飽滿",
+        "隨時以水平尺、垂直尺檢查"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "與柱、樑結合",
+      "body": {
+        "default": "依設計在柱邊設置繫筋或植筋，使牆與結構結合。",
+        "master": "依設計植筋或繫筋。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "頂部塞縫",
+      "body": {
+        "default": "牆砌到樑底時留一點空間，隔日待下方砂漿收縮後再塞填。",
+        "beginner": "一次砌到頂，等砂漿乾縮後頂端會出現裂縫。"
+      },
+      "waitTime": "常見隔日再塞縫"
+    },
+    {
+      "order": 6,
+      "title": "門窗開口",
+      "body": {
+        "default": "開口上方設置過樑（楣樑），依設計施作。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "紅磚",
+      "materialId": "red-brick",
+      "spec": "約 23×11×6 cm",
+      "qtyNote": "半 B 牆約 60 塊/m²（概估）"
+    },
+    {
+      "name": "卜特蘭水泥",
+      "materialId": "portland-cement"
+    },
+    {
+      "name": "砂",
+      "materialId": "fine-sand",
+      "spec": "中砂"
+    }
+  ],
+  "tools": [
+    {
+      "name": "磚刀（砌磚鏝刀）"
+    },
+    {
+      "name": "水平尺、垂直尺"
+    },
+    {
+      "name": "水線"
+    },
+    {
+      "name": "灰桶、攪拌機"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "磚沒有濕潤",
+      "consequence": "砂漿失水、黏結不良",
+      "prevention": "前一天澆水"
+    },
+    {
+      "mistake": "一天砌太高",
+      "consequence": "下方砂漿未硬化被壓壞、牆體變形",
+      "prevention": "控制每日砌高"
+    },
+    {
+      "mistake": "灰縫不飽滿",
+      "consequence": "隔音差、易滲水、強度不足",
+      "prevention": "灰縫填滿砂漿"
+    },
+    {
+      "mistake": "頂部一次塞滿",
+      "consequence": "牆頂裂縫",
+      "prevention": "隔日再塞縫"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "垂直度",
+      "criteria": "符合規範",
+      "method": "垂直尺、雷射"
+    },
+    {
+      "item": "水平",
+      "criteria": "每層水平",
+      "method": "水平尺"
+    },
+    {
+      "item": "灰縫",
+      "criteria": "厚度一致、飽滿",
+      "method": "目視"
+    },
+    {
+      "item": "錯縫",
+      "criteria": "上下層錯開",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "超過 2 m 高度須使用合格施工架。"
+    },
+    {
+      "level": "warning",
+      "text": "水泥為鹼性，戴手套。"
+    },
+    {
+      "level": "info",
+      "text": "搬運紅磚注意腰部姿勢，使用推車。"
+    }
+  ],
+  "aliases": [
+    "砌磚",
+    "砌牆",
+    "磚牆"
+  ],
+  "duration": "依面積，一般隔間牆約 1–3 天",
+  "relatedTermIds": [
+    "ni-zuo",
+    "shui-ni",
+    "fang-yang"
+  ],
+  "relatedProcedureIds": [
+    "plastering-finish"
+  ],
+  "calculatorIds": [
+    "mortar"
+  ]
+}

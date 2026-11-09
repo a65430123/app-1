@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026.11.09-4",
+  "contentVersion": "2026.11.09-5",
   "minAppVersion": "0.1.0",
   "publishedAt": "2026-11-09",
   "materialCategories": [
@@ -22,5 +22,13 @@
     "空調材料",
     "景觀材料"
   ],
-  "note": "發佈新內容時，請把 contentVersion 往上調（格式 YYYY.MM.DD-序號），App 才會偵測到更新。schemaVersion 只有在資料結構有破壞性變更時才 +1。 materialCategories 決定材料庫分類的顯示順序，未列出的分類排在最後。"
+  "featuredProcedures": [
+    "renovation-sequence",
+    "waterproof-coating",
+    "tile-laying",
+    "wall-repainting",
+    "home-panel-check",
+    "handover-inspection"
+  ],
+  "note": "發佈新內容時，請把 contentVersion 往上調（格式 YYYY.MM.DD-序號），App 才會偵測到更新。schemaVersion 只有在資料結構有破壞性變更時才 +1。 materialCategories 決定材料庫分類的顯示順序，未列出的分類排在最後。 featuredProcedures 決定首頁「精選工序」顯示哪些工序。"
 }

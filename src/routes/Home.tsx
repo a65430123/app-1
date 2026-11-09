@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Search, Package, BookA, MoreHorizontal } from 'lucide-react';
+import { Search, Package, BookA, ListOrdered, MoreHorizontal } from 'lucide-react';
 import { TopBar } from '@/components/layout/TopBar';
 import { Page } from '@/components/layout/AppShell';
 import { SectionTitle, Empty } from '@/components/ui/Card';
 import { EntryRow } from '@/components/content/EntryRow';
 import { iconFor } from '@/components/ui/icons';
-import { trades, procedures } from '@/content';
+import { trades, procedures, featuredProcedures } from '@/content';
 import { useSettings } from '@/stores/settings';
 import { useLibrary } from '@/stores/library';
 
@@ -39,15 +39,17 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-3">
-          <Link to="/materials" className="flex min-h-24 items-center gap-3 rounded-2xl bg-charcoal p-4 text-on-charcoal active:opacity-90">
-            <Package className="size-8 shrink-0 text-primary" aria-hidden />
-            <span className="whitespace-nowrap text-lg font-bold">材料庫</span>
-          </Link>
-          <Link to="/glossary" className="flex min-h-24 items-center gap-3 rounded-2xl bg-charcoal p-4 text-on-charcoal active:opacity-90">
-            <BookA className="size-8 shrink-0 text-primary" aria-hidden />
-            <span className="whitespace-nowrap text-lg font-bold">術語辭典</span>
-          </Link>
+        <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
+          {[
+            { to: '/procedures', label: '工序百科', Icon: ListOrdered },
+            { to: '/materials', label: '材料庫', Icon: Package },
+            { to: '/glossary', label: '術語辭典', Icon: BookA },
+          ].map(({ to, label, Icon }) => (
+            <Link key={to} to={to} className="flex min-h-24 flex-col items-center justify-center gap-1 rounded-2xl bg-charcoal p-3 text-on-charcoal active:opacity-90">
+              <Icon className="size-8 shrink-0 text-primary" aria-hidden />
+              <span className="whitespace-nowrap text-base font-bold">{label}</span>
+            </Link>
+          ))}
         </div>
 
         <SectionTitle action={history.length > 0 && <Link to="/me/history" className="tap flex items-center font-bold text-primary-ink">全部 ›</Link>}>最近瀏覽</SectionTitle>
@@ -57,9 +59,9 @@ export default function Home() {
           <Empty text="還沒有瀏覽紀錄，先點個工序看看吧" />
         )}
 
-        <SectionTitle>精選工序</SectionTitle>
+        <SectionTitle action={<Link to="/procedures" className="tap flex items-center font-bold text-primary-ink">全部 {procedures.length} 項 ›</Link>}>精選工序</SectionTitle>
         <div className="flex flex-col gap-2">
-          {procedures.map((p) => <EntryRow key={p.id} type="procedure" id={p.id} showType={false} />)}
+          {featuredProcedures.map((p) => <EntryRow key={p.id} type="procedure" id={p.id} showType={false} />)}
         </div>
       </Page>
     </>

@@ -1,0 +1,207 @@
+{
+  "id": "concrete-pouring",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "結構",
+    "混凝土",
+    "灌漿"
+  ],
+  "difficulty": "intermediate",
+  "title": "混凝土澆置與養護",
+  "summary": "把預拌混凝土澆入模板、振動搗實並完成養護",
+  "tradeIds": [
+    "structure"
+  ],
+  "overview": {
+    "default": "預拌混凝土到場後，經檢查與取樣，以泵浦車澆入模板，使用振動棒搗實、表面整平，並在之後一段期間內保濕養護。",
+    "beginner": "俗稱「灌漿」。灌漿當天是整棟房子品質的關鍵之一，振動不足會有蜂窩（空洞），養護不足會裂。",
+    "master": "澆置前檢查 → 進場驗收（坍度、試體）→ 分層澆置 → 振動搗實 → 整平粉光 → 濕養護。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "澆置前檢查",
+      "body": {
+        "default": "確認鋼筋、模板、預埋物都已查驗合格，清除模板內雜物，模板適度濕潤。"
+      },
+      "keyPoints": [
+        "模板內的垃圾、木屑要清乾淨",
+        "安排好人力、振動棒與備用機具"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "進場驗收與取樣",
+      "body": {
+        "default": "核對送貨單（強度、數量、出廠時間），做坍度試驗並依規定取樣製作圓柱試體。",
+        "beginner": "坍度試驗是測混凝土「稀不稀」，圓柱試體會送去實驗室壓，確認強度夠不夠。"
+      },
+      "specs": [
+        {
+          "label": "坍度",
+          "value": "依設計與施工規範"
+        },
+        {
+          "label": "試體",
+          "value": "依規範頻率取樣"
+        }
+      ],
+      "keyPoints": [
+        "現場不可任意加水"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "分層澆置",
+      "body": {
+        "default": "依順序（常見先柱牆、後樑版）分層澆置，避免一次倒太多造成側壓過大。",
+        "master": "分層澆置，控制落差，避免析離。"
+      },
+      "keyPoints": [
+        "落下高度過高時用導管，避免骨材分離"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "振動搗實",
+      "body": {
+        "default": "以振動棒垂直插入、逐點搗實，看到表面泛漿、不再冒氣泡即可拔出。",
+        "beginner": "振動是把混凝土裡的空氣趕出來，讓它塞滿每個角落。",
+        "master": "插點間距約 50 cm、垂直插入、緩拔；避免碰觸鋼筋與模板、勿用振動棒推送混凝土。"
+      },
+      "specs": [
+        {
+          "label": "插入間距（常見）",
+          "value": "約 40–60 cm"
+        },
+        {
+          "label": "時間",
+          "value": "每點數秒至十數秒，泛漿即止"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "整平與表面處理",
+      "body": {
+        "default": "以刮尺整平，依需要做粉光或刷毛。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "養護",
+      "body": {
+        "default": "終凝後開始灑水或覆蓋保濕，避免日曬強風。",
+        "master": "濕養護一般至少 7 天（依規範與水泥種類）。"
+      },
+      "waitTime": "一般至少約 7 天"
+    }
+  ],
+  "materials": [
+    {
+      "name": "預拌混凝土",
+      "materialId": "ready-mix-concrete",
+      "spec": "依設計強度",
+      "qtyNote": "可用「混凝土方數」計算機估算"
+    },
+    {
+      "name": "養護用塑膠布或麻布"
+    }
+  ],
+  "tools": [
+    {
+      "name": "泵浦車"
+    },
+    {
+      "name": "振動棒（含備用）"
+    },
+    {
+      "name": "刮尺、鏝刀"
+    },
+    {
+      "name": "坍度錐、試體模"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "現場加水",
+      "consequence": "強度下降、乾縮裂縫",
+      "prevention": "嚴禁加水，坍度不足應退貨或依規範處理"
+    },
+    {
+      "mistake": "振動不足",
+      "consequence": "蜂窩、空洞",
+      "prevention": "依插點間距逐點振動"
+    },
+    {
+      "mistake": "過度振動",
+      "consequence": "骨材下沉、表面浮漿",
+      "prevention": "泛漿即停止"
+    },
+    {
+      "mistake": "沒有養護",
+      "consequence": "表面裂縫、強度不足",
+      "prevention": "至少濕養護約 7 天"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "送貨單",
+      "criteria": "強度、數量、時間正確",
+      "method": "核對單據"
+    },
+    {
+      "item": "坍度",
+      "criteria": "符合規定",
+      "method": "坍度試驗"
+    },
+    {
+      "item": "試體",
+      "criteria": "依規定取樣並標示",
+      "method": "記錄"
+    },
+    {
+      "item": "表面",
+      "criteria": "無明顯蜂窩、冷縫",
+      "method": "拆模後目視"
+    },
+    {
+      "item": "養護",
+      "criteria": "有確實灑水或覆蓋",
+      "method": "每日檢查"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "泵浦車作業範圍禁止人員進入，注意上方電線。"
+    },
+    {
+      "level": "warning",
+      "text": "混凝土具鹼性，戴手套、穿雨鞋，避免皮膚長時間接觸。"
+    },
+    {
+      "level": "warning",
+      "text": "振動棒使用前檢查漏電斷路器與電線外皮。"
+    }
+  ],
+  "aliases": [
+    "灌漿",
+    "打混凝土",
+    "澆置"
+  ],
+  "duration": "澆置當天完成，養護約 7 天以上",
+  "relatedTermIds": [
+    "hun-ning-tu",
+    "yang-hu"
+  ],
+  "relatedProcedureIds": [
+    "rebar-tying",
+    "formwork"
+  ],
+  "calculatorIds": [
+    "concrete"
+  ]
+}

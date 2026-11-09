@@ -1,0 +1,151 @@
+{
+  "id": "drainage-piping",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "排水"
+  ],
+  "difficulty": "intermediate",
+  "title": "排水管配管",
+  "summary": "衛浴、廚房排水管的坡度、存水彎與通水測試",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "overview": {
+    "default": "依設備位置配置排水管，維持足夠坡度讓水順利流走，設置存水彎防臭，完成後做通水試驗。",
+    "beginner": "排水靠的是「坡度」，水往低處流；坡度不夠或接反，就會積水、堵塞、發臭。",
+    "master": "定位 → 配管（坡度）→ 存水彎、清潔口 → 固定 → 通水試驗。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "定位",
+      "body": {
+        "default": "確認馬桶、面盆、淋浴排水、地排與管道間位置。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "配管與坡度",
+      "body": {
+        "default": "依管徑維持排水坡度，轉彎使用適當角度的彎頭（避免直角急轉）。",
+        "beginner": "坡度太小水流太慢會堵，太大水跑太快反而把固體留在管內。"
+      },
+      "specs": [
+        {
+          "label": "坡度（常見參考）",
+          "value": "約 1/50–1/100（依管徑與規範）"
+        }
+      ],
+      "keyPoints": [
+        "彎頭使用 45° 組合或大彎，減少堵塞"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "存水彎與清潔口",
+      "body": {
+        "default": "各設備排水設存水彎（或設備已內建），適當位置設清潔口方便日後疏通。",
+        "beginner": "存水彎（U 型或 P 型彎）裡會留一點水，擋住下水道的臭味。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "固定與封口",
+      "body": {
+        "default": "管線固定並暫時封口，避免施工時異物掉入。"
+      },
+      "keyPoints": [
+        "施工期間管口一定要封住，水泥砂漿掉進去會堵死"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "通水試驗",
+      "body": {
+        "default": "灌水測試排水是否順暢、接頭是否滲漏。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "PVC 排水管與管件",
+      "materialId": "pvc-pipe",
+      "spec": "排水用"
+    },
+    {
+      "name": "PVC 接著劑"
+    }
+  ],
+  "tools": [
+    {
+      "name": "管子鋸"
+    },
+    {
+      "name": "水平尺（量坡度）"
+    },
+    {
+      "name": "膠合用刷"
+    },
+    {
+      "name": "捲尺"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "坡度不足或倒坡",
+      "consequence": "積水、堵塞",
+      "prevention": "以水平尺確認每段坡度"
+    },
+    {
+      "mistake": "直角急轉",
+      "consequence": "容易卡住堵塞",
+      "prevention": "用 45° 彎頭組合"
+    },
+    {
+      "mistake": "施工時沒封管口",
+      "consequence": "砂漿掉入堵塞",
+      "prevention": "全程封口"
+    },
+    {
+      "mistake": "缺存水彎",
+      "consequence": "下水道臭味上來",
+      "prevention": "每個排水點確認防臭"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "坡度",
+      "criteria": "每段坡度正確",
+      "method": "水平尺"
+    },
+    {
+      "item": "通水",
+      "criteria": "排水順暢、無滲漏",
+      "method": "灌水測試"
+    },
+    {
+      "item": "防臭",
+      "criteria": "存水彎或防臭地排",
+      "method": "目視、聞"
+    }
+  ],
+  "safety": [
+    {
+      "level": "info",
+      "text": "使用 PVC 接著劑保持通風、遠離火源。"
+    }
+  ],
+  "aliases": [
+    "排水管",
+    "污水管",
+    "廢水管"
+  ],
+  "duration": "一般住宅約 1–2 天",
+  "relatedProcedureIds": [
+    "water-supply-piping",
+    "waterproof-coating"
+  ]
+}

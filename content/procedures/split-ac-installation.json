@@ -1,0 +1,212 @@
+{
+  "id": "split-ac-installation",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "空調",
+    "冷氣"
+  ],
+  "difficulty": "master",
+  "title": "分離式冷氣安裝",
+  "summary": "室內機、室外機定位，冷媒配管、排水、抽真空與試機",
+  "tradeIds": [
+    "hvac"
+  ],
+  "overview": {
+    "default": "依原廠規範決定室內外機位置，鑽孔配置冷媒管、排水管與電源，完成接管後抽真空、檢漏，開閥試機並確認排水順暢。",
+    "beginner": "冷氣好不好用、會不會漏水，安裝佔很大因素。驗收時可以請師傅示範「抽真空」與排水測試。",
+    "master": "定位 → 掛板 → 鑽孔（外低）→ 配管、排水、電源 → 擴口接管 → 抽真空 → 檢漏 → 開閥試機。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "定位",
+      "body": {
+        "default": "室內機避開直吹床鋪、預留上方與兩側維修空間；室外機放在通風、可維修、支架穩固的位置。"
+      },
+      "keyPoints": [
+        "依原廠安裝手冊的距離要求",
+        "室外機出風口前方不可被擋住"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "掛板與鑽孔",
+      "body": {
+        "default": "安裝室內機掛板並水平校正，穿牆孔內高外低，加裝套管。",
+        "beginner": "穿牆孔要往外斜，才不會讓雨水倒灌、排水往內流。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "配管",
+      "body": {
+        "default": "冷媒銅管依原廠管徑配置，包覆保溫；排水管保持順向坡度，避免凹陷積水。",
+        "master": "管徑依原廠；排水管全程順坡、不可有 U 形積水段。"
+      },
+      "keyPoints": [
+        "銅管彎曲用彎管器，不可壓扁",
+        "排水管出口不可泡在水裡"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "電源",
+      "body": {
+        "default": "使用專用迴路，線徑與開關依冷氣規格。",
+        "beginner": "冷氣用電量大，要有自己專用的一路電，不要跟其他插座共用。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "擴口與接管",
+      "body": {
+        "default": "以擴口器擴口、扭力扳手鎖緊接頭。",
+        "master": "擴口尺寸正確、依規定扭力鎖緊。"
+      }
+    },
+    {
+      "order": 6,
+      "title": "抽真空與檢漏",
+      "body": {
+        "default": "以真空泵抽除管內空氣與水分，觀察真空錶保持不回升，接頭檢漏。",
+        "beginner": "管子裡有空氣和水氣，冷氣會變不冷甚至損壞壓縮機，所以一定要抽真空。"
+      },
+      "specs": [
+        {
+          "label": "抽真空",
+          "value": "依原廠規範（常見至少 15–30 分鐘，視管長）"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "開閥試機",
+      "body": {
+        "default": "開啟室外機閥門，送電試機，量測出風溫度、運轉電流，倒水測試排水。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "冷媒銅管",
+      "materialId": "refrigerant-copper-pipe",
+      "spec": "依原廠管徑"
+    },
+    {
+      "name": "保溫管",
+      "materialId": "pipe-insulation"
+    },
+    {
+      "name": "排水管"
+    },
+    {
+      "name": "PVC 絞線",
+      "materialId": "pvc-stranded-wire",
+      "spec": "依冷氣規格"
+    },
+    {
+      "name": "室外機支架、膨脹螺栓",
+      "materialId": "post-installed-anchor"
+    },
+    {
+      "name": "PU 發泡劑或封孔材",
+      "materialId": "pu-foam",
+      "spec": "穿牆孔"
+    }
+  ],
+  "tools": [
+    {
+      "name": "真空泵、真空錶（壓力錶組）"
+    },
+    {
+      "name": "擴口器、彎管器、切管器"
+    },
+    {
+      "name": "扭力扳手"
+    },
+    {
+      "name": "電鑽、水鑽"
+    },
+    {
+      "name": "水平儀"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "沒有抽真空",
+      "consequence": "冷房效果差、壓縮機故障",
+      "prevention": "抽真空並觀察真空錶"
+    },
+    {
+      "mistake": "排水管有凹段或倒坡",
+      "consequence": "室內機滴水",
+      "prevention": "全程順坡"
+    },
+    {
+      "mistake": "穿牆孔內低外高",
+      "consequence": "雨水倒灌",
+      "prevention": "孔內高外低並封孔"
+    },
+    {
+      "mistake": "室外機支架不牢",
+      "consequence": "掉落傷人",
+      "prevention": "依荷重選用支架與錨栓"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "排水",
+      "criteria": "倒水測試順暢不滴",
+      "method": "倒水"
+    },
+    {
+      "item": "冷房",
+      "criteria": "出風溫度明顯下降",
+      "method": "溫度計"
+    },
+    {
+      "item": "運轉電流",
+      "criteria": "符合規格",
+      "method": "鉤表"
+    },
+    {
+      "item": "外觀",
+      "criteria": "管線包覆整齊、封孔確實",
+      "method": "目視"
+    },
+    {
+      "item": "支架",
+      "criteria": "穩固、錨栓鎖緊",
+      "method": "手搖、目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "室外機安裝在高處時須使用安全帶與防墜措施，必要時使用吊車或施工架。"
+    },
+    {
+      "level": "warning",
+      "text": "電源施作須斷電，依規定由合格人員施作。"
+    },
+    {
+      "level": "warning",
+      "text": "冷媒外洩避免接觸皮膚與眼睛。"
+    }
+  ],
+  "aliases": [
+    "裝冷氣",
+    "冷氣安裝",
+    "分離式"
+  ],
+  "duration": "一對一機型約半天",
+  "relatedProcedureIds": [
+    "ac-maintenance",
+    "outlet-wiring"
+  ],
+  "calculatorIds": [
+    "voltage-drop"
+  ]
+}

@@ -155,6 +155,8 @@ export const ContentBundle = z.object({
   publishedAt: z.string(),
   /** 材料庫分類的顯示順序 */
   materialCategories: z.array(z.string()).optional(),
+  /** 首頁精選工序 */
+  featuredProcedures: z.array(z.string()).optional(),
   data: z.object({
     trades: z.array(Trade),
     procedures: z.array(Procedure),

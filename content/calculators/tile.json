@@ -1,6 +1,6 @@
 {
   "id": "tile",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -79,6 +79,7 @@
     "建議多備少量同批號磁磚供日後修補"
   ],
   "relatedProcedureIds": [
-    "tile-laying"
+    "tile-laying",
+    "wall-tiling"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "yang-hu",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "泥作",
@@ -24,6 +24,7 @@
   ],
   "relatedProcedureIds": [
     "plastering-finish",
-    "waterproof-coating"
+    "waterproof-coating",
+    "concrete-pouring"
   ]
 }

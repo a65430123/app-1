@@ -1,6 +1,6 @@
 {
   "id": "paint",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-11-09",
   "tags": [
     "油漆"
@@ -64,5 +64,9 @@
   "notes": [
     "粗糙或吸水性高的面需要較多",
     "底漆與面漆塗佈率不同，請分開計算"
+  ],
+  "relatedProcedureIds": [
+    "wall-repainting",
+    "rust-proof-painting"
   ]
 }

@@ -1,0 +1,189 @@
+{
+  "id": "wall-tiling",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "泥作",
+    "磁磚",
+    "牆面"
+  ],
+  "difficulty": "intermediate",
+  "title": "壁磚硬底鋪貼",
+  "summary": "在已整平的牆面上，以磁磚黏著劑鋪貼壁磚",
+  "tradeIds": [
+    "masonry"
+  ],
+  "overview": {
+    "default": "牆面先打底整平並硬化後，以鋸齒鏝刀塗抹磁磚黏著劑（益膠泥），將壁磚壓貼定位，最後填縫。浴室、廚房牆面最常用。",
+    "beginner": "「硬底」是指底層已經做平、乾硬了才貼磚，靠黏著劑把磚黏上去；所以底層平不平，決定了磚貼得平不平。",
+    "master": "打底整平 → 放樣 → 黏著劑鋸齒塗佈 → 貼磚壓實 → 調縫 → 填縫。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "確認基面",
+      "body": {
+        "default": "牆面打底完成並乾硬，平整度符合要求，浴室須先完成防水層並試水。"
+      },
+      "keyPoints": [
+        "基面不平，硬底無法補救",
+        "浴室防水層完成並通過試水"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "放樣排磚",
+      "body": {
+        "default": "彈出水平基準線與垂直線，排磚讓切磚落在陰角或不顯眼處。",
+        "master": "定水平基準、排磚對稱。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "塗佈黏著劑",
+      "body": {
+        "default": "以平面鏝刀先刮一層，再用鋸齒鏝刀梳出均勻條紋。",
+        "beginner": "鋸齒鏝刀刮出來的條紋，壓下去後會攤平，讓磚背全部都沾到。"
+      },
+      "specs": [
+        {
+          "label": "鏝刀齒深",
+          "value": "依磚的尺寸（磚越大齒越深）"
+        }
+      ],
+      "keyPoints": [
+        "一次塗佈面積不要超過開放時間內能貼完的範圍"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "貼磚",
+      "body": {
+        "default": "磚壓上後稍微左右推移再壓實，以定位片控制縫寬，大尺寸磚建議磚背也塗一層（雙面塗佈）。",
+        "master": "壓實、推移、定位片控縫；大磚雙面塗佈。"
+      },
+      "keyPoints": [
+        "隨時掀一片檢查磚背覆蓋率",
+        "由下往上貼，第一排以靠尺支撐"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "填縫與清潔",
+      "body": {
+        "default": "黏著劑硬化後（常見隔日）清縫、填縫，半乾時以海綿擦淨。"
+      },
+      "waitTime": "常見隔日"
+    }
+  ],
+  "materials": [
+    {
+      "name": "磁磚黏著劑（益膠泥）",
+      "materialId": "tile-adhesive"
+    },
+    {
+      "name": "壁磚",
+      "materialId": "ceramic-wall-tile",
+      "qtyNote": "可用「磁磚片數」計算機估算"
+    },
+    {
+      "name": "填縫劑",
+      "materialId": "tile-grout",
+      "spec": "防霉型"
+    },
+    {
+      "name": "十字定位片"
+    }
+  ],
+  "tools": [
+    {
+      "name": "鋸齒鏝刀、平鏝刀"
+    },
+    {
+      "name": "雷射水平儀"
+    },
+    {
+      "name": "切磚機"
+    },
+    {
+      "name": "橡膠槌"
+    },
+    {
+      "name": "攪拌器"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "基面不平就貼",
+      "consequence": "磚面不平、高低差",
+      "prevention": "先整平底層"
+    },
+    {
+      "mistake": "黏著劑超過開放時間",
+      "consequence": "表面結皮、黏不牢、空心",
+      "prevention": "在時間內貼完，結皮刮掉重抹"
+    },
+    {
+      "mistake": "磚背覆蓋率不足",
+      "consequence": "空心、日後脫落",
+      "prevention": "鋸齒塗佈、大磚雙面塗"
+    },
+    {
+      "mistake": "浴室沒先做防水",
+      "consequence": "牆內滲水、隔壁壁癌",
+      "prevention": "防水完成並試水後再貼"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "平整度",
+      "criteria": "相鄰磚無明顯高低差",
+      "method": "靠尺、手摸"
+    },
+    {
+      "item": "垂直與水平",
+      "criteria": "磚縫筆直",
+      "method": "雷射、拉線"
+    },
+    {
+      "item": "空心",
+      "criteria": "無明顯空心聲",
+      "method": "敲擊棒"
+    },
+    {
+      "item": "縫寬",
+      "criteria": "一致",
+      "method": "目視"
+    }
+  ],
+  "safety": [
+    {
+      "level": "danger",
+      "text": "切磚機須有護罩，戴護目鏡與防塵口罩。"
+    },
+    {
+      "level": "warning",
+      "text": "黏著劑含水泥，戴手套避免皮膚刺激。"
+    }
+  ],
+  "aliases": [
+    "貼壁磚",
+    "硬底施工",
+    "貼牆磚"
+  ],
+  "duration": "一般浴室牆面約 2–3 天",
+  "relatedTermIds": [
+    "kong-xin",
+    "fang-yang",
+    "ni-zuo"
+  ],
+  "relatedProcedureIds": [
+    "tile-laying",
+    "waterproof-coating",
+    "plastering-finish"
+  ],
+  "calculatorIds": [
+    "tile"
+  ]
+}

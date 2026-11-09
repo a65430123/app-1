@@ -1,0 +1,158 @@
+{
+  "id": "silicone-resealing",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "防水",
+    "衛浴",
+    "居家"
+  ],
+  "difficulty": "beginner",
+  "title": "浴室矽利康重新施打",
+  "summary": "去除發霉舊矽利康並重新施打，屋主也能自己做",
+  "tradeIds": [
+    "waterproofing",
+    "interior"
+  ],
+  "overview": {
+    "default": "刮除發霉或剝離的舊矽利康，清潔乾燥後貼上遮蔽膠帶，打上防霉矽利康並刮平，撕除膠帶後等待固化。",
+    "beginner": "浴缸邊、洗手台邊黑黑的通常是矽利康發霉，重打一次就會很乾淨。做好的關鍵是「乾燥」和「貼膠帶」。",
+    "master": "刮除 → 除霉清潔 → 乾燥 → 遮蔽 → 打膠 → 刮平 → 撕膠帶 → 固化。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "刮除舊膠",
+      "body": {
+        "default": "以刮刀或美工刀把舊矽利康完全刮除，殘膠用去膠劑處理。"
+      }
+    },
+    {
+      "order": 2,
+      "title": "除霉清潔",
+      "body": {
+        "default": "以除霉劑或稀釋漂白水清潔，再用清水擦淨。"
+      }
+    },
+    {
+      "order": 3,
+      "title": "完全乾燥",
+      "body": {
+        "default": "接縫要完全乾燥，可用吹風機輔助。",
+        "beginner": "有水氣的話矽利康黏不牢，很快就會脫落。"
+      },
+      "waitTime": "建議至少數小時"
+    },
+    {
+      "order": 4,
+      "title": "貼遮蔽膠帶",
+      "body": {
+        "default": "在接縫兩側貼上紙膠帶，留出要打膠的寬度。"
+      }
+    },
+    {
+      "order": 5,
+      "title": "打膠與刮平",
+      "body": {
+        "default": "以膠槍連續打膠，再用刮板或沾肥皂水的手指一次刮平。"
+      },
+      "keyPoints": [
+        "打膠要連續，不要斷斷續續"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "撕膠帶與固化",
+      "body": {
+        "default": "趁膠未乾時撕除膠帶，固化期間不要碰水。"
+      },
+      "waitTime": "依產品，常見 24 小時內避免碰水"
+    }
+  ],
+  "materials": [
+    {
+      "name": "防霉矽利康",
+      "materialId": "silicone-sealant",
+      "spec": "衛浴用"
+    },
+    {
+      "name": "紙膠帶"
+    },
+    {
+      "name": "除霉劑"
+    }
+  ],
+  "tools": [
+    {
+      "name": "矽利康膠槍"
+    },
+    {
+      "name": "刮刀、美工刀"
+    },
+    {
+      "name": "刮板"
+    },
+    {
+      "name": "抹布、吹風機"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "舊膠沒刮乾淨",
+      "consequence": "新膠附著差、很快剝落",
+      "prevention": "完全刮除"
+    },
+    {
+      "mistake": "接縫沒乾就打",
+      "consequence": "脫膠、發霉",
+      "prevention": "確實乾燥"
+    },
+    {
+      "mistake": "固化前就碰水",
+      "consequence": "表面破壞、附著不良",
+      "prevention": "依產品時間避免碰水"
+    },
+    {
+      "mistake": "用錯種類（如酸性）",
+      "consequence": "腐蝕金屬、石材變色",
+      "prevention": "衛浴用防霉中性矽利康"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "附著",
+      "criteria": "兩側密貼無縫隙",
+      "method": "手壓、目視"
+    },
+    {
+      "item": "外觀",
+      "criteria": "線條平順、寬度一致",
+      "method": "目視"
+    },
+    {
+      "item": "固化",
+      "criteria": "表面不黏手",
+      "method": "手觸"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "除霉劑與其他清潔劑不可混用，保持通風。"
+    },
+    {
+      "level": "info",
+      "text": "美工刀使用時注意方向，避免割傷。"
+    }
+  ],
+  "aliases": [
+    "打矽利康",
+    "重打矽利康",
+    "矽力康發霉"
+  ],
+  "duration": "約 1–2 小時（另需固化時間）",
+  "relatedProcedureIds": [
+    "waterproof-coating"
+  ]
+}

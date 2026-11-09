@@ -1,0 +1,177 @@
+{
+  "id": "water-supply-piping",
+  "type": "procedure",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-09",
+  "tags": [
+    "水電",
+    "給水",
+    "管路"
+  ],
+  "difficulty": "master",
+  "title": "給水管配管與打壓試驗",
+  "summary": "室內冷熱水管的配置、固定與完工前打壓測試",
+  "tradeIds": [
+    "electrical-plumbing"
+  ],
+  "overview": {
+    "default": "依用水設備位置規劃冷熱水管路徑，選用適合的管材配管固定，熱水管做保溫，封牆前進行打壓試驗確認不漏水。",
+    "beginner": "水管埋進牆裡就看不到了，萬一漏水要打牆修。所以「封牆前打壓」是最重要的檢查。",
+    "master": "規劃 → 配管 → 固定 → 熱水保溫 → 打壓試驗 → 封牆 → 通水測試。"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "title": "管路規劃",
+      "body": {
+        "default": "依衛浴、廚房設備位置與出水高度，規劃冷熱水管路徑與管徑。"
+      },
+      "keyPoints": [
+        "冷熱水管分開、熱水管越短越好",
+        "預留檢修用的總開關"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "選管與配管",
+      "body": {
+        "default": "冷熱水管選用耐熱耐壓管材（如不鏽鋼壓接管、PPR 熱熔管），依接合方式施作。",
+        "beginner": "PVC 管不耐熱，不能當熱水管。",
+        "master": "熱水用不鏽鋼或 PPR，接合依各工法。"
+      },
+      "keyPoints": [
+        "接頭依原廠工法壓接或熱熔"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "固定與保護",
+      "body": {
+        "default": "以管夾固定，穿過結構或牆面處加套管，熱水管包覆保溫。"
+      }
+    },
+    {
+      "order": 4,
+      "title": "打壓試驗",
+      "body": {
+        "default": "封口後以打壓泵加壓，靜置觀察壓力錶是否下降。",
+        "beginner": "把水管灌滿水加壓，放一段時間，壓力沒有掉就代表沒漏。",
+        "master": "依規範或契約試驗壓力與時間，記錄壓力錶讀數並拍照。"
+      },
+      "specs": [
+        {
+          "label": "試驗壓力與時間",
+          "value": "依規範或契約（常見加壓約 10 kgf/cm²，維持一段時間觀察）"
+        }
+      ],
+      "keyPoints": [
+        "拍照記錄開始與結束的壓力錶讀數"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "封牆與通水",
+      "body": {
+        "default": "打壓通過後才可封牆、粉刷，完工後通水檢查各出水口與接頭。"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "不鏽鋼壓接管",
+      "materialId": "stainless-press-pipe",
+      "spec": "冷熱水"
+    },
+    {
+      "name": "PPR 熱熔管",
+      "materialId": "ppr-pipe",
+      "spec": "冷熱水（擇一系統）"
+    },
+    {
+      "name": "保溫管",
+      "materialId": "pipe-insulation",
+      "spec": "熱水管"
+    },
+    {
+      "name": "管夾、套管"
+    }
+  ],
+  "tools": [
+    {
+      "name": "壓接鉗或熱熔機"
+    },
+    {
+      "name": "管子切割器"
+    },
+    {
+      "name": "打壓泵（含壓力錶）"
+    },
+    {
+      "name": "水平儀"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "沒有打壓就封牆",
+      "consequence": "日後漏水需打牆",
+      "prevention": "封牆前打壓並記錄"
+    },
+    {
+      "mistake": "熱水用 PVC 管",
+      "consequence": "管材變形破裂",
+      "prevention": "熱水用耐熱管材"
+    },
+    {
+      "mistake": "熱水管未保溫",
+      "consequence": "熱損失、出熱水慢",
+      "prevention": "包覆保溫"
+    },
+    {
+      "mistake": "不同金屬直接接觸",
+      "consequence": "電位腐蝕",
+      "prevention": "使用絕緣接頭"
+    }
+  ],
+  "qcChecklist": [
+    {
+      "item": "打壓",
+      "criteria": "試驗期間壓力無下降",
+      "method": "壓力錶讀數＋照片"
+    },
+    {
+      "item": "管材",
+      "criteria": "冷熱水管材正確",
+      "method": "目視、標示"
+    },
+    {
+      "item": "固定",
+      "criteria": "管夾間距適當、不晃動",
+      "method": "目視、手搖"
+    },
+    {
+      "item": "出水",
+      "criteria": "各出水口出水正常、無滲漏",
+      "method": "通水測試"
+    }
+  ],
+  "safety": [
+    {
+      "level": "warning",
+      "text": "鑽牆、打鑿前確認牆內管線位置。"
+    },
+    {
+      "level": "warning",
+      "text": "熱熔機高溫，注意燙傷。"
+    }
+  ],
+  "aliases": [
+    "配水管",
+    "打壓",
+    "水管配管",
+    "冷熱水管"
+  ],
+  "duration": "一般住宅約 1–3 天（不含泥作）",
+  "relatedProcedureIds": [
+    "drainage-piping"
+  ]
+}
